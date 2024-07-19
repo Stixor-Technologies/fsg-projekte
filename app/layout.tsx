@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "@/components/header/header";
 
 import "./globals.css";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body
         className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} font-proxima `}
       >
+        <Header />
         {children}
       </body>
     </html>

@@ -27,6 +27,14 @@ body {
 }
 
 @layer utilities {
+  .link-container {
+    @apply hidden gap-5 md:flex lg:gap-[35px];
+  }
+
+  .header-link {
+    @apply font-proxima-semibold hover:text-light-brown leading-[22px] duration-300 lg:text-lg;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
