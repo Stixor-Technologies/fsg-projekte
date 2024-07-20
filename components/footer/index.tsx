@@ -46,19 +46,19 @@ const Footer = () => {
 
               <div className="mx-auto mt-6 flex flex-col justify-between sm:max-w-[20.875rem] sm:flex-row lg:mt-[2.563rem]">
                 <Link
-                  className=" text-brown font-proxima-semibold text-lg uppercase tracking-wider"
+                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
                   href={"/"}
                 >
                   Impressum
                 </Link>
                 <Link
-                  className=" text-brown font-proxima-semibold text-lg uppercase tracking-wider"
+                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
                   href={"/"}
                 >
                   Agb
                 </Link>
                 <Link
-                  className=" text-brown font-proxima-semibold text-lg uppercase tracking-wider"
+                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
                   href={"/"}
                 >
                   Datenschutz
