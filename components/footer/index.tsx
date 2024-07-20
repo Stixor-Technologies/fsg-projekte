@@ -71,7 +71,7 @@ const Footer = () => {
                 UNTERNEHMEN
               </h4>
 
-              <div className=" font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.938rem] xl:text-lg xl:leading-[1.625rem]">
+              <div className=" font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" ">
                   FSG Grundstücks-
                   <br /> gesellschaft mbH
