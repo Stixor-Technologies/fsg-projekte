@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header ref={header} className={`bg-dark-blue fixed z-50 w-full`}>
       <div className="container">
-        <nav className="mx-auto flex h-[85px] !max-w-[1522px] items-center justify-between lg:h-[131px]">
+        <nav className="mx-auto flex h-[5.313rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
           {/* <div className="link-container">
             <Link className="header-link" href={"/"}>
               Bauprojekte

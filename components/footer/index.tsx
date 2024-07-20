@@ -6,21 +6,21 @@ import Logo from "@/public/assets/footer-logo.svg";
 const Footer = () => {
   return (
     <footer className=" bg-dark-blue ">
-      <div className="4xl:h-[538px] container pb-12 pt-[44.5px] lg:pb-[73px]">
-        <div className="max-w-[1769px]">
+      <div className="4xl:h-[33.625rem] container pb-12 pt-[2.781rem] lg:pb-[4.563rem]">
+        <div className="max-w-[110.563rem]">
           <div className="flex flex-col items-center gap-11 ">
             <Image src={Logo} alt="footer-logo" />
 
             <div className="h-[0.5px] w-full bg-white" />
           </div>
 
-          <div className="mt-[49px] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0">
+          <div className="mt-[3.063rem] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0">
             <div className="">
-              <h4 className="font-proxima-semibold text-brown text-lg leading-[22px]">
+              <h4 className="font-proxima-semibold text-brown text-lg leading-[1.375rem]">
                 VERTRIEB
               </h4>
 
-              <div className="font-gt-book mt-2.5 space-y-3.5 lg:mt-[31px] lg:space-y-[19px] xl:text-lg xl:leading-[26px]">
+              <div className="font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" ">
                   FSG Projekte <br /> Beratungs- und Vertriebsgesellschaft mbH
                 </h4>
@@ -38,13 +38,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className=" row-start-3 sm:col-span-full sm:row-start-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[56px]">
-              <h5 className="font-gt-super-italic text-xl sm:text-center lg:text-2xl xl:text-[33px] xl:!leading-[38px]">
+            <div className=" row-start-3 sm:col-span-full sm:row-start-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[3.5rem]">
+              <h5 className="font-gt-super-italic text-xl sm:text-center lg:text-2xl xl:text-[2.063rem] xl:!leading-[2.375rem]">
                 Besondere Orte <br /> mit einem besonderen Anspruch:
                 <br /> Vollenden.
               </h5>
 
-              <div className="mx-auto mt-6 flex flex-col justify-between sm:max-w-[334px] sm:flex-row lg:mt-[41px]">
+              <div className="mx-auto mt-6 flex flex-col justify-between sm:max-w-[20.875rem] sm:flex-row lg:mt-[2.563rem]">
                 <Link
                   className=" text-brown font-proxima-semibold text-lg uppercase tracking-wider"
                   href={"/"}
@@ -67,11 +67,11 @@ const Footer = () => {
             </div>
 
             <div className=" sm:text-right">
-              <h4 className=" font-proxima-semibold text-brown text-lg leading-[22px]">
+              <h4 className=" font-proxima-semibold text-brown text-lg leading-[1.375rem]">
                 UNTERNEHMEN
               </h4>
 
-              <div className=" font-gt-book mt-2.5 space-y-3.5 lg:mt-[31px] lg:space-y-[19px] xl:text-lg xl:leading-[26px]">
+              <div className=" font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.938rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" ">
                   FSG Grundstücks-
                   <br /> gesellschaft mbH
