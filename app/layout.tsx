@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "@/components/header/header";
+import Footer from "@/components/footer";
 
 import "./globals.css";
 
@@ -29,6 +30,11 @@ const GtSuperRegular = localFont({
   variable: "--font-gt-regular",
 });
 
+const GtSuperRegularItalic = localFont({
+  src: "./fonts/GT-Super-Text-Regular-Italic.otf",
+  variable: "--font-gt-regular-italic",
+});
+
 const GtSuperMedium = localFont({
   src: "./fonts/GT-Super-Text-Medium.otf",
   variable: "--font-gt-medium",
@@ -52,10 +58,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} font-proxima `}
+        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} font-proxima `}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

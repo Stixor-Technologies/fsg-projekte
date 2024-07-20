@@ -32,7 +32,7 @@ body {
   }
 
   .header-link {
-    @apply font-proxima-semibold hover:text-light-brown leading-[22px] duration-300 lg:text-lg;
+    @apply font-proxima-semibold hover:text-light-brown uppercase !leading-[22px] tracking-wider duration-300 lg:text-lg;
   }
 
   .text-balance {
