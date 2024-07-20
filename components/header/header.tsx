@@ -20,32 +20,6 @@ const Header = () => {
     <header ref={header} className={`bg-dark-blue fixed z-50 w-full`}>
       <div className="container">
         <nav className="mx-auto flex h-[5.313rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
-          {/* <div className="link-container">
-            <Link className="header-link" href={"/"}>
-              Bauprojekte
-            </Link>
-            <Link className="header-link" href={"/"}>
-              Ankauf
-            </Link>
-          </div>
-
-          <Link href={"/"}>
-            <Image
-              src={Logo}
-              alt="header-logo"
-              className="xs:max-w-[17rem] max-w-[12rem] lg:max-w-none"
-            />
-          </Link>
-
-          <div className="link-container">
-            <Link className="header-link" href={"/"}>
-              Unternehmen
-            </Link>
-            <Link className="header-link" href={"/"}>
-              Kontakt
-            </Link>
-          </div> */}
-
           <div className="link-container">
             {navLinks.slice(0, Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
