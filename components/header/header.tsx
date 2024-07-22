@@ -17,9 +17,12 @@ const Header = () => {
   const header = useRef<HTMLElement | null>(null);
 
   return (
-    <header ref={header} className={`fixed z-50 w-full bg-dark-blue`}>
+    <header
+      ref={header}
+      className={`fixed z-50 w-full border-b-[2px] border-brown bg-dark-blue`}
+    >
       <div className="container">
-        <nav className="mx-auto flex h-[5.313rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
+        <nav className="mx-auto flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
           <div className="link-container">
             {navLinks.slice(0, Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
