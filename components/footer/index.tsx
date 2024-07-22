@@ -6,7 +6,7 @@ import Logo from "@/public/assets/footer-logo.svg";
 const Footer = () => {
   return (
     <footer className=" bg-dark-blue ">
-      <div className="4xl:h-[33.625rem] container pb-12 pt-[2.781rem] lg:pb-[4.563rem]">
+      <div className="container pb-12 pt-[2.781rem] lg:pb-[4.563rem] 4xl:h-[33.625rem]">
         <div className="max-w-[110.563rem]">
           <div className="flex flex-col items-center gap-11 ">
             <Image src={Logo} alt="footer-logo" />
@@ -16,11 +16,11 @@ const Footer = () => {
 
           <div className="mt-[3.063rem] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0">
             <div className="">
-              <h4 className="font-proxima-semibold text-brown text-lg leading-[1.375rem]">
+              <h4 className="font-proxima-semibold text-lg leading-[1.375rem] text-brown">
                 VERTRIEB
               </h4>
 
-              <div className="font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
+              <div className="mt-2.5 space-y-3.5 font-gt-book lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" ">
                   FSG Projekte <br /> Beratungs- und Vertriebsgesellschaft mbH
                 </h4>
@@ -46,19 +46,19 @@ const Footer = () => {
 
               <div className="mx-auto mt-6 flex flex-col justify-between sm:max-w-[20.875rem] sm:flex-row lg:mt-[2.563rem]">
                 <Link
-                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
+                  className=" font-proxima-semibold text-lg uppercase tracking-wide text-brown duration-300 hover:text-light-brown"
                   href={"/"}
                 >
                   Impressum
                 </Link>
                 <Link
-                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
+                  className=" font-proxima-semibold text-lg uppercase tracking-wide text-brown duration-300 hover:text-light-brown"
                   href={"/"}
                 >
                   Agb
                 </Link>
                 <Link
-                  className=" text-brown font-proxima-semibold hover:text-light-brown text-lg uppercase tracking-wider duration-300"
+                  className=" font-proxima-semibold text-lg uppercase tracking-wide text-brown duration-300 hover:text-light-brown"
                   href={"/"}
                 >
                   Datenschutz
@@ -67,11 +67,11 @@ const Footer = () => {
             </div>
 
             <div className=" sm:text-right">
-              <h4 className=" font-proxima-semibold text-brown text-lg leading-[1.375rem]">
+              <h4 className=" font-proxima-semibold text-lg leading-[1.375rem] text-brown">
                 UNTERNEHMEN
               </h4>
 
-              <div className=" font-gt-book mt-2.5 space-y-3.5 lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
+              <div className=" mt-2.5 space-y-3.5 font-gt-book lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" ">
                   FSG Grundstücks-
                   <br /> gesellschaft mbH

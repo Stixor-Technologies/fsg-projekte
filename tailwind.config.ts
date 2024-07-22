@@ -36,6 +36,7 @@ const config: Config = {
         "dark-brown": "#C7B8A6",
         silver: "#C3C3C3",
         gray: "#F2F3F4",
+        "dark-green": "#0B260A",
       },
       screens: {
         xs: "440px",
@@ -77,7 +78,7 @@ const config: Config = {
             paddingRight: "7.8125rem",
           },
           "@screen 4xl": {
-            maxWidth: "100%",
+            maxWidth: "1920px",
             // paddingLeft: "7.8125rem",
             // paddingRight: "7.8125rem",
           },

@@ -17,7 +17,7 @@ const Header = () => {
   const header = useRef<HTMLElement | null>(null);
 
   return (
-    <header ref={header} className={`bg-dark-blue fixed z-50 w-full`}>
+    <header ref={header} className={`fixed z-50 w-full bg-dark-blue`}>
       <div className="container">
         <nav className="mx-auto flex h-[5.313rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
           <div className="link-container">
@@ -36,7 +36,7 @@ const Header = () => {
             <Image
               src={Logo}
               alt="header-logo"
-              className="xs:max-w-[17rem] max-w-[12rem] lg:max-w-none"
+              className="max-w-[12rem] xs:max-w-[17rem] lg:max-w-none"
             />
           </Link>
 

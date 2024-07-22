@@ -95,8 +95,8 @@ const Sidebar = () => {
     <>
       <div
         ref={sideBarMenu}
-        className="min-aspect:-mr-[40vw] min-aspect:w-[40vw] bg-dark-blue fixed right-0 top-0 z-40
-          -mr-[100vw] h-screen w-screen will-change-auto"
+        className="min-aspect:-mr-[40vw] min-aspect:w-[40vw] fixed right-0 top-0 z-40 -mr-[100vw]
+          h-screen w-screen bg-dark-blue will-change-auto"
       >
         <div className="bg-indigo-blue absolute -z-10 h-full w-full" />
 
@@ -107,7 +107,7 @@ const Sidebar = () => {
           <ul className="min-aspect:space-y-[3vw] min-aspect:text-[3vw] mt-[12.6vw] space-y-[7vw] px-8 text-[7vw] md:text-left">
             {navLinks?.map((link) => (
               <li
-                className={`after:transition-width hover:text-light-brown relative w-max text-white duration-300 ${
+                className={`after:transition-width relative w-max text-white duration-300 hover:text-light-brown ${
                   path === link?.path && "after:w-full"
                 }`}
                 key={link?.id}

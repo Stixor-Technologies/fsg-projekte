@@ -4,6 +4,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const proximaThin = localFont({
   src: "./fonts/Proxima-Nova-Thin.otf",
@@ -63,6 +64,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
