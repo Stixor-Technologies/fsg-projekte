@@ -6,8 +6,8 @@ import Logo from "@/public/assets/footer-logo.svg";
 const Footer = () => {
   return (
     <footer className=" bg-dark-blue ">
-      <div className="container pb-12 pt-[2.781rem] lg:pb-[4.563rem] 4xl:h-[33.625rem]">
-        <div className="max-w-[110.563rem]">
+      <div className="container pb-12 pt-[2.781rem] lg:pb-[4.563rem] 4xl:h-[33.625rem] 4xl:px-0">
+        <div className="mx-auto max-w-[110.563rem]">
           <div className="flex flex-col items-center gap-11 ">
             <Image src={Logo} alt="footer-logo" />
 
@@ -21,7 +21,7 @@ const Footer = () => {
               </h4>
 
               <div className="mt-2.5 space-y-3.5 font-gt-book lg:mt-[1.938rem] lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
-                <h4 className="4xl:h-[2.75rem] ">
+                <h4 className="tracking-tight 4xl:h-[2.75rem] ">
                   FSG Projekte <br /> Beratungs- und Vertriebsgesellschaft mbH
                 </h4>
                 <address className="not-italic 4xl:h-[2.75rem]">
