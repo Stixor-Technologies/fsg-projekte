@@ -28,11 +28,11 @@ body {
 
 @layer utilities {
   .link-container {
-    @apply hidden gap-5 md:flex lg:gap-[2.188rem];
+    @apply hidden gap-5 md:flex lg:gap-[2.75rem];
   }
 
   .header-link {
-    @apply font-proxima-semibold hover:text-light-brown uppercase !leading-[1.375rem] tracking-wide duration-300 md:text-sm lg:text-lg;
+    @apply font-proxima-semibold uppercase !leading-[1.375rem] tracking-wide duration-300 hover:text-light-brown md:text-sm lg:text-lg 4xl:h-[1.125rem];
   }
 
   .text-balance {
