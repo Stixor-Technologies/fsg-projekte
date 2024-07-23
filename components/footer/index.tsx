@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className="mt-[3.063rem] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0 4xl:grid-cols-[21.063rem,30.125rem,14.125rem]">
             <div className="">
-              <h4 className="font-proxima-semibold text-lg leading-[1.375rem] text-brown">
+              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-brown">
                 VERTRIEB
               </h4>
 
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
 
             <div className=" sm:text-right">
-              <h4 className=" font-proxima-semibold text-lg leading-[1.375rem] text-brown">
+              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-brown">
                 UNTERNEHMEN
               </h4>
 
