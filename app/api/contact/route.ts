@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       from: process.env.SENDGRID_EMAIL_FROM,
       replyTo: data?.email,
       body: data?.message,
-      subject: `[Lead from website]`,
+      subject: `Nachricht an FSG Projekte`,
       html: data?.htmlContent,
     };
 

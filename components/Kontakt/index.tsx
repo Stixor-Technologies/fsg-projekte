@@ -177,7 +177,7 @@ const Kontakt = () => {
     <section className=" bg-light-yellow py-[3.125rem] lg:pb-[3.625rem] lg:pt-[6.25rem] 4xl:h-[58.313rem]">
       <div className="mx-auto max-w-[64.188rem] px-5 md:px-10 xl:px-0">
         <div className=" mb-[1.938rem] text-center lg:mb-[3.875re,]">
-          <h2 className=" text-center font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem]">
+          <h2 className=" text-center font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-5">
             Kontakt
           </h2>
           <p className="mt-[2.188rem] font-gt-book text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[1.875rem] lg:leading-[2.188rem] 4xl:h-[6.25rem]">
