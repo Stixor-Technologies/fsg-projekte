@@ -63,7 +63,7 @@ const Hamburger = () => {
     >
       <div
         className={`absolute left-1/2 top-1/2 -z-10 h-[150%] w-[150%] -translate-x-1/2 
-              -translate-y-1/2 scale-0 transform rounded-full  transition-all duration-[400ms] ease-[cubic-bezier(0.68,-0.55,0.27,1.55)] group-hover:scale-100 group-hover:bg-brown group-hover:opacity-60 ${
+              -translate-y-1/2 scale-0  transform rounded-full  transition-all duration-[400ms] ease-[cubic-bezier(0.68,-0.55,0.27,1.55)] group-hover:scale-100 group-hover:opacity-60 group-hover:md:bg-brown ${
                 !isMenuOpen
                   ? "scale-0 bg-transparent"
                   : "scale-100 bg-brown opacity-60"

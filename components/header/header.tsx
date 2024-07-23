@@ -21,9 +21,9 @@ const Header = () => {
       ref={header}
       className={`fixed z-50 w-full border-b-[2px] border-brown bg-dark-blue`}
     >
-      <div className="container 4xl:ml-[4px] 4xl:mr-[1px]">
-        <nav className="mx-auto flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem] 4xl:justify-normal">
-          <div className="link-container">
+      <div className="container ">
+        <nav className="mx-auto  flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
+          <div className="link-container 4xl:ml-[4px]">
             {navLinks.slice(0, Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
                 key={link?.id}
@@ -43,7 +43,7 @@ const Header = () => {
             />
           </Link>
 
-          <div className="link-container !gap-[3.688rem]">
+          <div className="link-container gap-5 lg:!gap-[3.688rem] 4xl:mr-[1px]">
             {navLinks.slice(Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
                 key={link?.id}
