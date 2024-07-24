@@ -35,6 +35,14 @@ body {
     @apply font-proxima-semibold uppercase !leading-[1.375rem] tracking-wide duration-300 hover:text-light-brown md:text-sm lg:text-lg 4xl:h-[1.125rem];
   }
 
+  .ankauf-point {
+    @apply mt-3.5 block font-proxima-semibold uppercase text-brown xl:mt-[34px] 4xl:h-[33px];
+  }
+
+  .ankauf-desc {
+    @apply block font-gt-super text-lg text-medium-blue lg:text-2xl 4xl:leading-[37px];
+  }
+
   .text-balance {
     text-wrap: balance;
   }

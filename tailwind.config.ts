@@ -25,6 +25,8 @@ const config: Config = {
         "gt-super-italic": ["var(--font-gt-regular-italic)"],
         "gt-medium": ["var(--font-gt-medium)"],
         "gt-book": ["var(--font-gt-book)"],
+        "gt-book-italic": ["var(--font-gt-book-italic)"],
+        "gt-display-light": ["var(--font-gt-display-light)"],
       },
       colors: {
         "light-yellow": "#F4EDE4",

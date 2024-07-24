@@ -210,7 +210,7 @@ const Kontakt = () => {
 
                 {inputTemplate({
                   name: "email",
-                  placeholder: "E-mail*",
+                  placeholder: "E-Mail*",
                   touched: touched.email,
                   error: errors.email,
                 })}

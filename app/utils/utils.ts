@@ -2,19 +2,19 @@ const navLinks = [
   {
     id: 1,
     title: "Bauprojekte",
-    path: "#",
+    path: "/",
   },
 
   {
     id: 2,
     title: "Ankauf",
-    path: "#",
+    path: "/ankauf",
   },
 
   {
     id: 3,
     title: "Unternehmen",
-    path: "#",
+    path: "/unternehmen",
   },
 
   {
