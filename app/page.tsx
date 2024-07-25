@@ -5,7 +5,6 @@ import AnkaufsProfile from "@/public/assets/homepage/ankaufsprofile.png";
 import { aktuelleprojekte } from "./utils/data";
 import Kontakt from "@/components/Kontakt";
 import LinkButton from "@/components/link-button";
-import Link from "next/link";
 
 export default function Home() {
   return (
