@@ -33,6 +33,7 @@ const config: Config = {
         "dark-blue": "#101D40",
         "medium-blue": "#212D4D",
         "light-blue": "#1C2C53",
+        "transparent-blue": "#4E5770",
         brown: "#765534",
         "light-brown": "#AC9379",
         "dark-brown": "#C7B8A6",

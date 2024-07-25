@@ -32,7 +32,7 @@ const LinkButton: FC<ActionProps> = ({ variant, styles, text, ...props }) => {
     }
   };
 
-  const allClassNames = `  items-center bg-brown justify-center gap-3 bg-opacity-80 font-proxima-semibold  text-base uppercase tracking-wide duration-300 hover:rounded-[5px] hover:bg-opacity-100 hover:text-[17px] hover:tracking-widest lg:text-lg lg:leading-[23px] lg:hover:text-[19px] disabled:opacity-50  ${styles} ${getSizeClass()}`;
+  const allClassNames = `  items-center bg-brown justify-center gap-3 font-proxima-semibold  text-base uppercase tracking-wide duration-300 hover:rounded-[5px] hover:bg-opacity-100 hover:text-[17px] hover:tracking-widest lg:text-lg lg:leading-[23px] lg:hover:text-[19px] disabled:opacity-50  ${styles} ${getSizeClass()}`;
 
   if (props.as === "link") {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

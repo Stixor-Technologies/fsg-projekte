@@ -111,6 +111,9 @@ const Sidebar = () => {
                   path === link?.path && "after:w-full"
                 }`}
                 key={link?.id}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}
               >
                 <Link href={link?.path}>{link.title}</Link>
               </li>

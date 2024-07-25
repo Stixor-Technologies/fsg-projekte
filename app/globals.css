@@ -36,11 +36,24 @@ body {
   }
 
   .ankauf-point {
-    @apply mt-3.5 block font-proxima-semibold uppercase text-brown xl:mt-[34px] 4xl:h-[33px];
+    @apply mt-3.5 block font-proxima-semibold uppercase text-brown xl:mt-[2.125rem] 4xl:h-[2.063rem];
   }
 
   .ankauf-desc {
-    @apply block font-gt-super text-lg text-medium-blue lg:text-2xl 4xl:leading-[37px];
+    @apply block font-gt-super text-lg text-medium-blue lg:text-2xl 4xl:leading-[2.313rem];
+  }
+
+  .metric-container {
+    @apply w-full px-3 text-center md:max-w-[18.75rem] lg:px-0 xl:mx-[52.5px] xl:mb-[44px] xl:mt-[43px];
+    /* @apply w-full  px-3 text-center lg:px-0 xl:mx-[52.5px] xl:mb-[44px] xl:mt-[43px]; */
+  }
+
+  .metric {
+    @apply font-gt-book text-5xl lg:text-[4.375rem] lg:leading-[4.813rem] 4xl:h-[73px];
+  }
+
+  .metric-label {
+    @apply inline-block text-lg uppercase tracking-wide text-medium-blue lg:mt-3 lg:text-[1.313rem] lg:leading-[1.563rem] xl:mt-[18px];
   }
 
   .text-balance {

@@ -288,7 +288,7 @@ const Kontakt = () => {
                   as={"button"}
                   variant="md"
                   text="Absenden"
-                  styles="mt-8 sm:mt-0"
+                  styles="mt-8 sm:mt-0 bg-opacity-80"
                   loading={isLoading}
                   disabled={isLoading}
                 />
