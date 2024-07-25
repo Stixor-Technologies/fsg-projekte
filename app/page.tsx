@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* section 3 */}
-        <div className="mb-[2.813rem] flex flex-col bg-dark-blue md:flex-row lg:mb-[4.688rem]">
+        <div className="mb-[2.813rem] flex flex-col bg-dark-blue md:flex-row lg:mb-[4.688rem] 4xl:h-[65.563rem]">
           <div className=" flex-1 md:order-1">
             <Image src={Fabian} alt="fabian" />
           </div>
