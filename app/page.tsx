@@ -175,7 +175,7 @@ export default function Home() {
                 </span>
               </p>
 
-              <span className=" border-b-[2px] border-brown pb-2 uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]">
+              <span className="inline-block border-b-[2px] border-brown pb-2 uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]">
                 PDF ansehen
               </span>
             </div>
