@@ -10,7 +10,7 @@ const Unternehmen = () => {
         {/* section 1 */}
         <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[56.75rem] lg:mb-[6.25rem] ">
           <div className="mx-auto max-w-[71.563rem] text-center">
-            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.188rem] 4xl:h-5">
+            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-12 4xl:h-5">
               unternehmen
             </h4>
             <p className="font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[17.813rem]">
