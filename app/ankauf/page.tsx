@@ -16,7 +16,7 @@ const Ankauf = () => {
             <h4 className=" mb-[clamp(2px,4.4vw,5.188rem)] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
               Ankaufsprofile
             </h4>
-            <h2 className="font-gt-book text-[clamp(0.875rem,3vw,2.188rem)] leading-[clamp(0.875rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[8.438rem]">
+            <h2 className="font-gt-book text-[clamp(1rem,3vw,2.188rem)] leading-[clamp(0.875rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[8.438rem]">
               Mit Seriosität, Verbindlichkeit
               <br /> und besten Referenzen: <br />
               Wir kaufen Immobilien und Grundstücke.
@@ -26,7 +26,7 @@ const Ankauf = () => {
 
         {/* section 2 */}
 
-        <div className="mx-auto my-28 max-w-[59.063rem] text-center font-gt-super sm:text-lg lg:mb-[15.063rem] lg:mt-[12.313rem] lg:text-[1.563rem] lg:leading-[2.5rem] lg:tracking-tight 4xl:h-[24.063rem]">
+        <div className="mx-auto my-14 max-w-[59.063rem] text-center font-gt-super sm:text-lg lg:mb-[15.063rem] lg:mt-[12.313rem] lg:text-[1.563rem] lg:leading-[2.5rem] lg:tracking-tight 4xl:h-[24.063rem]">
           <p>
             Was gibt es Schöneres als etwas Gutes noch besser zu machen?{" "}
             <br className="hidden lg:block" /> Wir haben diesen Ehrgeiz.
@@ -51,7 +51,7 @@ const Ankauf = () => {
         </div>
 
         {/* section 3 */}
-        <div className="flex flex-col gap-[4.5rem]">
+        <div className="flex flex-col gap-14 lg:gap-[4.5rem]">
           {Ankaufsprofil?.map((profil, index) => (
             <div
               key={index}
@@ -61,7 +61,7 @@ const Ankauf = () => {
                 <div className=" flex h-[460px] flex-1 items-center justify-center ">
                   <div className="w-full max-w-[516px] text-center lg:-mt-24">
                     <h4 className=" font-gt-display-light text-[12.5rem] leading-none text-light-yellow xs:text-[18.75rem] md:text-[460px] ">
-                      01
+                      {String(index + 1).padStart(2, "0")}
                     </h4>
                     <h2 className="font-gt-book text-2xl text-medium-blue xs:-mt-8 xs:text-3xl md:-mt-16 md:text-[2.813rem] md:leading-[4.813rem] ">
                       {profil?.name}
@@ -69,7 +69,7 @@ const Ankauf = () => {
                   </div>
                 </div>
 
-                <div className="mt-14 w-full flex-1 space-y-5 divide-y-[1px] divide-medium-blue border-medium-blue lg:mt-[85px] lg:border-l lg:pl-[52px] xl:space-y-[38px] 4xl:max-w-[757px]">
+                <div className="mt-14 w-full flex-1 space-y-5 divide-y-[1px] divide-medium-blue border-medium-blue lg:mt-[85px] lg:border-l lg:pl-[52px] xl:space-y-[38px] 4xl:h-[51.063rem] 4xl:max-w-[757px]">
                   <div>
                     <span className={`ankauf-point !mt-0`}>asset-klassen</span>
                     <span className="ankauf-desc 4xl:h-6 ">
