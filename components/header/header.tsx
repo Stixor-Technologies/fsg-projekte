@@ -6,13 +6,12 @@ import Logo from "@/public/assets/header-logo.svg";
 import Link from "next/link";
 import Hamburger from "./menu/hamburger";
 import { navLinks } from "@/app/utils/utils";
-import gsap from "gsap";
-import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 import { usePathname } from "next/navigation";
+import { useScrollToSection } from "@/app/utils/scroll";
 
 const Header = () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const path = usePathname();
+  const { scrollToSection } = useScrollToSection();
 
   const header = useRef<HTMLElement | null>(null);
 
@@ -44,7 +43,7 @@ const Header = () => {
           </Link>
 
           <div className="link-container gap-5 lg:!gap-[3.688rem] 4xl:mr-[1px]">
-            {navLinks.slice(Math.ceil(navLinks.length / 2)).map((link) => (
+            {navLinks.slice(-2, -1).map((link) => (
               <Link
                 key={link?.id}
                 className={`header-link ${path === link?.path && "text-light-brown"}`}
@@ -53,6 +52,14 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
+            <button
+              className={`header-link }`}
+              onClick={() => {
+                scrollToSection("#kontact");
+              }}
+            >
+              kontact
+            </button>
           </div>
 
           <Hamburger />

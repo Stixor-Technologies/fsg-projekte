@@ -5,6 +5,7 @@ import { useMenuStore } from "@/store/menu-store";
 import { navLinks } from "@/app/utils/utils";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useScrollToSection } from "@/app/utils/scroll";
 
 const Sidebar = () => {
   const path = usePathname();
@@ -14,6 +15,7 @@ const Sidebar = () => {
 
   const isMenuOpen = useMenuStore((state) => state.isMenuOpen);
   const setIsMenuOpen = useMenuStore((state) => state.setIsMenuOpen);
+  const { scrollToSection } = useScrollToSection();
 
   const handleDocumentClick = useCallback(
     (event: MouseEvent) => {
@@ -105,10 +107,10 @@ const Sidebar = () => {
           w-full flex-col justify-center p-4 pb-4 pt-[2.313rem]"
         >
           <ul className="min-aspect:space-y-[3vw] min-aspect:text-[3vw] mt-[12.6vw] space-y-[7vw] px-8 text-[7vw] md:text-left">
-            {navLinks?.map((link) => (
+            {navLinks.slice(0, 3)?.map((link) => (
               <li
-                className={`after:transition-width relative w-max text-white duration-300 hover:text-light-brown ${
-                  path === link?.path && "after:w-full"
+                className={`after:transition-width relative w-max duration-300 hover:text-light-brown ${
+                  path === link?.path && "text-light-brown"
                 }`}
                 key={link?.id}
                 onClick={() => {
@@ -118,6 +120,16 @@ const Sidebar = () => {
                 <Link href={link?.path}>{link.title}</Link>
               </li>
             ))}
+
+            <li
+              className={`after:transition-width relative w-max text-white duration-300 hover:text-light-brown`}
+              onClick={() => {
+                scrollToSection("#kontact");
+                setIsMenuOpen(false);
+              }}
+            >
+              Kontact
+            </li>
           </ul>
         </div>
       </div>

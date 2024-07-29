@@ -6,6 +6,8 @@ import Image from "next/image";
 import LinkButton from "../link-button";
 import FaqArrow from "@/public/assets/arrow.svg";
 import { FaqItem } from "@/app/utils/types";
+import { useScrollToSection } from "@/app/utils/scroll";
+import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
 interface FaqProps {
   faqs: FaqItem[];
@@ -216,7 +218,9 @@ const FaqCard = ({
 };
 
 const Faq: FC<FaqProps> = ({ faqs }) => {
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const [activeFaq, setActiveFaq] = useState<number>(-1);
+  const { scrollToSection } = useScrollToSection();
 
   const toggleActive = (id: number) => {
     setActiveFaq((prevActiveFaq) => (prevActiveFaq === id ? -1 : id));
@@ -238,7 +242,14 @@ const Faq: FC<FaqProps> = ({ faqs }) => {
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <LinkButton text="Jetzt anfragen" variant="sm" as={"button"} />
+        <LinkButton
+          text="Jetzt anfragen"
+          variant="sm"
+          as={"button"}
+          onClick={() => {
+            scrollToSection("#kontact");
+          }}
+        />
       </div>
     </div>
   );
