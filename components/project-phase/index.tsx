@@ -10,13 +10,13 @@ const ProjectPhase: FC<ProjectPhaseProps> = ({
   currentPhase,
 }) => {
   return (
-    <div className="mx-auto mb-[2.813rem] max-w-[1522px] lg:mb-[6.625rem] 4xl:h-[8.188rem]">
+    <div className="mx-auto mb-[2.813rem] max-w-[95.125rem] lg:mb-[6.625rem] 4xl:h-[8.188rem]">
       <div className="flex items-center">
         <div className="flex w-full flex-1 flex-col md:flex-row">
           {projectPhases?.map((phase: any, index: number) => (
             <div
               key={index}
-              className="flex flex-1 gap-12 md:flex-col md:gap-5 xl:gap-[26px]"
+              className="flex flex-1 gap-12 md:flex-col md:gap-5 xl:gap-[1.625rem]"
             >
               <div className={`flex flex-col items-center md:flex-row `}>
                 <div
@@ -43,7 +43,7 @@ const ProjectPhase: FC<ProjectPhaseProps> = ({
               </div>
 
               <span
-                className={`mt-4 self-start text-sm uppercase md:mt-0 md:self-center xl:text-[21px] ${currentPhase >= phase?.phaseNumber ? " text-medium-blue" : "text-silver"}`}
+                className={`mt-4 self-start text-sm uppercase md:mt-0 md:self-center xl:text-[1.3125rem] ${currentPhase >= phase?.phaseNumber ? " text-medium-blue" : "text-silver"}`}
               >
                 {phase?.phaseName}
               </span>

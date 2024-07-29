@@ -8,6 +8,7 @@ import Faq from "@/components/faq";
 import ProjectPhase from "@/components/project-phase";
 import Slider from "@/components/slider";
 import { Project } from "@/app/utils/types";
+import MapComponent from "@/components/map";
 
 interface ProjectDetailParams {
   params: {
@@ -56,7 +57,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
                     Philosophie
                   </h4>
-                  <p className=" max-w-[1190px] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[17.813rem]">
+                  <p className=" max-w-[74.375rem] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[17.813rem]">
                     {/* {project?.philosophie} */}
                     <span className="block">
                       <TextWithLineBreaks text={project?.philosophie} />
@@ -67,15 +68,15 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
               {/* section 3 */}
 
-              <div className="mb-[2.813rem] grid grid-cols-1 justify-between gap-3   divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,1px,1fr] md:flex md:gap-0 md:divide-x lg:mb-[6.25rem]  lg:py-[1.875rem] 4xl:h-[260px]">
+              <div className="mb-[2.813rem] grid grid-cols-1 justify-between gap-3   divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,1px,1fr] md:flex md:gap-0 md:divide-x lg:mb-[6.25rem]  lg:py-[1.875rem] 4xl:h-[16.25rem]">
                 <div className="flex flex-1 flex-col gap-3 md:flex-row md:justify-between md:gap-0">
-                  <div className="metric-container 4xl:ml-[76px]">
+                  <div className="metric-container 4xl:ml-[4.75rem]">
                     <h5 className="metric">
                       {project?.unitMetrics?.wohnungen}
                     </h5>
                     <span className="metric-label">Wohnungen</span>
                   </div>
-                  <div className="w-[1px] shrink-0 bg-transparent-blue" />
+                  <div className="w-[.0625rem] shrink-0 bg-transparent-blue" />
 
                   <div className="metric-container">
                     <h5 className="metric">
@@ -84,7 +85,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     <span className="metric-label">Penthouse</span>
                   </div>
                 </div>
-                <div className="w-[1px] shrink-0 bg-transparent-blue md:hidden" />
+                <div className="w-[.0625rem] shrink-0 bg-transparent-blue md:hidden" />
 
                 {project?.unitMetrics?.stellplätze &&
                   project?.unitMetrics?.zuralster && (
@@ -96,9 +97,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                         <span className="metric-label">Zur Alster</span>
                       </div>
 
-                      <div className="w-[1px] shrink-0 bg-transparent-blue" />
+                      <div className="w-[.0625rem] shrink-0 bg-transparent-blue" />
 
-                      <div className="metric-container 4xl:mr-[77px]">
+                      <div className="metric-container 4xl:mr-[4.8125rem]">
                         <h5 className="metric">
                           {project?.unitMetrics?.stellplätze}
                         </h5>
@@ -117,9 +118,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                         <span className="metric-label">gebäude</span>
                       </div>
 
-                      <div className="w-[1px] shrink-0 bg-transparent-blue" />
+                      <div className="w-[.0625rem] shrink-0 bg-transparent-blue" />
 
-                      <div className="metric-container 4xl:mr-[77px]">
+                      <div className="metric-container 4xl:mr-[4.8125rem]">
                         <h5 className="metric">
                           {project?.unitMetrics?.zummühlenkamp}
                         </h5>
@@ -304,6 +305,8 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
                 />
               )}
+
+              <MapComponent center={project?.mapCenter} />
 
               {/* section 10 */}
               <Faq faqs={project?.faq} />

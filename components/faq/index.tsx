@@ -113,7 +113,7 @@ const FaqCard = ({
           className="group relative flex cursor-pointer items-center justify-between gap-8"
           onClick={questionClicked}
         >
-          <span className="w-[90%] font-gt-book text-2xl text-medium-blue lg:text-[2.188rem] 4xl:h-[35px]">
+          <span className="w-[90%] font-gt-book text-2xl text-medium-blue lg:text-[2.188rem] 4xl:h-[2.1875rem]">
             {faqItem?.question}
           </span>
 
@@ -122,7 +122,7 @@ const FaqCard = ({
             width={9.34}
             height={9.34}
             alt="expand-answer-icon"
-            className={`${isActive ? "rotate-180" : "rotate-0"} mr-[22px] duration-300 ease-in-out`}
+            className={`${isActive ? "rotate-180" : "rotate-0"} mr-[1.375rem] duration-300 ease-in-out`}
           />
         </div>
 
@@ -166,8 +166,8 @@ const FaqCard = ({
           </div>
 
           <div className="flex flex-col gap-5 lg:flex-row lg:gap-0">
-            <div className="flex w-full max-w-[1200px] flex-col md:flex-row">
-              <div className="mr-10 w-full max-w-[557px]">
+            <div className="flex w-full max-w-[75rem] flex-col md:flex-row">
+              <div className="mr-10 w-full max-w-[34.8125rem]">
                 <h3 className="faq-list-header">Ausstattung</h3>
                 <ul className="faq-list  4xl:h-[17rem]">
                   {faqItem?.answer?.ausstattung?.map(
@@ -178,7 +178,7 @@ const FaqCard = ({
                 </ul>
               </div>
 
-              <div className="w-full max-w-[603px]">
+              <div className="w-full max-w-[37.6875rem]">
                 <div>
                   <h3 className="faq-list-header">Besonderheiten</h3>
                   <ul className="faq-list 4xl:h-[6.5rem]">
@@ -205,7 +205,7 @@ const FaqCard = ({
               </div>
             </div>
 
-            <div className="w-full shrink-0 items-center justify-center self-start lg:ml-4 lg:flex lg:max-w-[264px]">
+            <div className="w-full shrink-0 items-center justify-center self-start lg:ml-4 lg:flex lg:max-w-[16.5rem]">
               <Image src={faqItem?.answer?.faqImage} alt="" className="" />
             </div>
           </div>

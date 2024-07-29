@@ -233,6 +233,8 @@ const aktuelleprojekte = [
         },
       },
     ],
+
+    mapCenter: { lon: 73.08889281534162, lat: 33.52346569905463 },
   },
 
   {
@@ -448,6 +450,7 @@ const aktuelleprojekte = [
         },
       },
     ],
+    mapCenter: { lon: 73.08889281534162, lat: 33.52346569905463 },
   },
 ];
 

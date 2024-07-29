@@ -24,15 +24,15 @@ const LinkButton: FC<ActionProps> = ({ variant, styles, text, ...props }) => {
   const getSizeClass = () => {
     switch (variant) {
       case "sm":
-        return "sm:max-w-[379px] w-full h-[50px] lg:h-[76px]";
+        return "sm:max-w-[23.6875rem] w-full h-[3.125rem] lg:h-[4.75rem]";
       case "md":
-        return "sm:max-w-[485px] w-full h-[50px] lg:h-[76px]";
+        return "sm:max-w-[30.3125rem] w-full h-[3.125rem] lg:h-[4.75rem]";
       default:
         return "";
     }
   };
 
-  const allClassNames = `  items-center bg-brown justify-center gap-3 font-proxima-semibold  text-sm uppercase tracking-wide duration-300 hover:rounded-[5px] hover:bg-opacity-100 hover:text-[15px]  hover:tracking-[0.5px] sm:hover:tracking-widest lg:text-lg lg:leading-[23px] lg:hover:text-[19px] disabled:opacity-50  ${styles} ${getSizeClass()}`;
+  const allClassNames = `  items-center bg-brown justify-center gap-3 font-proxima-semibold  text-sm uppercase tracking-wide duration-300 hover:rounded-[.3125rem] hover:bg-opacity-100 hover:text-[.9375rem]  hover:tracking-[0.5px] sm:hover:tracking-widest lg:text-lg lg:leading-[1.4375rem] lg:hover:text-[1.1875rem] disabled:opacity-50  ${styles} ${getSizeClass()}`;
 
   if (props.as === "link") {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

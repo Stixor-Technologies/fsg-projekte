@@ -55,12 +55,12 @@ const Ankauf = () => {
           {Ankaufsprofil?.map((profil, index) => (
             <div
               key={index}
-              className=" flex flex-col bg-white px-5 py-14 pt-[2.188rem] sm:px-10 lg:px-[78px] lg:pb-[6.25rem] 4xl:h-[1213px]"
+              className=" flex flex-col bg-white px-5 py-14 pt-[2.188rem] sm:px-10 lg:px-[4.875rem] lg:pb-[6.25rem] 4xl:h-[75.8125rem]"
             >
-              <div className="mb-14 flex flex-col lg:mb-[100px] lg:flex-row">
-                <div className=" flex h-[460px] flex-1 items-center justify-center ">
-                  <div className="w-full max-w-[516px] text-center lg:-mt-24">
-                    <h4 className=" font-gt-display-light text-[12.5rem] leading-none text-light-yellow xs:text-[18.75rem] md:text-[460px] ">
+              <div className="mb-14 flex flex-col lg:mb-[6.25rem] lg:flex-row">
+                <div className=" flex h-[28.75rem] flex-1 items-center justify-center ">
+                  <div className="w-full max-w-[32.25rem] text-center lg:-mt-24">
+                    <h4 className=" font-gt-display-light text-[12.5rem] leading-none text-light-yellow xs:text-[18.75rem] md:text-[28.75rem] ">
                       {String(index + 1).padStart(2, "0")}
                     </h4>
                     <h2 className="font-gt-book text-2xl text-medium-blue xs:-mt-8 xs:text-3xl md:-mt-16 md:text-[2.813rem] md:leading-[4.813rem] ">
@@ -69,7 +69,7 @@ const Ankauf = () => {
                   </div>
                 </div>
 
-                <div className="mt-14 w-full flex-1 space-y-5 divide-y-[1px] divide-medium-blue border-medium-blue lg:mt-[85px] lg:border-l lg:pl-[52px] xl:space-y-[38px] 4xl:h-[51.063rem] 4xl:max-w-[757px]">
+                <div className="mt-14 w-full flex-1 space-y-5 divide-y-[.0625rem] divide-medium-blue border-medium-blue lg:mt-[5.3125rem] lg:border-l lg:pl-[3.25rem] xl:space-y-[2.375rem] 4xl:h-[51.063rem] 4xl:max-w-[47.3125rem]">
                   <div>
                     <span className={`ankauf-point !mt-0`}>asset-klassen</span>
                     <span className="ankauf-desc 4xl:h-6 ">

@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { LngLatLike } from "mapbox-gl";
 
 interface FaqItem {
   id: number;
@@ -57,6 +58,7 @@ interface Project {
   faq: FaqItem[];
   feature_before?: StaticImageData;
   bildImages?: StaticImageData[];
+  mapCenter: LngLatLike;
 }
 
 export type { FaqItem, Project };
