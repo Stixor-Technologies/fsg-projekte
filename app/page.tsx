@@ -5,6 +5,7 @@ import AnkaufsProfile from "@/public/assets/homepage/ankaufsprofile.png";
 import { aktuelleprojekte } from "./utils/data";
 import Kontakt from "@/components/Kontakt";
 import LinkButton from "@/components/link-button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ export default function Home() {
                 Das F und das S von FSG:
                 <br /> Fabian Schneider
               </h2>
-              <p className="my-3 font-proxima-thin text-sm lg:my-7 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-[3.438rem] 4xl:h-[10.313rem]">
+              <p className="my-3 font-proxima text-sm lg:my-7 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-[3.438rem] 4xl:h-[10.313rem]">
                 Fabian Schneider ist der Mensch gewordene Qualitätsanspruch.
                 <br className="hidden 2xl:block" />
                 Weil sich seiner Meinung nach nur so nachhaltige Immobilienwerte
@@ -94,7 +95,11 @@ export default function Home() {
 
           <div className="mt-[6vw] flex flex-col gap-[4vw] 2xl:mt-24 2xl:gap-[6.25rem]">
             {aktuelleprojekte?.map((project, index) => (
-              <div key={project?.id} className=" group relative">
+              <Link
+                href={`/projekt-details/${project?.id}`}
+                key={project?.id}
+                className=" group relative"
+              >
                 <Image src={project.displayImage} alt="" />
                 <div className=" absolute inset-0 flex items-center justify-center bg-medium-blue bg-opacity-40">
                   <Image
@@ -130,7 +135,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
 
             <LinkButton

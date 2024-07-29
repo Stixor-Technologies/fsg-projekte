@@ -56,7 +56,59 @@ body {
     @apply inline-block text-lg uppercase tracking-wide text-medium-blue lg:mt-3 lg:text-[1.313rem] lg:leading-[1.563rem] xl:mt-[18px];
   }
 
-  .text-balance {
-    text-wrap: balance;
+  .faq-section-1 {
+    @apply flex flex-1 flex-col gap-2 4xl:gap-[0.938rem];
   }
+
+  .faq-section-1-header {
+    @apply inline-block text-nowrap font-proxima-semibold uppercase text-medium-blue lg:text-xl lg:leading-[1.875rem] 4xl:h-[1.313rem];
+  }
+
+  .faq-section-1-value {
+    @apply font-gt-super-bold bg-dark-blue py-[0.563rem] text-center lg:text-xl lg:leading-[1.875rem];
+  }
+
+  .faq-list-header {
+    @apply mb-3 font-gt-super uppercase text-medium-blue underline decoration-1 lg:mb-[1.438rem] lg:text-xl lg:leading-[1.75rem] 4xl:h-5;
+  }
+
+  .faq-list {
+    @apply mb-7 list-outside list-disc pl-3 text-medium-blue lg:pl-3.5 lg:text-xl lg:leading-[1.75rem] 4xl:mb-0;
+  }
+
+  .faq-list li::marker {
+    @apply relative flex items-center pl-2 text-xs before:absolute before:left-0 before:-mt-4 before:text-3xl;
+  }
+}
+
+.swiper-pagination {
+  /* @apply !static !-bottom-10 mt-2 flex-col gap-[0.772rem]  p-0 md:!max-h-max lg:!absolute lg:!bottom-auto lg:!left-0 lg:!top-[11.65rem] lg:mt-0 lg:flex lg:!w-[1.1rem] lg:gap-2 2xl:!top-[12.158rem] 2xl:!w-[1.916rem] 2xl:gap-[0.772rem]; */
+
+  /* @apply !right-[73px] !flex flex-col gap-3; */
+}
+
+/* .swiper-pagination-bullet {
+  @apply !m-0 !h-[9px] !w-[9px];
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white !opacity-100;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
+  background: url("/assets/arrow-white.svg") no-repeat center/contain;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply !h-[30px] !w-[30px];
+} */
+
+.swiper-button-next {
+  /* @apply !right-[23%] !top-auto bottom-1.5 !h-4 !w-4 !opacity-100 sm:!right-[35%] md:!right-[38%] lg:!left-[0.22rem] lg:!top-[20.5rem] lg:bottom-auto lg:h-[0.9rem] lg:w-[1.2rem] 2xl:!left-[0.313rem] 2xl:!top-[27.063rem] 2xl:!h-[1.238rem] 2xl:!w-[1.852rem]; */
+}
+
+.swiper-button-prev {
+  /* @apply !left-[23%] !top-auto bottom-1.5 !h-4 !w-4 -translate-y-1/2 !opacity-100 sm:!left-[35%] md:!left-[38%]  lg:!left-auto lg:!right-[63px] lg:!top-1/2 lg:bottom-auto lg:!-mt-10 lg:!h-[30px] lg:!w-[30px]; */
 }

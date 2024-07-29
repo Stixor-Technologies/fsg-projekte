@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { Formik, Field, Form, FormikHelpers } from "formik";
 import ArrowDown from "@/public/assets/arrow.svg";
@@ -7,6 +7,7 @@ import Image from "next/image";
 import toast from "react-hot-toast";
 import Link from "next/link";
 import LinkButton from "../link-button";
+import { aktuelleprojekte } from "@/app/utils/data";
 
 interface InputType {
   type?: string;
@@ -24,6 +25,7 @@ interface DropwDownType {
 
 const Kontakt = () => {
   const [isLoading, setLoading] = useState(false);
+  const [projectOptions, setProjectOptions] = useState<string[]>([]);
 
   type FormValues = {
     vorName: string;
@@ -80,6 +82,11 @@ const Kontakt = () => {
       .required("Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen"),
   });
 
+  useEffect(() => {
+    const projectIds = aktuelleprojekte.map((project) => project.id);
+    setProjectOptions(projectIds);
+  }, []);
+
   const onSubmit = async (
     values: FormValues,
     formikHelpers: FormikHelpers<FormValues>,
@@ -107,7 +114,6 @@ const Kontakt = () => {
         }),
       });
       const data = await res.json();
-      console.log("data", data);
       if (data === 202) {
         toast.success("Email has been sent", {
           position: "top-right",
@@ -153,7 +159,7 @@ const Kontakt = () => {
       <Field
         as="select"
         name={name}
-        className={`w-full appearance-none bg-transparent text-[0.938rem] leading-[2.125rem] text-medium-blue outline-none placeholder:text-medium-blue`}
+        className={`w-full appearance-none bg-transparent text-[0.938rem] capitalize leading-[2.125rem] text-medium-blue outline-none placeholder:text-medium-blue`}
       >
         <option value="" disabled>
           {`${placeholder}`}
@@ -224,12 +230,7 @@ const Kontakt = () => {
                 {dropDownTemplate({
                   name: "projekt",
                   placeholder: "Projekt",
-                  options: [
-                    "Projekt One",
-                    "Projekt Two",
-                    "Projekt Three",
-                    "Projekt Four",
-                  ],
+                  options: projectOptions,
                 })}
 
                 {inputTemplate({

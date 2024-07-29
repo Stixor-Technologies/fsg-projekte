@@ -22,6 +22,7 @@ const config: Config = {
         "proxima-semibold": ["var(--font-proxima-semibold)"],
         "proxima-bold": ["var(--font-proxima-bold)"],
         "gt-super": ["var(--font-gt-regular)"],
+        "gt-super-bold": ["var(--font-gt-bold)"],
         "gt-super-italic": ["var(--font-gt-regular-italic)"],
         "gt-medium": ["var(--font-gt-medium)"],
         "gt-book": ["var(--font-gt-book)"],

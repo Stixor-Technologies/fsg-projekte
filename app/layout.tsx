@@ -31,6 +31,11 @@ const GtSuperRegular = localFont({
   variable: "--font-gt-regular",
 });
 
+const GtSuperBold = localFont({
+  src: "./fonts/GT-Super-Text-Bold.otf",
+  variable: "--font-gt-bold",
+});
+
 const GtSuperRegularItalic = localFont({
   src: "./fonts/GT-Super-Text-Regular-Italic.otf",
   variable: "--font-gt-regular-italic",
@@ -69,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay} font-proxima`}
+        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay} ${GtSuperBold.variable} font-proxima`}
       >
         <Header />
         {children}
