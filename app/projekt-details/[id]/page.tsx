@@ -298,7 +298,11 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 />
               )}
 
-              <MapComponent center={project?.mapCenter} />
+              <MapComponent
+                title={project?.dieLage?.title}
+                decription={project?.dieLage?.description}
+                center={project?.mapCenter}
+              />
 
               {/* section 10 */}
               <Faq faqs={project?.faq} />

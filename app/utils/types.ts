@@ -59,6 +59,10 @@ interface Project {
   feature_before?: StaticImageData;
   bildImages?: StaticImageData[];
   mapCenter: LngLatLike;
+  dieLage: {
+    title: string;
+    description: string;
+  };
 }
 
 export type { FaqItem, Project };

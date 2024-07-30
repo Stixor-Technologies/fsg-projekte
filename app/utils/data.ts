@@ -16,6 +16,9 @@ import PhaseImage_138 from "@/public/assets/aktuelle-projekte/138/138-phaseImage
 import Bild_138_1 from "@/public/assets/aktuelle-projekte/138/138-bild-1.png";
 import Bild_138_2 from "@/public/assets/aktuelle-projekte/138/138-bild-2.png";
 import Gallery_138 from "@/public/assets/aktuelle-projekte/138/138-gallery.png";
+import Interior_138 from "@/public/assets/aktuelle-projekte/138/138-interior.png";
+import Architektur_138 from "@/public/assets/aktuelle-projekte/138/138-architektur.png";
+import Slider_138_1 from "@/public/assets/aktuelle-projekte/138/138-slider-1.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
 
@@ -92,6 +95,11 @@ const aktuelleprojekte = [
 
     galleryImage: PetitGallery,
 
+    dieLage: {
+      title: "Wohnen wo Wasser und Himmel sich treffen…",
+      description:
+        "Uhlenhorst ist die geografische Mitte Hamburgs und eine der schönsten und begehrtesten Lagen der Stadt. | Im Hofweg und seinen beiden Verlängerungen, dem Mühlenkamp und der Papenhuder Straße, schlägt der Puls des Viertels: | Die Flaniermeile wartet mit noblen Etagenwohnhäusern im Jugendstil und unzähligen einladenden Geschäften, Restaurants und Cafés auf. Hier trifft man sich zum Essen oder Einkaufen oder beobachtet bei schönem Wetter einfach das bunte Treiben. | Wer noch mehr Großstadtflair sucht, macht sich auf in die Hamburger City, die ebenfalls nur einen Spaziergang entfernt ist.  ",
+    },
     faq: [
       {
         id: 1,
@@ -289,7 +297,7 @@ const aktuelleprojekte = [
       zummühlenkamp: "300 m",
     },
     phaseImage: PhaseImage_138,
-    sliderImages: [PetitSlider1, PetitSlider1, PetitSlider1],
+    sliderImages: [Slider_138_1, Slider_138_1, Slider_138_1],
     projectPhases: [
       {
         phaseName: "planungsphase",
@@ -315,9 +323,9 @@ const aktuelleprojekte = [
         phaseNumber: 5,
       },
     ],
-    currentPhase: 3,
+    currentPhase: 4,
     architektur: {
-      displayImage: PetitArchitektur,
+      displayImage: Architektur_138,
       title: "Die Schönheit klassischer Jugendstilarchitektur",
       description1:
         "Das elegante Petit Palais ist ein neu erbautes  Mehrfamilienhaus, das im schönsten | Teil des Uhlenhorster Hofwegs liegt. Mit seiner weißen Fassade, seinen dezenten | Erkern und seiner  klaren Linienführung fügt es sich perfekt in die Reihe der angrenzenden historischen Jugendstilbauten ein. Dabei zeigt es einen eigenen Charakter und ergänzt das Straßenbild um schöne Details.",
@@ -325,7 +333,7 @@ const aktuelleprojekte = [
         "In allen seinen acht Stockwerken treffen Charme und Weite traditioneller |  Altbauten auf den Komfort und die Funktionalität der heutigen Zeit. Freiheit bietet | auch der Ausblick aus  den Obergeschossen des Petit Palais. So präsentiert sich | ein schöner Blick ins Grüne und macht die Wechsel der Jahreszeiten unmittelbar  erlebbar. In den durch eine Fußbodenheizung gewärmten  Wohnräumen sorgt | ein hochwertiger Parkettboden für einen eleganten Charakter. Bäder aus | Naturstein erfüllen hohe Ansprüche. In einer Tiefgarage bieten 11 Stellplätze |  weiteren Komfort.",
     },
     interior: {
-      displayImage: PetitInterior,
+      displayImage: Interior_138,
       title: "KLASSISCHE BAUKULTUR | modern INTERPRETIERT",
       description1:
         "Dekorativer Naturstein, Kiesbeläge und moderne Bodenstrahler sorgen dafür, | dass das gute Wohngefühl bereits auf dem Grundstück beginnt.",
@@ -343,7 +351,12 @@ const aktuelleprojekte = [
     },
     bildImages: [Bild_138_1, Bild_138_2],
     galleryImage: Gallery_138,
-
+    dieLage: {
+      title:
+        "Exklusive Läden, Shops, Boutiquen, | dicht an dicht, wie die Perlen einer Kette.",
+      description:
+        "Die Straßen von Uhlenhorst sind mit unzähligen Cafés, Restaurants und Möglichkeiten gepflastert. | Von bodenständig bis mit Stern – hier findet sich alles. Allein für den täglichen Bedarf gibt es mehr als 20 Supermärkte, mehrere | Bio-Discounter sowie diverse Obst-, Gemüse- und Feinkostgeschäfte mit verführerischen Schaufenstern und Auslagen. | Im Mühlenkamp, im Hofweg, in der Gertigstrasse oder im Poelchaukamp gehören ausgefallene Mode- und Interiorläden zum | guten Umgangston. Am Goldbekufer findet drei-mal die Woche ein großer Wochenmarkt statt und in den Einkaufsstraßen | reihen sich Bäcker, Friseure und Blumengeschäfte dicht an dicht – wie die Perlen einer Kette. ",
+    },
     faq: [
       {
         id: 1,

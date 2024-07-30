@@ -4,14 +4,17 @@ import mapboxgl, { LngLatLike } from "mapbox-gl";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MAP_KEY } from "@/app/utils/constant";
+import TextWithLineBreaks from "../line-break";
 
 mapboxgl.accessToken = MAP_KEY!;
 
 interface MapProps {
   center: LngLatLike;
+  title: string;
+  decription: string;
 }
 
-const Map: FC<MapProps> = ({ center }) => {
+const Map: FC<MapProps> = ({ center, title, decription }) => {
   const mapContainerRef = useRef(null);
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -41,23 +44,11 @@ const Map: FC<MapProps> = ({ center }) => {
             <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-[1.313rem] lg:leading-[1.5rem] 4xl:h-[1.313rem]">
               DIE Lage
             </h2>
-            <h3 className="my-6 font-gt-book-italic text-xl text-medium-blue lg:mb-[2.906rem] lg:mt-[2.594rem] lg:text-[1.875rem] lg:leading-[2.5rem] 4xl:h-[1.875rem]">
-              Wohnen wo Wasser und Himmel sich treffen…
+            <h3 className="my-6 font-gt-book-italic text-xl text-medium-blue lg:mb-[2.906rem] lg:mt-[2.594rem] lg:text-[1.875rem] lg:leading-[2.5rem]">
+              <TextWithLineBreaks text={title} />
             </h3>
-            <p className=" text-[0.938rem] leading-[1.563rem] text-medium-blue 4xl:h-[7.188rem]">
-              Uhlenhorst ist die geografische Mitte Hamburgs und eine der
-              schönsten und begehrtesten Lagen der Stadt.{" "}
-              <br className="hidden 2xl:block" /> Im Hofweg und seinen beiden
-              Verlängerungen, dem Mühlenkamp und der Papenhuder Straße, schlägt
-              der Puls des Viertels: <br className="hidden 2xl:block" /> Die
-              Flaniermeile wartet mit noblen Etagenwohnhäusern im Jugendstil und
-              unzähligen einladenden Geschäften, Restaurants{" "}
-              <br className="hidden 2xl:block" /> und Cafés auf. Hier trifft man
-              sich zum Essen oder Einkaufen oder beobachtet bei schönem Wetter
-              einfach das bunte Treiben.
-              <br className="hidden 2xl:block" /> Wer noch mehr Großstadtflair
-              sucht, macht sich auf in die Hamburger City, die ebenfalls nur
-              einen Spaziergang entfernt ist.
+            <p className=" text-[0.938rem] leading-[1.563rem] text-medium-blue">
+              <TextWithLineBreaks text={decription} />
             </p>
           </div>
         </div>
