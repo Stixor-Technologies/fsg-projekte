@@ -34,10 +34,10 @@ const Map: FC<MapProps> = ({ center }) => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <section className="relative mb-[2.813rem] lg:mb-[6.25rem]">
+    <section className="relative mb-[2.813rem] lg:mb-[6.25rem] 4xl:h-[81.6875rem]">
       <div className="overflow-hidden pb-12 lg:pb-[4.938rem] ">
-        <div className="bg-gray  pt-12 lg:pt-[6.25rem]">
-          <div className="mx-auto max-w-[54.188rem] px-4 pb-10 text-center xs:px-7 lg:pb-[6.125rem] 2xl:px-0">
+        <div className="bg-gray pt-12 lg:pt-[6.25rem]">
+          <div className="mx-auto max-w-[54.188rem] px-4 pb-10 text-center xs:px-7 lg:pb-[6.375rem] 2xl:px-0">
             <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-[1.313rem] lg:leading-[1.5rem] 4xl:h-[1.313rem]">
               DIE Lage
             </h2>

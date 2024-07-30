@@ -232,6 +232,41 @@ const aktuelleprojekte = [
           faqImage: Faq1,
         },
       },
+
+      {
+        id: 5,
+        question: "Wohnung 5",
+        answer: {
+          zimmer: 4,
+          flache: "219, 98 m²",
+          terrassen: "14,75 m²",
+          wohnflache: "234,65 m²",
+          runterladen: "Grundriss runterladen",
+          ausstattung: [
+            "Böden aus Eiche- Fischgrätparkett und Marmor in den Bädern",
+            "Vier Schlafzimmer",
+            "Bis zu 2,70 m Deckenhöhe",
+            "Fußbodenheizung",
+            "3-Fach isolierverglaste Holzfenster",
+            "Hochwertige 2,23 m hohe Türen mit Bauhausbeschlägen,  profilierte und lackierte Sockelleisten",
+            "Hauswirtschaftsraum",
+            "Separater Kellerraum",
+          ],
+
+          besonderheiten: [
+            "Großzügige Terrasse und Balkon mit Natursteinbelag",
+            "Eigener, ruhig gelegener Garten mit Westausrichtung",
+            "Große Fensterfront mit Schiebeelementen",
+          ],
+          badezimmer: [
+            "Zwei Bäder sowie ein Gäaste-WC",
+            "Armaturen von Dornbracht",
+            "Sanitärobjekte von Villeroy & Boch und Kaldewei",
+            "Natuerstein und eingelassene Deckenspots",
+          ],
+          faqImage: Faq1,
+        },
+      },
     ],
 
     mapCenter: { lon: 73.08889281534162, lat: 33.52346569905463 },

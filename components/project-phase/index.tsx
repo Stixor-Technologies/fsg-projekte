@@ -30,7 +30,9 @@ const ProjectPhase: FC<ProjectPhaseProps> = ({
                 <div
                   className={`group relative flex size-14 shrink-0 items-center justify-center rounded-full font-gt-book text-3xl  leading-none xl:size-20 xl:text-[3.125rem]   ${currentPhase >= phase.phaseNumber ? "bg-medium-blue text-white" : "border border-silver text-silver"} `}
                 >
-                  <span className="-mt-2">{index + 1}</span>
+                  <span className={`${index > 1 ? "-mt-3" : "-mt-2"}`}>
+                    {index + 1}
+                  </span>
                 </div>
 
                 <div

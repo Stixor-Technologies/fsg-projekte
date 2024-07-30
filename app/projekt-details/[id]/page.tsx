@@ -57,9 +57,8 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
                     Philosophie
                   </h4>
-                  <p className=" max-w-[74.375rem] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[17.813rem]">
-                    {/* {project?.philosophie} */}
-                    <span className="block">
+                  <p className=" max-w-[74.375rem] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.5rem] md:!leading-[3.4375rem]">
+                    <span className="block 4xl:h-[12.8125rem]">
                       <TextWithLineBreaks text={project?.philosophie} />
                     </span>
                   </p>
@@ -68,7 +67,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
               {/* section 3 */}
 
-              <div className="mb-[2.813rem] grid grid-cols-1 justify-between gap-3   divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,1px,1fr] md:flex md:gap-0 md:divide-x lg:mb-[6.25rem]  lg:py-[1.875rem] 4xl:h-[16.25rem]">
+              <div className="mb-[2.813rem] grid grid-cols-1 justify-between gap-3   divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,.0625rem,1fr] md:flex md:gap-0 md:divide-x lg:mb-[6.25rem]  lg:py-[1.875rem] 4xl:h-[16.25rem]">
                 <div className="flex flex-1 flex-col gap-3 md:flex-row md:justify-between md:gap-0">
                   <div className="metric-container 4xl:ml-[4.75rem]">
                     <h5 className="metric">
@@ -130,7 +129,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   )}
               </div>
 
-              {/* section 3 */}
+              {/* section 4 */}
               <Image
                 src={project?.phaseImage}
                 alt=""
@@ -163,7 +162,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     <h3 className="break-words font-gt-super text-xl uppercase md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.813rem] 4xl:h-[4.688rem]">
                       {project?.architektur?.title}
                     </h3>
-                    <p className="mt-3 font-proxima text-[0.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-12 4xl:h-[21.25rem]">
+                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-12 4xl:h-[21.25rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.architektur?.description1}
@@ -204,7 +203,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     <h3 className="break-words font-gt-super text-xl md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.5rem] 4xl:h-[4.375rem]">
                       <TextWithLineBreaks text={project?.interior?.title} />
                     </h3>
-                    <p className="mt-3 font-proxima text-[0.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[3.188rem] 4xl:h-[13.438rem]">
+                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[3.188rem] 4xl:h-[13.438rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.interior?.description1}
@@ -264,7 +263,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                         text={project?.besonderheiten?.title}
                       />
                     </h3>
-                    <p className="mt-3 font-proxima text-[0.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[2.938rem] 4xl:h-[13.438rem]">
+                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[2.938rem] 4xl:h-[13.438rem]">
                       <span className="block 4xl:h-[5.625rem]">
                         <TextWithLineBreaks
                           text={project?.besonderheiten?.description1}
