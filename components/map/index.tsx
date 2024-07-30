@@ -37,7 +37,7 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <section className="relative mb-[2.813rem] lg:mb-[6.25rem] 4xl:h-[81.6875rem]">
+    <section className="relative mb-[2.813rem] lg:mb-[6.25rem] 4xl:h-[85.8125rem]">
       <div className="overflow-hidden pb-12 lg:pb-[4.938rem] ">
         <div className="bg-gray pt-12 lg:pt-[6.25rem]">
           <div className="mx-auto max-w-[54.188rem] px-4 pb-10 text-center xs:px-7 lg:pb-[6.375rem] 2xl:px-0">
@@ -58,8 +58,8 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
         />
       </div>
 
-      <div className="absolute bottom-0 left-1/2 z-10 flex h-[7rem] w-full max-w-[56.25rem] -translate-x-1/2  rounded-lg bg-[#AAAAAA] px-1 text-white xs:px-4 sm:px-10 md:h-[13vw] 4xl:h-[11.625rem]">
-        <div className="flex items-center  justify-between gap-2 xs:w-[80%]">
+      <div className="absolute bottom-0 left-1/2 z-10 flex h-[5rem] w-full max-w-[56.25rem] -translate-x-1/2 justify-center rounded-lg  bg-[#AAAAAA] px-1 text-white xs:justify-normal xs:px-4 md:h-[13vw] md:px-10 4xl:h-[11.625rem]">
+        <div className="mt-5 flex items-center  justify-between gap-3 xs:w-[80%] sm:w-[70%] md:mt-10 lg:w-[90%]">
           <div className="flex items-center gap-1 xs:gap-2 ">
             <input
               type="checkbox"
@@ -67,9 +67,12 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
               name="Galerien"
               value="Galerien"
               className="peer relative size-3 shrink-0
-                                  appearance-none rounded-sm border border-white bg-transparent accent-white checked:appearance-auto sm:size-4"
+                                  appearance-none rounded-sm border-[2px] border-white bg-transparent accent-white checked:appearance-auto lg:size-[1.625rem]"
             />
-            <label htmlFor="Galerien" className="text-sm sm:text-base">
+            <label
+              htmlFor="Galerien"
+              className="text-xs xs:text-sm lg:text-2xl"
+            >
               Galerien
             </label>
           </div>
@@ -81,9 +84,12 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
               name="Galerien"
               value="Galerien"
               className="peer relative size-3 shrink-0
-                                  appearance-none rounded-sm border border-white bg-transparent accent-white checked:appearance-auto sm:size-4"
+                                  appearance-none rounded-sm border-[2px] border-white bg-transparent accent-white checked:appearance-auto lg:size-[1.625rem]"
             />
-            <label htmlFor="Galerien" className="text-sm sm:text-base">
+            <label
+              htmlFor="Galerien"
+              className="text-xs xs:text-sm lg:text-2xl"
+            >
               Kultur
             </label>
           </div>
@@ -95,9 +101,12 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
               name="Galerien"
               value="Galerien"
               className="peer relative size-3 shrink-0
-                                  appearance-none rounded-sm border border-white bg-transparent accent-white checked:appearance-auto sm:size-4"
+                                  appearance-none rounded-sm border-[2px] border-white bg-transparent accent-white checked:appearance-auto lg:size-[1.625rem]"
             />
-            <label htmlFor="Galerien" className="text-sm sm:text-base">
+            <label
+              htmlFor="Galerien"
+              className="text-xs xs:text-sm lg:text-2xl"
+            >
               Genuss
             </label>
           </div>
@@ -109,9 +118,12 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
               name="Galerien"
               value="Galerien"
               className="peer relative size-3 shrink-0
-                                  appearance-none rounded-sm border border-white bg-transparent accent-white checked:appearance-auto sm:size-4"
+                                  appearance-none rounded-sm border-[2px] border-white bg-transparent accent-white checked:appearance-auto lg:size-[1.625rem]"
             />
-            <label htmlFor="Galerien" className="text-sm sm:text-base">
+            <label
+              htmlFor="Galerien"
+              className="text-xs xs:text-sm lg:text-2xl"
+            >
               Shopping
             </label>
           </div>

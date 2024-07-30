@@ -20,7 +20,7 @@ const DetailHero: FC<DetailHeroProps> = ({ displayImage, projectName }) => {
           width={path == "/projekt-details/138" ? 380 : 220}
           src={projectName}
           alt=""
-          className={`relative max-w-[14vw] 2xl:max-w-none`}
+          className={`relative 2xl:max-w-none ${path === "/projekt-details/138" ? "max-w-[30vw]" : "max-w-[14vw]"}`}
         />
       </div>
     </div>

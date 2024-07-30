@@ -45,7 +45,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               />
 
               {/* section 2 */}
-              <div className="flex items-center justify-center bg-light-yellow px-4 py-36 xs:px-7 md:h-[63.875rem] ">
+              <div className="flex items-center justify-center bg-light-yellow px-4 py-12 xs:px-7 md:h-[63.875rem] ">
                 <div className="mx-auto max-w-[74.375rem] text-center">
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
                     Philosophie
