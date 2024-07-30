@@ -80,9 +80,12 @@ export default function Home() {
                 realisieren lassen.
               </p>
 
-              <span className="inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]">
+              <Link
+                href={"/unternehmen"}
+                className="inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
+              >
                 UNTERNEHMEN
-              </span>
+              </Link>
             </div>
           </div>
         </div>
