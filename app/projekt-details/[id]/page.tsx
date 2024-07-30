@@ -9,6 +9,7 @@ import ProjectPhase from "@/components/project-phase";
 import Slider from "@/components/slider";
 import { Project } from "@/app/utils/types";
 import MapComponent from "@/components/map";
+import DetailHero from "@/components/detail-hero";
 
 interface ProjectDetailParams {
   params: {
@@ -38,18 +39,10 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
           <section className=" pb-[3.181rem] pt-[6.75rem] lg:pt-[10.656rem]">
             <div className="container">
               {/* section 1 */}
-
-              <div className="relative mb-[2.813rem] lg:mb-24">
-                <Image src={project?.detailDisplay} alt="" />
-                <div className="absolute inset-0 flex items-center justify-center 4xl:mt-16">
-                  <Image
-                    width={220}
-                    src={project?.projectName}
-                    alt=""
-                    className={`relative max-w-[14vw] 2xl:max-w-none`}
-                  />
-                </div>
-              </div>
+              <DetailHero
+                displayImage={project?.detailDisplay}
+                projectName={project?.projectName}
+              />
 
               {/* section 2 */}
               <div className="flex items-center justify-center bg-light-yellow px-4 py-36 xs:px-7 md:h-[63.875rem] ">
