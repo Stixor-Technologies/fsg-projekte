@@ -16,12 +16,9 @@ const Header = () => {
   const header = useRef<HTMLElement | null>(null);
 
   return (
-    <header
-      ref={header}
-      className={`fixed z-50 w-full border-b-[2px] border-brown bg-dark-blue`}
-    >
+    <header ref={header} className={`fixed z-50 w-full bg-dark-blue`}>
       <div className="container ">
-        <nav className="mx-auto  flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between lg:h-[8.188rem]">
+        <nav className="mx-auto  flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between lg:h-[12.0625rem]">
           <div className="link-container 4xl:ml-[4px]">
             {navLinks.slice(0, Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
@@ -38,7 +35,7 @@ const Header = () => {
             <Image
               src={Logo}
               alt="header-logo"
-              className="max-w-[12rem] xs:max-w-[17rem] lg:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
+              className="max-w-[12rem] xs:max-w-[6rem] lg:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
             />
           </Link>
 

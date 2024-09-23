@@ -28,6 +28,7 @@ const config: Config = {
         "gt-book": ["var(--font-gt-book)"],
         "gt-book-italic": ["var(--font-gt-book-italic)"],
         "gt-display-light": ["var(--font-gt-display-light)"],
+        "gt-display-rg": ["var(--font-gt-display-rg)"],
       },
       colors: {
         "light-yellow": "#F4EDE4",

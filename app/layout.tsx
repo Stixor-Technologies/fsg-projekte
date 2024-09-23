@@ -60,6 +60,10 @@ const GtSuperDisplay = localFont({
   src: "./fonts/GT-Super-Display-Light.otf",
   variable: "--font-gt-display-light",
 });
+const GtSuperDisplayRegular = localFont({
+  src: "./fonts/GT-Super-Display-Regular.otf",
+  variable: "--font-gt-display-rg",
+});
 
 export const metadata: Metadata = {
   title: "FSG",
@@ -74,7 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay.variable} ${GtSuperBold.variable} font-proxima`}
+        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay.variable} ${GtSuperBold.variable} font-proxima ${GtSuperDisplayRegular.variable}`}
       >
         <Header />
         {children}

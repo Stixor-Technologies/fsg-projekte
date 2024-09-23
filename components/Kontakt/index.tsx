@@ -186,13 +186,12 @@ const Kontakt = () => {
     >
       <div className="mx-auto max-w-[64.188rem] px-5 md:px-10 xl:px-0">
         <div className=" mb-[1.938rem] text-center lg:mb-[3.875re,]">
-          <h2 className=" text-center font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-5">
-            Kontakt
-          </h2>
-          <p className="mt-[2.188rem] font-gt-book text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[1.875rem] lg:leading-[2.188rem] 4xl:h-[6.25rem]">
-            Hier ein schöner Intro Satz,
-            <br /> wir freuen uns von Ihnen zu hören!
+          <p className="mt-[2.188rem] font-gt-display-light text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
+            Wir beraten Sie gern
           </p>
+          <h2 className="mt-3 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 2xl:mb-[5.0187rem] 4xl:h-5">
+            TEL +49 (0)40 561 289 40
+          </h2>
         </div>
 
         <Formik
@@ -201,51 +200,52 @@ const Kontakt = () => {
           validationSchema={validationSchema}
         >
           {({ errors, touched }) => (
-            <Form className="text-secondary grid grid-cols-1 gap-[1.875rem] text-lg sm:grid-cols-2 sm:gap-[3.406rem]">
-              <div className="space-y-[0.938rem]">
-                {inputTemplate({
-                  name: "vorName",
-                  placeholder: "Vorname*",
-                  touched: touched.vorName,
-                  error: errors.vorName,
-                })}
+            <Form className="text-secondary text-lg">
+              <div className="grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2 sm:gap-[3.406rem]">
+                <div className="space-y-[0.9375rem]">
+                  {inputTemplate({
+                    name: "vorName",
+                    placeholder: "Vorname*",
+                    touched: touched.vorName,
+                    error: errors.vorName,
+                  })}
 
-                {inputTemplate({
-                  name: "nachName",
-                  placeholder: "Nachname*",
-                  touched: touched.nachName,
-                  error: errors.nachName,
-                })}
+                  {inputTemplate({
+                    name: "nachName",
+                    placeholder: "Nachname*",
+                    touched: touched.nachName,
+                    error: errors.nachName,
+                  })}
 
-                {inputTemplate({
-                  name: "email",
-                  placeholder: "E-Mail*",
-                  touched: touched.email,
-                  error: errors.email,
-                })}
-
-                {dropDownTemplate({
-                  name: "ruckrufnummer",
-                  placeholder: "Rückrufnummer",
-                  options: ["One", "Two", "Three", "Four", "Five"],
-                })}
-
-                {dropDownTemplate({
-                  name: "projekt",
-                  placeholder: "Projekt",
-                  options: projectOptions,
-                })}
-
-                {inputTemplate({
-                  name: "discovery",
-                  placeholder: "Wie haben Sie von uns gehört?",
-                  touched: touched.discovery,
-                  error: errors.discovery,
-                })}
+                  {inputTemplate({
+                    name: "email",
+                    placeholder: "E-Mail*",
+                    touched: touched.email,
+                    error: errors.email,
+                  })}
+                </div>
+                <div className="flex flex-col justify-between gap-[0.938rem]">
+                  {dropDownTemplate({
+                    name: "ruckrufnummer",
+                    placeholder: "Rückrufnummer",
+                    options: ["One", "Two", "Three", "Four", "Five"],
+                  })}
+                  {dropDownTemplate({
+                    name: "projekt",
+                    placeholder: "Projekt",
+                    options: projectOptions,
+                  })}
+                  {inputTemplate({
+                    name: "discovery",
+                    placeholder: "Wie haben Sie von uns gehört?",
+                    touched: touched.discovery,
+                    error: errors.discovery,
+                  })}
+                </div>
               </div>
 
-              <div className=" flex flex-col justify-between gap-[0.938rem]">
-                <div>
+              <div className="flex flex-col items-center justify-center gap-[2.2813rem]">
+                <div className="mt-[1.875rem] w-full">
                   <Field
                     as="textarea"
                     name="nachricht"
@@ -258,36 +258,6 @@ const Kontakt = () => {
                     </p>
                   )}
                 </div>
-
-                <div>
-                  <div className="flex items-center gap-[1.125rem] sm:-mt-3">
-                    <Field
-                      id={"terms"}
-                      type="checkbox"
-                      name={"terms"}
-                      className=" peer relative size-[1.313rem]
-                                  shrink-0 appearance-none rounded-[0.313rem] border border-medium-blue bg-transparent accent-medium-blue checked:appearance-auto"
-                    />
-
-                    <label
-                      htmlFor={"terms"}
-                      className="text-[0.938rem] leading-none text-medium-blue"
-                    >
-                      Ich stimme den{" "}
-                      <Link href={"/"} className=" text-brown underline">
-                        Datenschutzbedingungen
-                      </Link>{" "}
-                      zu*
-                    </label>
-                  </div>
-
-                  {touched.terms && errors.terms && (
-                    <p className="mt-1 text-xs italic text-red-600">
-                      {errors.terms as string}
-                    </p>
-                  )}
-                </div>
-
                 <LinkButton
                   as={"button"}
                   variant="md"
@@ -296,17 +266,36 @@ const Kontakt = () => {
                   loading={isLoading}
                   disabled={isLoading}
                 />
+                <div className="flex items-center gap-[1.125rem] sm:-mt-3">
+                  <Field
+                    id={"terms"}
+                    type="checkbox"
+                    name={"terms"}
+                    className=" peer relative size-[1.313rem]
+                                  shrink-0 appearance-none rounded-[0.313rem] border border-medium-blue bg-transparent accent-medium-blue checked:appearance-auto"
+                  />
+
+                  <label
+                    htmlFor={"terms"}
+                    className="text-[0.938rem] leading-none text-medium-blue"
+                  >
+                    Ich stimme den{" "}
+                    <Link href={"/"} className=" text-brown underline">
+                      Datenschutzbedingungen
+                    </Link>{" "}
+                    zu*
+                  </label>
+                </div>
+
+                {touched.terms && errors.terms && (
+                  <p className="mt-1 text-xs italic text-red-600">
+                    {errors.terms as string}
+                  </p>
+                )}
               </div>
             </Form>
           )}
         </Formik>
-
-        <div className="mt-[3.125rem] text-center font-gt-book text-xl text-medium-blue lg:mt-[7.063rem] lg:text-[1.875rem] lg:leading-[2.188rem] 4xl:h-[6.25rem]">
-          <span className="block">Oder rufen Sie uns an!</span>
-          <Link href={`tel:+40 (0)40 561 289 40`}>
-            Tel +40 (0)40 561 289 40
-          </Link>
-        </div>
       </div>
     </section>
   );

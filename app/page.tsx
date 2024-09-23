@@ -9,19 +9,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[10.656rem]">
+    <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
       <div className="container">
         {/* section 1 */}
         <div className="relative mb-[2.813rem] flex items-center justify-center lg:mb-[6.563rem]">
           <Image src={HeroImage} alt="hero" />
 
-          <div className="absolute max-w-[63.75rem] text-center sm:-mt-16">
-            <h4 className=" mb-[clamp(2px,1.8vw,2.125rem)] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.563rem)] uppercase leading-tight tracking-wide 4xl:h-[1.563rem] 4xl:leading-[1.875rem]">
-              ES IST EINE PASSION
-            </h4>
-            <h2 className="font-gt-book text-[clamp(1rem,3vw,3.438rem)] uppercase leading-[clamp(1rem,3.4vw,4.063rem)] tracking-tight 4xl:h-[11.563rem]">
-              Besondere Orte <br /> mit einem besonderen Anspruch: <br />
-              Vollenden.
+          <div className="absolute top-36 max-w-[63.75rem] text-center">
+            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,3.438rem)] uppercase leading-[clamp(1rem,3.4vw,4.063rem)] tracking-tight text-black 4xl:h-[11.563rem]">
+              Klassische Architektur,
+              <br />
+              modern interpretiert.
             </h2>
           </div>
         </div>
@@ -30,23 +28,31 @@ export default function Home() {
         <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[63.313rem] lg:mb-[5.625rem] ">
           <div className="mx-auto max-w-[60.313rem] text-center">
             <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.188rem] 4xl:h-5">
-              Es ist Leidenschaft
+              Beste Lagen verdienen beste Planung.
             </h4>
-            <p className="font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[20.938rem]">
+            <p className="font-gt-display-rg !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[21.0625rem]">
               <span className=" block">
-                Weil wir stets das Besondere wollen,
-                <br className="hidden lg:block" /> lassen wir all unsere
-                Erfahrung, Leidenschaft und Kreativität in unsere Projekte
-                einfließen.
+                Bei FSG | Projekte haben wir ein einfaches Credo:
+                <br className="hidden lg:block" /> Nur wenn uns eine Bauidee zu
+                100 Prozent fasziniert, gehen wir sie an.
               </span>
 
               <span className="block">
-                Schließlich ist es das Ziel, uns mit neuen Sichtweisen{" "}
+                Dann aber mit ganzer Kraft und Verve.
                 <br className="hidden lg:block" />
-                vom Üblichen abzuheben. Dabei vergessen wir auch unsere Werte
-                nicht: Um jeder Adresse eine zutiefst persönliche{" "}
-                <br className="hidden lg:block" /> und emotionale Note mit auf
-                den Weg zu geben.
+                Das beginnt bei der Auswahl erstklassiger Grundstücke in den
+                feinsten Lagen,
+                <br className="hidden lg:block" />
+                geht über die Beauftragung bekannter Architekten und
+                <br className="hidden lg:block" />
+                bewährter Gewerke, bis hin zur exklusiven Ausgestaltung der
+                Objekte
+                <br className="hidden lg:block" />
+                durch kreative Innenarchitekten und Designer.
+                <br className="hidden lg:block" />
+                Das Ergebnis: außergewöhnliche Wohnimmobilien,
+                <br className="hidden lg:block" />
+                die für sich sprechen – und zum Dialog einladen.
               </span>
             </p>
           </div>
@@ -55,31 +61,28 @@ export default function Home() {
         {/* section 3 */}
         <div className="mb-[2.813rem] flex flex-col bg-dark-blue md:flex-row lg:mb-[4.688rem] 4xl:h-[65.563rem]">
           <div className=" flex-1 md:order-1">
-            <Image src={Fabian} alt="fabian" />
+            <Image src={Fabian} alt="fabian" objectPosition="bottom" />
           </div>
 
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 lg:px-7 2xl:px-0 4xl:items-start">
             <div className="w-full text-center lg:max-w-[39.188rem] 4xl:mb-[20.406rem]  4xl:mt-[21.863rem]">
-              <h2 className="font-gt-medium text-xl uppercase lg:text-[1.875rem] lg:leading-[2.5rem] 4xl:h-[4.375rem]">
-                Das F und das S von FSG:
-                <br /> Fabian Schneider
-              </h2>
-              <p className="my-3 font-proxima text-sm lg:my-7 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-[3.438rem] 4xl:h-[10.313rem]">
-                Fabian Schneider ist der Mensch gewordene Qualitätsanspruch.
+              <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
+                „Sich zu Hause zu fühlen – zu wissen, genau hier,
                 <br className="hidden 2xl:block" />
-                Weil sich seiner Meinung nach nur so nachhaltige Immobilienwerte
-                realisieren werden. <br className="hidden 2xl:block" /> Das
-                wurde ihm schon als Kind einer Bauträgerfamilie in die Wiege
-                gelegt. <br className="hidden 2xl:block" /> Später arbeitete er
-                als Bestandshalter und Projektentwickler für bedeutende
-                Unternehmen <br className="hidden 2xl:block" /> der
-                Immobilienwirtschaft. Auf diesem Erfahrungsschatz aufbauend,
-                gründete er <br className="hidden 2xl:block" /> 2012 die
-                FSG-Grundstücksgesellschaft. Weil sich besondere Ambitionen nur
-                und am <br className="hidden 2xl:block" /> besten in Eigenregie
-                realisieren lassen.
+                genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
+                Bauprojekt an.
+                <br className="hidden 2xl:block" /> Es definiert unser Ziel,
+                wenn wir darüber nachdenken, welche
+                <br className="hidden 2xl:block" /> Blickachsen es braucht, um
+                Licht und Leben in eine Wohnung zu lassen.
+                <br className="hidden 2xl:block" /> Mit welchen Materialien wir
+                arbeiten, wo der Elektroschalter sitzen
+                <br className="hidden 2xl:block" />
+                muss und welche Pflanzen im Garten stehen.“
               </p>
-
+              <p className="mb-[3.5812rem] mt-[1.25rem] font-proxima">
+                FABIAN SCHNEIDER
+              </p>
               <Link
                 href={"/unternehmen"}
                 className="inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
@@ -158,28 +161,23 @@ export default function Home() {
 
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
             <div className="w-full text-center lg:max-w-[36.563rem]  ">
-              <h2 className=" mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-9 2xl:mb-[3.563rem] 4xl:h-5">
-                Ankaufsprofile
+              <h2 className="mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-9 2xl:mb-[3.563rem] 4xl:h-5">
+                WIR SUCHEN GRUNDSTÜCKE UND IMMOBILIEN.
               </h2>
-
-              <h3 className="font-gt-medium text-xl uppercase md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.5rem] 4xl:h-[9.375rem]">
-                Mit allen Tugenden <br /> des hanseatischen Kaufmanns: <br />
-                Wir suchen Grundstücke <br /> und Immobilien.
-              </h3>
-              <p className="my-3 font-proxima text-sm lg:my-5 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-7 2xl:my-[3.438rem] 4xl:h-[10.313rem]">
+              <p className="my-3 font-proxima text-sm lg:my-3 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-7 2xl:my-[2.3125rem]">
                 <span className="block">
-                  Etwas Gutes noch besser zu machen. Und zwar so, bis es mit
-                  einzigartig ist. <br className="hidden xl:block" /> In diesem
-                  Sinne suchen wir Grundstücke und Bestandsimmobilen in guten
-                  bis sehr <br className="hidden xl:block" /> guten Lagen. In
+                  Etwas Gutes noch besser zu machen.
+                  <br className="hidden xl:block" /> In diesem Sinne suchen wir
+                  Grundstücke und Bestandsimmobilen in guten
+                  <br className="hidden xl:block" /> bis sehr guten Lagen. In
                   Hamburg, besonders um die Alster herum.
                 </span>
 
                 <span className="mt-2 block xl:mt-5">
-                  Auf unsere Bonität können Sie sich ebenso verlassen wie auf
-                  unsere Diskretion und <br className="hidden xl:block" /> die
-                  seriöse Abwicklung der Transaktion. Denn bei uns sprechen Sie
-                  mit dem Entscheider. Wir freuen uns auf Ihre Nachricht.
+                  Auf eine diskrete und unkomplizierte Abwicklung der
+                  Transaktion
+                  <br className="hidden xl:block" /> Können Sie sich verlassen.
+                  Wir freuen uns auf Ihre Nachricht!
                 </span>
               </p>
 
