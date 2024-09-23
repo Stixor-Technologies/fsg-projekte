@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="row-start-1 sm:col-span-full sm:row-start-1 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[3.5rem] 4xl:col-start-3">
+            <div className="row-start-1 mx-auto sm:col-span-full sm:row-start-1 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[3.5rem] 4xl:col-start-3">
               <Image src={Logo} alt="footer-logo" />
             </div>
 

@@ -55,7 +55,7 @@ const Header = () => {
                 scrollToSection("#kontact");
               }}
             >
-              kontact
+              kontakt
             </button>
           </div>
 

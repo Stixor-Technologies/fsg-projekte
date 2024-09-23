@@ -10,20 +10,30 @@ const Unternehmen = () => {
         {/* section 1 */}
         <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[56.75rem] lg:mb-[6.25rem] ">
           <div className="mx-auto max-w-[71.563rem] text-center">
-            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-12 4xl:h-5">
-              unternehmen
+            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-10 4xl:h-5">
+              UNSER UNTERNEHMEN
             </h4>
-            <p className="font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[17.813rem]">
-              Von der Auswahl erstklassiger Grundstücke in den feinsten Lagen,
-              <br className="hidden xl:block" /> über die Beauftragung
-              herausragender Architekten, <br className="hidden xl:block" /> das
-              perfekte Zusammenspiel mit bewährten Gewerken bis hin zur
+            <p className="font-gt-display-light !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[17.813rem]">
+              Seit über zwanzig Jahren sind wir in der norddeutschen
+              Immobilienwirtschaft
+              <br className="hidden xl:block" /> fest etabliert. Mediales
+              Scheinwerferlicht liegt uns fern – lieber wollen wir die Augen
+              <br className="hidden xl:block" /> das perfekte Zusammenspiel mit
+              bewährten Gewerken bis hin zur
               <br className="hidden xl:block" />
-              exklusiven Ausgestaltung der Objekte durch bekannte
-              Innenarchitekten <br className="hidden xl:block" /> und Designer –
-              alles in unserem Unternehmen ist
-              <br className="hidden xl:block" /> auf Anspruch und Leidenschaft
-              aufgebaut.
+              unserer Kunden zum Leuchten bringen. Die akribische Planung und
+              Ausführung unser <br className="hidden xl:block" /> Bauvorhaben
+              hat daher höchste Priorität: Dafür nehmen wir uns sehr viel
+              <br className="hidden xl:block" /> Zeit. Manche mögen das
+              pedantisch nennen – für uns ist es ein
+              <br className="hidden xl:block" /> Qualitätsversprechen, das durch
+              nichts zu ersetzen ist.
+              <br className="hidden xl:block" />
+              Auf den ersten Blick bekommt man davon wenig mit.
+              <br className="hidden xl:block" />
+              Aber gerade diese unsichtbaren Details hinter den Kulissen machen
+              <br className="hidden xl:block" />
+              den Komfort und Wert unserer Immobilien aus.
             </p>
           </div>
         </div>

@@ -36,11 +36,11 @@ body {
   }
 
   .ankauf-point {
-    @apply mt-3.5 block font-proxima-semibold uppercase text-brown xl:mt-[2.125rem] 4xl:h-[2.063rem];
+    @apply mb-[0.8125rem] mt-[2.625rem] block font-proxima-semibold uppercase text-brown 4xl:h-[2.063rem];
   }
 
   .ankauf-desc {
-    @apply block font-gt-super text-lg text-medium-blue lg:text-2xl 4xl:leading-[2.313rem];
+    @apply flex flex-col justify-center font-gt-display-light text-lg text-medium-blue lg:text-[1.75rem] 4xl:leading-[2.375rem];
   }
 
   .metric-container {

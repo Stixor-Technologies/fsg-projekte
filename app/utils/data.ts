@@ -504,32 +504,30 @@ const aktuelleprojekte = [
 
 const Ankaufsprofil = [
   {
-    name: "Projektentwicklung",
-    "asset-klaseen": "Wohnen / Gewerbe / Ferienimmobilien / Logistik",
-    standorte:
-      "Hamburg & Umland / Bremen / Hannover / Lüneburg / Sylt sowie weitere Nord- & Ostseeregionen",
-    mikrolagen: "Mittlere bis sehr gute Lagen sowie aufstrebende Lage",
-    maßnahmen:
-      "Abriss & Neubau / Sanierung / Revitalisierung / Baurechtschaffung",
-    kriterien:
-      "WALT < 10 Jahre / BGF > 1.000 qm / Grundstück > 500 qm / mit & ohne Planrecht",
-    investitionsvolumen: "Bis 75 Mio. Euro",
-    download: "/",
+    Transaktionsstruktur: "Assetdeal | Sharedeal",
+    Volumen: "bis 60.000.000 €",
+    GrundstückE:
+      "Mit oder ohne Baurecht | Baurechtschaffung gehört zu unseren Expertisen | Erschlossene oder unerschlossene Grundstücke | Frei von Mietverhältnissen oder Walt < 15 Jahre",
+    Bestandsobjekte:
+      "Wohnhäuser | Wohn- Geschäftshäuser | Wohnanlagen | Gewerbehöfe | Objekte mit Nachverdichtungspotential",
+    Regionen:
+      "Metropolregion Hamburg | Lüneburg | Berlin, München | Norddeutschland insb. Insel Sylt",
+    Ausschlußkriterien: "Erbpacht | Teileigentum | Forward- Deals",
   },
 
-  {
-    name: "Bestandsimmobilien",
-    "asset-klaseen": "Wohnen / Gewerbe / Ferienimmobilien / Logistik",
-    standorte:
-      "Hamburg & Umland / Bremen / Hannover / Lüneburg / Sylt sowie weitere Nord- & Ostseeregionen",
-    mikrolagen: "Mittlere bis sehr gute Lagen sowie aufstrebende Lage",
-    maßnahmen:
-      "Abriss & Neubau / Sanierung / Revitalisierung / Baurechtschaffung",
-    kriterien:
-      "WALT < 10 Jahre / BGF > 1.000 qm / Grundstück > 500 qm / mit & ohne Planrecht",
-    investitionsvolumen: "Bis 75 Mio. Euro",
-    download: "/",
-  },
+  // {
+  //   name: "Bestandsimmobilien",
+  //   "asset-klaseen": "Wohnen / Gewerbe / Ferienimmobilien / Logistik",
+  //   standorte:
+  //     "Hamburg & Umland / Bremen / Hannover / Lüneburg / Sylt sowie weitere Nord- & Ostseeregionen",
+  //   mikrolagen: "Mittlere bis sehr gute Lagen sowie aufstrebende Lage",
+  //   maßnahmen:
+  //     "Abriss & Neubau / Sanierung / Revitalisierung / Baurechtschaffung",
+  //   kriterien:
+  //     "WALT < 10 Jahre / BGF > 1.000 qm / Grundstück > 500 qm / mit & ohne Planrecht",
+  //   investitionsvolumen: "Bis 75 Mio. Euro",
+  //   download: "/",
+  // },
 ];
 
 export { aktuelleprojekte, Ankaufsprofil };
