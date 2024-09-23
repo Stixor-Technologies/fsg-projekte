@@ -174,7 +174,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             </div>
 
             {/* section 7 */}
-            <Slider sliderImages={project?.sliderImages} />
+            {/* <Slider sliderImages={project?.sliderImages} /> */}
 
             {/* section 8 */}
             <div className="container">
