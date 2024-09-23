@@ -22,7 +22,7 @@ interface ColumnSectionData {
   displayImage: StaticImageData;
   title: string;
   description1: string;
-  description2: string;
+  description2?: string;
 }
 
 interface Project {
@@ -54,6 +54,7 @@ interface Project {
     phaseName: string;
     phaseNumber: number;
   }[];
+  slider2Images: StaticImageData[];
   currentPhase: number;
   architektur: ColumnSectionData;
   interior: ColumnSectionData;

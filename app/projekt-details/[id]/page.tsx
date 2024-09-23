@@ -9,6 +9,11 @@ import ProjectPhase from "@/components/project-phase";
 import { Project } from "@/app/utils/types";
 import ProjectSlider from "@/components/slider";
 import { SwiperSlide } from "swiper/react";
+import LinkButton from "@/components/link-button";
+import Project1Sec7 from "./components/project-1-sec-7";
+import Project2Sec7 from "./components/project-2-sec-7";
+import Project1Sec9 from "./components/project-1-sec-9";
+import Project2Sec9 from "./components/project-2-sec-9";
 
 interface ProjectDetailParams {
   params: {
@@ -53,16 +58,23 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               </ProjectSlider>
 
               {/* section 2 */}
-              <div className="flex items-center justify-center bg-light-yellow px-4 py-12 xs:px-7 md:h-[63.875rem] ">
-                <div className="mx-auto max-w-[74.375rem] text-center">
+              <div className="flex items-center justify-center bg-light-yellow px-4 py-12 xs:px-7 md:h-[63.875rem]">
+                <div className="mx-auto flex max-w-[74.375rem] flex-col items-center justify-center text-center">
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
                     <TextWithLineBreaks text={project?.philosophieHeader} />
                   </h4>
-                  <p className=" max-w-[74.375rem] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.5rem] md:!leading-[3.4375rem]">
-                    <span className="block 4xl:h-[12.8125rem]">
+                  <p className=" max-w-[74.375rem] font-gt-display-light !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem]">
+                    <span className="mb-[4.5625rem] block 4xl:h-[18.375rem]">
                       <TextWithLineBreaks text={project?.philosophie} />
                     </span>
                   </p>
+                  {project?.philosophieButtonText && (
+                    <LinkButton
+                      as={"button"}
+                      variant="md"
+                      text="ZUR PETIT PALAIS WEBSEITE"
+                    />
+                  )}
                 </div>
               </div>
 
@@ -131,11 +143,17 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               </div>
 
               {/* section 4 */}
-              <Image
-                src={project?.phaseImage}
-                alt=""
-                className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
-              />
+              <ProjectSlider arrowColor="white">
+                {project?.sliderImages.map((image, index) => (
+                  <>
+                    <SwiperSlide key={index}>
+                      <div className="relative mb-[2.813rem] lg:mb-24">
+                        <Image src={image} alt="" className="w-full" />
+                      </div>
+                    </SwiperSlide>
+                  </>
+                ))}
+              </ProjectSlider>
 
               {/* section 5 */}
               <ProjectPhase
@@ -156,23 +174,14 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
                 <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
                   <div className="w-full text-center text-medium-blue lg:max-w-[33.938rem]  ">
-                    <h2 className=" mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-10 4xl:h-5">
-                      Architektur
-                    </h2>
-
-                    <h3 className="break-words font-gt-super text-xl uppercase md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.813rem] 4xl:h-[4.688rem]">
-                      {project?.architektur?.title}
+                    <h3 className="font-proxima-semibold text-xl leading-[1.5rem] text-brown">
+                      <TextWithLineBreaks text={project?.architektur.title} />
+                      {/* {project?.architektur?.title} */}
                     </h3>
                     <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-12 4xl:h-[21.25rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.architektur?.description1}
-                        />
-                      </span>
-
-                      <span className="mt-2 block xl:mt-5">
-                        <TextWithLineBreaks
-                          text={project?.architektur?.description2}
                         />
                       </span>
                     </p>
@@ -183,54 +192,50 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
             {/* section 7 */}
             {/* <Slider sliderImages={project?.sliderImages} /> */}
+            {project.id === "petit-palais" ? (
+              <Project1Sec7 />
+            ) : (
+              <Project2Sec7 />
+            )}
 
             {/* section 8 */}
             <div className="container">
-              <div className="mb-[2.813rem] flex flex-col bg-gray  md:flex-row md:py-12 md:pl-[3vw] lg:mb-[6.25rem] lg:pb-[6.25rem] lg:pt-[6.25rem] 3xl:pl-[6.25rem]">
-                <div className="flex-1 lg:max-w-[31.25rem] 3xl:max-w-[44.063rem]">
-                  <Image
-                    src={project?.interior?.displayImage}
-                    alt=""
-                    className="mx-auto"
-                  />
-                </div>
-
+              <div className="mb-[2.813rem] flex flex-col bg-gray md:flex-row md:py-12 md:pl-[3vw] lg:mb-[6.25rem] lg:pb-[6.25rem] lg:pt-[6.25rem] 3xl:pl-[6.25rem]">
                 <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
                   <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem]">
-                    <h2 className="mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-[2.438rem] 4xl:h-5">
-                      Interior
-                    </h2>
-
-                    <h3 className="break-words font-gt-super text-xl md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.5rem] 4xl:h-[4.375rem]">
-                      <TextWithLineBreaks text={project?.interior?.title} />
-                    </h3>
-                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[3.188rem] 4xl:h-[13.438rem]">
+                    <p className="font-proxima-semibold text-[1.3125rem] text-brown">
+                      <TextWithLineBreaks text="Eine hervorragende Lage, | eine aussergewöhnliche Architektur – | und die passende Ausstattung dazu.  |" />
+                    </p>
+                    <p className="font-proxima text-[.938rem] lg:leading-[1.563rem] 4xl:h-[13.438rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.interior?.description1}
                         />
                       </span>
-
-                      <span className="mt-2 block xl:mt-5">
-                        <TextWithLineBreaks
-                          text={project?.interior?.description2}
-                        />
-                      </span>
                     </p>
                   </div>
+                </div>
+                <div className="flex-1">
+                  <Image src={project?.interior?.displayImage} alt="" />
                 </div>
               </div>
 
               {/* section 9 - model */}
 
-              {project?.model && (
+              {/* {project?.model && (
                 <Image
                   src={project?.model}
                   alt=""
                   className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
                 />
-              )}
+              )} */}
             </div>
+
+            {project.id === "petit-palais" ? (
+              <Project1Sec9 />
+            ) : (
+              <Project2Sec9 />
+            )}
 
             {/* section 10 - feature before*/}
             {project?.feature_before && (
@@ -273,7 +278,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
                       <span className="mt-4 block font-gt-book-italic text-xl leading-[1.875rem] xl:mt-[1.875rem] 4xl:h-[5rem]">
                         <TextWithLineBreaks
-                          text={project?.besonderheiten?.description2}
+                          text={project?.besonderheiten?.description2 || ""}
                         />
                       </span>
                     </p>

@@ -3,7 +3,15 @@ import PetitDisplay from "@/public/assets/aktuelle-projekte/petit/petit-display.
 import PetitDetailDisplay from "@/public/assets/aktuelle-projekte/petit/petit-detail-display.png";
 import PetitPhaseImage from "@/public/assets/aktuelle-projekte/petit/petit-phaseImage.png";
 import PetitArchitektur from "@/public/assets/aktuelle-projekte/petit/petit-architektur.png";
-import PetitSlider1 from "@/public/assets/aktuelle-projekte/petit/petit-slider-1.png";
+import PetitSlider1 from "@/public/assets/aktuelle-projekte/petit/main-slider/1.png";
+import PetitSlider2 from "@/public/assets/aktuelle-projekte/petit/main-slider/2.png";
+import PetitSlider3 from "@/public/assets/aktuelle-projekte/petit/main-slider/3.png";
+import PetitSlider4 from "@/public/assets/aktuelle-projekte/petit/main-slider/4.png";
+import PetitSlider5 from "@/public/assets/aktuelle-projekte/petit/main-slider/5.png";
+import PetitSlider6 from "@/public/assets/aktuelle-projekte/petit/slider-3/1.png";
+import PetitSlider7 from "@/public/assets/aktuelle-projekte/petit/slider-3/2.png";
+import PetitSlider8 from "@/public/assets/aktuelle-projekte/petit/slider-3/3.png";
+import PetitSlider9 from "@/public/assets/aktuelle-projekte/petit/slider-3/3.png";
 import PetitInterior from "@/public/assets/aktuelle-projekte/petit/petit-interior.png";
 import PetitModel from "@/public/assets/aktuelle-projekte/petit/petit-model.png";
 import PetitBesonderheiten from "@/public/assets/aktuelle-projekte/petit/petit-besonderheiten.png";
@@ -19,8 +27,9 @@ import Gallery_138 from "@/public/assets/aktuelle-projekte/138/138-gallery.png";
 import Interior_138 from "@/public/assets/aktuelle-projekte/138/138-interior.png";
 import Architektur_138 from "@/public/assets/aktuelle-projekte/138/138-architektur.png";
 import Slider_138_1 from "@/public/assets/aktuelle-projekte/138/138-slider-1.png";
-import AktuelleHeroSliderImage from "@/public/assets/aktuelle-projekte/petit/petit-slider.png";
-import AktuelleHeroSliderImage2 from "@/public/assets/aktuelle-projekte/petit/petit-slider-2.png";
+import AktuelleHeroSliderImage from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider.png";
+import AktuelleHeroSliderImage2 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-2.png";
+import AktuelleHeroSliderImage3 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-3.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
 
@@ -34,6 +43,9 @@ const aktuelleprojekte = [
       },
       {
         displayImage: AktuelleHeroSliderImage2,
+      },
+      {
+        displayImage: AktuelleHeroSliderImage3,
       },
     ],
     displayImage: PetitDisplay,
@@ -52,7 +64,14 @@ const aktuelleprojekte = [
       stellplätze: 11,
     },
     phaseImage: PetitPhaseImage,
-    sliderImages: [PetitSlider1, PetitSlider1, PetitSlider1],
+    sliderImages: [
+      PetitSlider1,
+      PetitSlider2,
+      PetitSlider3,
+      PetitSlider4,
+      PetitSlider5,
+    ],
+    slider2Images: [PetitSlider6, PetitSlider7, PetitSlider8, PetitSlider9],
     projectPhases: [
       {
         phaseName: "planungsphase",
@@ -81,9 +100,8 @@ const aktuelleprojekte = [
     currentPhase: 3,
     architektur: {
       displayImage: PetitArchitektur,
-      title: "Die Schönheit klassischer Jugendstilarchitektur",
-      description1:
-        "Das elegante Petit Palais ist ein neu erbautes  Mehrfamilienhaus, das im schönsten | Teil des Uhlenhorster Hofwegs liegt. Mit seiner weißen Fassade, seinen dezenten | Erkern und seiner  klaren Linienführung fügt es sich perfekt in die Reihe der angrenzenden historischen Jugendstilbauten ein. Dabei zeigt es einen eigenen Charakter und ergänzt das Straßenbild um schöne Details.",
+      title: `Selten hatte Weiss so | eine Ausstrahlung wie am | Petit Palais im Hofweg.`,
+      description1: `Das Petit Palais schmückt den schönsten Teil des Hofwegs | in Uhlenhorst. Wo es sich mit seiner strahlend weißen Fassade, | den dezenten Erkern und seinen klaren Linien perfekt in ein Ensemble | aus prachtvollen historischen Bauten einfügt. | In jeder der acht Etagen des neu erbauten Mehrfamilienhauses | treffender Charme und die Weitläufigkeit der historischen Altbauten auf | die hohenAnsprüche von heute und erfüllen sie auf eine ganz eigene, noble Weise: In den Wohnräumen sorgen Fußbodenheizungen für eine warme Atmosphäre, ausgesuchte Parkettböden für Eleganz. | Komfortable Bäder aus Marmor garantieren ein allzeit hohes Niveau und | die Tiefgarage bietet das, was in Uhlenhorst äußerst selten ist: | 11 Stellplätze.`,
       description2:
         "In allen seinen acht Stockwerken treffen Charme und Weite traditioneller |  Altbauten auf den Komfort und die Funktionalität der heutigen Zeit. Freiheit bietet | auch der Ausblick aus  den Obergeschossen des Petit Palais. So präsentiert sich | ein schöner Blick ins Grüne und macht die Wechsel der Jahreszeiten unmittelbar  erlebbar. In den durch eine Fußbodenheizung gewärmten  Wohnräumen sorgt | ein hochwertiger Parkettboden für einen eleganten Charakter. Bäder aus | Naturstein erfüllen hohe Ansprüche. In einer Tiefgarage bieten 11 Stellplätze |  weiteren Komfort.",
     },
@@ -91,9 +109,7 @@ const aktuelleprojekte = [
       displayImage: PetitInterior,
       title: "KLASSISCHE BAUKULTUR | modern INTERPRETIERT",
       description1:
-        "Dekorativer Naturstein, Kiesbeläge und moderne Bodenstrahler sorgen dafür, | dass das gute Wohngefühl bereits auf dem Grundstück beginnt.",
-      description2:
-        "Es sind die kleinen Dinge, die ein Bild einzigartig machen – so auch im | Petit Palais. Vom Naturstein im Treppenhaus bis zum Fischgrätparkett in allen | Wohnungen, von den Dornbracht-Armaturen in den Badezimmern bis zum | Bauhaus-Fenstergriff, von der eleganten Außenleuchte bis zur noblen | Aufzug-Ausstattung – jedes Detail hier ist mit viel Liebe ausgewählt und | Teil eines vollkommenen Ganzen.",
+        "Nie mit gut zufrieden sein – dieser Anspruch gilt von der | Architektur des Petit Palais bis hin zu seiner Ausstattung. | Das Normale, das Gängige, das Gewohnte, hier hat es keinen Platz. | Das beginnt schon an der Haustür. Ein handgefertigtes Unikat, | das auf die schönste Weise mit dem ebenfalls eigens angefertigten | Tor der Tiefgarage harmoniert. Dieses Niveau setzt sich vom großzügigen Entrée über das Treppenhaus bis zu den Wohnungseingangstüren fort. | Außen aus edlem Holz, mit brünierten Beschlägen im Bauhausstil. | Damit sie exakt zu den bronzefarbenen Wandleuchten von Occhio | passen, die den Bereich vor jeder Wohnung in brillante Farben tauchen. | In den Wohnräumen fällt das sorgsam im Fischgrätmuster verlegte Eichenparkett ins Auge. Eingerahmt von nicht weniger als zwölf Zentimeter hohen, weiß lackierten Sockelleisten, die glänzend mit den eleganten Schaltern und Dosen von Jung harmonieren. ",
     },
     model: PetitModel,
     besonderheiten: {
@@ -382,6 +398,7 @@ const aktuelleprojekte = [
       description:
         "Die Straßen von Uhlenhorst sind mit unzähligen Cafés, Restaurants und Möglichkeiten gepflastert. | Von bodenständig bis mit Stern – hier findet sich alles. Allein für den täglichen Bedarf gibt es mehr als 20 Supermärkte, mehrere | Bio-Discounter sowie diverse Obst-, Gemüse- und Feinkostgeschäfte mit verführerischen Schaufenstern und Auslagen. | Im Mühlenkamp, im Hofweg, in der Gertigstrasse oder im Poelchaukamp gehören ausgefallene Mode- und Interiorläden zum | guten Umgangston. Am Goldbekufer findet drei-mal die Woche ein großer Wochenmarkt statt und in den Einkaufsstraßen | reihen sich Bäcker, Friseure und Blumengeschäfte dicht an dicht – wie die Perlen einer Kette. ",
     },
+    slider2Images: [PetitSlider6, PetitSlider7, PetitSlider8, PetitSlider9],
     faq: [
       {
         id: 1,

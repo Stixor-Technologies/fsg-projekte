@@ -30,6 +30,7 @@ const config: Config = {
         "gt-display-light": ["var(--font-gt-display-light)"],
         "gt-display-rg": ["var(--font-gt-display-rg)"],
         "gt-display-light-italic": ["var(--font-gt-display-light-italic)"],
+        "ivy-presto": ["var(--font-ivy-presto)"],
       },
       colors: {
         "light-yellow": "#F4EDE4",

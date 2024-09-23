@@ -12,11 +12,13 @@ import ArrowWhite from "@/public/assets/arrow-white.svg";
 interface ProjectSliderProps {
   children: React.ReactNode;
   arrowColor?: "black" | "white";
+  slidesPerView?: number;
 }
 
 const ProjectSlider: FC<ProjectSliderProps> = ({
   children,
   arrowColor = "black",
+  slidesPerView = 1,
 }) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
@@ -29,6 +31,7 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
         loop={false}
         modules={[]}
         className="mySwiper !flex aspect-video h-full max-h-[65.25rem] w-full flex-col !items-center lg:flex-row"
+        slidesPerView={slidesPerView}
       >
         {children}
       </Swiper>
