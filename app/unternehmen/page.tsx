@@ -3,7 +3,7 @@ import React from "react";
 import Kontakt from "@/components/Kontakt";
 import Image from "next/image";
 import Fabian from "@/public/assets/unternehmen-slider-image.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import ProjectSlider from "@/components/slider";
 
 const Unternehmen = () => {

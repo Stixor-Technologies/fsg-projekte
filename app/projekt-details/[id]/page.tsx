@@ -6,10 +6,9 @@ import Spinner from "@/components/spinner/spinner";
 import TextWithLineBreaks from "@/components/line-break";
 import Faq from "@/components/faq";
 import ProjectPhase from "@/components/project-phase";
-import Slider from "@/components/slider";
 import { Project } from "@/app/utils/types";
-import MapComponent from "@/components/map";
-import DetailHero from "@/components/detail-hero";
+import ProjectSlider from "@/components/slider";
+import { SwiperSlide } from "swiper/react";
 
 interface ProjectDetailParams {
   params: {
@@ -36,19 +35,28 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
         </div>
       ) : !loading && project ? (
         <>
-          <section className=" pb-[3.181rem] pt-[6.75rem] lg:pt-[10.656rem]">
+          <section className=" pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
             <div className="container">
               {/* section 1 */}
-              <DetailHero
-                displayImage={project?.detailDisplay}
-                projectName={project?.projectName}
-              />
+              <ProjectSlider arrowColor="white">
+                {project.heroSlider.map((slide, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="relative mb-[2.813rem] lg:mb-24">
+                      <Image
+                        src={slide.displayImage}
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </ProjectSlider>
 
               {/* section 2 */}
               <div className="flex items-center justify-center bg-light-yellow px-4 py-12 xs:px-7 md:h-[63.875rem] ">
                 <div className="mx-auto max-w-[74.375rem] text-center">
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
-                    Philosophie
+                    <TextWithLineBreaks text={project?.philosophieHeader} />
                   </h4>
                   <p className=" max-w-[74.375rem] font-gt-book !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[2.5rem] md:!leading-[3.4375rem]">
                     <span className="block 4xl:h-[12.8125rem]">

@@ -19,6 +19,8 @@ import Gallery_138 from "@/public/assets/aktuelle-projekte/138/138-gallery.png";
 import Interior_138 from "@/public/assets/aktuelle-projekte/138/138-interior.png";
 import Architektur_138 from "@/public/assets/aktuelle-projekte/138/138-architektur.png";
 import Slider_138_1 from "@/public/assets/aktuelle-projekte/138/138-slider-1.png";
+import AktuelleHeroSliderImage from "@/public/assets/aktuelle-projekte/petit/petit-slider.png";
+import AktuelleHeroSliderImage2 from "@/public/assets/aktuelle-projekte/petit/petit-slider-2.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
 
@@ -26,13 +28,23 @@ const aktuelleprojekte = [
   {
     id: "petit-palais",
     projectName: PetitPalais,
+    heroSlider: [
+      {
+        displayImage: AktuelleHeroSliderImage,
+      },
+      {
+        displayImage: AktuelleHeroSliderImage2,
+      },
+    ],
     displayImage: PetitDisplay,
     detailDisplay: PetitDetailDisplay,
     units: "11 verfügbare Einheiten",
     space: "Von 112 bis 235 m2",
     type: "Classic architecture Modernly interpreted",
     area: "Hamburg Uhlenhorst",
-    philosophie: `Die Philosophie des Petit Palais erschließt sich | von ganz allein – durch die elegante Architektur, | die außergewöhnlich schöne Lage an der Alster und | den besonderen Lifestyle in diesem Quartier.`,
+    philosophieHeader: "PETIT PALAIS- | FÜR EIN MODERNES LEBENSGEFÜHL",
+    philosophie: `Elegante klassische Architektur, gepaart mit dem Luxus | moderner Ausstattung: Das ist das Petit Palais im schönsten Uhlenhorst. | Hier macht es seine Umgebung noch schöner: Mit seiner | repräsentativen Großzügigkeit, dem hohen Komfort und modernen | Designlösungen. Denn im Petit Palais ist Tradition niemals angestaubt. | Weil es sich nicht darauf beschränkt zu zitieren, sondern aus alten | und neuen Werten, ein ganz besonderes Lebensgefühl formt:  | Aus dem Besten von 1895 bis heute.`,
+    philosophieButtonText: "ZUR PETIT PALAIS WEBSEITE",
     unitMetrics: {
       wohnungen: 11,
       penthouse: 1,
@@ -283,13 +295,26 @@ const aktuelleprojekte = [
   {
     id: "138",
     projectName: Name_138,
+    heroSlider: [
+      {
+        displayImage: Display_138,
+        projectName: Name_138,
+      },
+      {
+        displayImage: Display_138,
+        projectName: Name_138,
+      },
+    ],
     displayImage: Display_138,
     detailDisplay: DetailDisplay_138,
     units: "24 Einheiten und 2 Penthäuser",
     space: "Con 28 bis 255 m2",
     type: "Nahe der Alster, mitten im Leben, umgeben von Schönem.",
     area: "Hamburg Harvestehude",
-    philosophie: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Nullam hendrerit augue ante, et suscipit lacus blandit a. | Mauris efficitur leo id nulla porttitor pretium. | Maecenas in gravida lectus. Nulla arcu risus, dictum quis.`,
+    philosophieHeader:
+      "Hier nimmt sich Hamburg | das Beste aus allen Lebensgefühlen - | und macht es zu Uhlenhorst.",
+    philosophie: `Wenn es ein Ideal von der Stadt gibt. | Hier ist es erreicht. An einem Ort, wo sich die schönsten | Gegensätze zu etwas noch Schönerem vereinen:  
+      Pulsierendes Leben mit glitzerndem Wasser, Jugendstilfassaden mit | alten Bäumen, Bars und Restaurants mit Parks und Wiesen, | Flaneure mit Müßiggängern, extrovertierte mit introvertierten  | Momenten. Hier zeigt sich Hamburg | von seiner schönsten Seite.`,
     unitMetrics: {
       wohnungen: 24,
       penthouse: 2,

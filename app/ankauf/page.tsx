@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import AnkaufProfile from "@/public/assets/ankauf/ankaufsprofil.png";
-import LinkButton from "@/components/link-button";
 import { Ankaufsprofil } from "../utils/data";
 
 const Ankauf = () => {
@@ -60,9 +59,13 @@ const Ankauf = () => {
                       Transaktionsstruktur
                     </span>
                     <div className="mb-[1.625rem]">
-                      {profil?.Transaktionsstruktur.split(" | ").map((item) => (
-                        <p className="ankauf-desc">{item}</p>
-                      ))}
+                      {profil?.Transaktionsstruktur.split(" | ").map(
+                        (item, index) => (
+                          <p className="ankauf-desc" key={index}>
+                            {item}
+                          </p>
+                        ),
+                      )}
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2">
@@ -72,33 +75,45 @@ const Ankauf = () => {
                   <div className="grid sm:grid-cols-2">
                     <span className={`ankauf-point`}>GrundstückE</span>
                     <div className="my-[1.625rem]">
-                      {profil?.GrundstückE.split(" | ").map((item) => (
-                        <p className="ankauf-desc">{item}</p>
+                      {profil?.GrundstückE.split(" | ").map((item, index) => (
+                        <p className="ankauf-desc" key={index}>
+                          {item}
+                        </p>
                       ))}
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2">
                     <span className={`ankauf-point`}>Bestandsobjekte</span>
                     <div className="my-[1.625rem]">
-                      {profil?.Bestandsobjekte.split(" | ").map((item) => (
-                        <p className="ankauf-desc">{item}</p>
-                      ))}
+                      {profil?.Bestandsobjekte.split(" | ").map(
+                        (item, index) => (
+                          <p className="ankauf-desc" key={index}>
+                            {item}
+                          </p>
+                        ),
+                      )}
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2">
                     <span className={`ankauf-point`}>Regionen</span>
                     <div className="my-[1.625rem]">
-                      {profil?.Regionen.split(" | ").map((item) => (
-                        <p className="ankauf-desc">{item}</p>
+                      {profil?.Regionen.split(" | ").map((item, index) => (
+                        <p className="ankauf-desc" key={index}>
+                          {item}
+                        </p>
                       ))}
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2">
                     <span className={`ankauf-point`}>Ausschlußkriterien</span>
                     <div className="my-[1.625rem]">
-                      {profil?.Ausschlußkriterien.split(" | ").map((item) => (
-                        <p className="ankauf-desc">{item}</p>
-                      ))}
+                      {profil?.Ausschlußkriterien.split(" | ").map(
+                        (item, index) => (
+                          <p className="ankauf-desc" key={index}>
+                            {item}
+                          </p>
+                        ),
+                      )}
                     </div>
                   </div>
                 </div>

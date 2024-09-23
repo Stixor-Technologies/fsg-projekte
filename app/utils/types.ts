@@ -28,6 +28,9 @@ interface ColumnSectionData {
 interface Project {
   id: string;
   projectName: StaticImageData;
+  heroSlider: {
+    displayImage: StaticImageData;
+  }[];
   displayImage: StaticImageData;
   units: string;
   space: string;
@@ -35,6 +38,8 @@ interface Project {
   area: string;
   detailDisplay: StaticImageData;
   philosophie: string;
+  philosophieHeader: string;
+  philosophieButtonText?: string;
   unitMetrics: {
     wohnungen: number;
     penthouse: number;
