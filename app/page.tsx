@@ -27,10 +27,10 @@ export default function Home() {
         {/* section 2 */}
         <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[63.313rem] lg:mb-[5.625rem] ">
           <div className="mx-auto max-w-[60.313rem] text-center">
-            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.188rem] 4xl:h-5">
+            <h4 className="mb-[3.3125rem] font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl">
               Beste Lagen verdienen beste Planung.
             </h4>
-            <p className="font-gt-display-rg !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[21.0625rem]">
+            <p className="font-gt-display-rg  !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[20.75rem] 4xl:w-[61.625rem]">
               <span className=" block">
                 Bei FSG | Projekte haben wir ein einfaches Credo:
                 <br className="hidden lg:block" /> Nur wenn uns eine Bauidee zu
@@ -66,26 +66,26 @@ export default function Home() {
 
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 lg:px-7 2xl:px-0 4xl:items-start">
             <div className="w-full text-center lg:max-w-[39.188rem] 4xl:mb-[20.406rem]  4xl:mt-[21.863rem]">
-              <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
-                „Sich zu Hause zu fühlen – zu wissen, genau hier,
-                <br className="hidden 2xl:block" />
-                genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
-                Bauprojekt an.
-                <br className="hidden 2xl:block" /> Es definiert unser Ziel,
-                wenn wir darüber nachdenken, welche
-                <br className="hidden 2xl:block" /> Blickachsen es braucht, um
-                Licht und Leben in eine Wohnung zu lassen.
-                <br className="hidden 2xl:block" /> Mit welchen Materialien wir
-                arbeiten, wo der Elektroschalter sitzen
-                <br className="hidden 2xl:block" />
-                muss und welche Pflanzen im Garten stehen.“
-              </p>
-              <p className="mb-[3.5812rem] mt-[1.25rem] font-proxima">
-                FABIAN SCHNEIDER
-              </p>
+              <div className="h-[11.9375rem]">
+                <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
+                  „Sich zu Hause zu fühlen – zu wissen, genau hier,
+                  <br className="hidden 2xl:block" />
+                  genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
+                  Bauprojekt an.
+                  <br className="hidden 2xl:block" /> Es definiert unser Ziel,
+                  wenn wir darüber nachdenken, welche
+                  <br className="hidden 2xl:block" /> Blickachsen es braucht, um
+                  Licht und Leben in eine Wohnung zu lassen.
+                  <br className="hidden 2xl:block" /> Mit welchen Materialien
+                  wir arbeiten, wo der Elektroschalter sitzen
+                  <br className="hidden 2xl:block" />
+                  muss und welche Pflanzen im Garten stehen.“
+                </p>
+                <p className="font-proxima">FABIAN SCHNEIDER</p>
+              </div>
               <Link
                 href={"/unternehmen"}
-                className="inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
+                className="mt-[3.5812rem] inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
               >
                 UNTERNEHMEN
               </Link>
@@ -161,10 +161,10 @@ export default function Home() {
 
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
             <div className="w-full text-center lg:max-w-[36.563rem]  ">
-              <h2 className="mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-9 2xl:mb-[3.563rem] 4xl:h-5">
+              <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem]">
                 WIR SUCHEN GRUNDSTÜCKE UND IMMOBILIEN.
               </h2>
-              <p className="my-3 font-proxima text-sm lg:my-3 lg:text-[0.938rem] lg:leading-[1.563rem] xl:my-7 2xl:my-[2.3125rem]">
+              <p className="my-[2.3125rem] font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem]">
                 <span className="block">
                   Etwas Gutes noch besser zu machen.
                   <br className="hidden xl:block" /> In diesem Sinne suchen wir

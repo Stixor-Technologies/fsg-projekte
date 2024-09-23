@@ -5,7 +5,7 @@ import Logo from "@/public/assets/footer-logo.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-dark-blue ">
+    <footer className=" bg-dark-blue pb-12">
       <div className="container pb-12 pt-[2.781rem] lg:pb-[4.563rem] 4xl:h-[33.625rem] 4xl:px-0">
         <div className="mx-auto max-w-[110.563rem]">
           <div className="flex flex-col items-center gap-[4.5625rem]">

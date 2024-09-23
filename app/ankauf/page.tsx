@@ -5,7 +5,7 @@ import { Ankaufsprofil } from "../utils/data";
 
 const Ankauf = () => {
   return (
-    <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+    <section className=" bg-light-blue pb-[12.5625rem] pt-[6.75rem] lg:pt-[12.0625rem]">
       <div className="container">
         {/* section 1 */}
         <div className="relative mb-14 flex items-center justify-center lg:mb-[6.563rem] ">
@@ -25,7 +25,7 @@ const Ankauf = () => {
 
         {/* section 2 */}
 
-        <div className="mx-auto my-14 max-w-[82.25rem] text-center font-gt-display-light sm:text-lg lg:mb-[15.063rem] lg:mt-[12.313rem] lg:text-[1.75rem] lg:leading-[2.375rem] lg:tracking-tight 4xl:h-[19.875rem]">
+        <div className="mx-auto my-14 max-w-[82.25rem] text-center font-gt-display-light sm:text-lg lg:mb-[16rem] lg:mt-[15.375rem] lg:text-[1.75rem] lg:leading-[2.375rem] lg:tracking-tight 4xl:h-[13.625rem]">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
             ligula ante. <br className="hidden lg:block" /> Mauris at congue

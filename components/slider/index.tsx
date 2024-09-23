@@ -30,7 +30,7 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
         }}
         loop={false}
         modules={[]}
-        className="mySwiper !flex aspect-video h-full max-h-[65.25rem] w-full flex-col !items-center lg:flex-row"
+        className="mySwiper !flex h-full max-h-[65.25rem] w-full flex-col !items-center lg:flex-row"
         slidesPerView={slidesPerView}
       >
         {children}

@@ -186,7 +186,7 @@ const Kontakt = () => {
     >
       <div className="mx-auto max-w-[64.188rem] px-5 md:px-10 xl:px-0">
         <div className=" mb-[1.938rem] text-center lg:mb-[3.875re,]">
-          <p className="mt-[2.188rem] font-gt-display-light text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
+          <p className="mt-[2.188rem] h-[3.4375rem] font-gt-display-light text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
             Wir beraten Sie gern
           </p>
           <h2 className="mt-3 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 2xl:mb-[5.0187rem] 4xl:h-5">

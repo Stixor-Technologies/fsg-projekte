@@ -5,47 +5,10 @@ import Image from "next/image";
 import Fabian from "@/public/assets/unternehmen-slider-image.png";
 import { SwiperSlide } from "swiper/react";
 import ProjectSlider from "@/components/slider";
+import UnternehmenImg2 from "@/public/assets/unternehmen-slide-2.png";
+import TextWithLineBreaks from "@/components/line-break";
 
 const Unternehmen = () => {
-  const sliderData = [
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-    {
-      image: Fabian,
-      description:
-        "„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ ",
-      subTitle: "FABIAN SCHNEIDER",
-    },
-  ];
-
   return (
     <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
       <div>
@@ -85,19 +48,20 @@ const Unternehmen = () => {
 
         {/* section 2 */}
 
-        <div className="mb-[2.813rem] bg-white px-[3.75rem] pb-12 pt-[6.25rem] text-black lg:mb-[6.875rem] 4xl:h-[65.25rem] 4xl:px-[7.9375rem] 4xl:pt-[10.75rem]">
+        <div className="mb-[2.813rem] bg-white text-black">
           <ProjectSlider>
-            {sliderData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <Image
-                    src={item.image}
-                    alt="fabian"
-                    width={284}
-                    className="mx-auto"
-                  />
-                  <p className="mb-[1.9375rem] mt-[4rem]">
-                    {item.description.split(" | ").map((text, index) => (
+            <SwiperSlide className="bg-white pt-[10.75rem]">
+              <div className="flex flex-col items-center justify-center gap-4 text-center">
+                <Image
+                  src={Fabian}
+                  alt="fabian"
+                  width={284}
+                  className="mx-auto"
+                />
+                <p className="mb-[1.9375rem] mt-[4rem]">
+                  {"„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ "
+                    .split(" | ")
+                    .map((text, index) => (
                       <span
                         key={index}
                         className="font-gt-display-light-italic text-[1.75rem] leading-[2.375rem]"
@@ -106,99 +70,36 @@ const Unternehmen = () => {
                         <br />
                       </span>
                     ))}
-                  </p>
-                  <p className="font-proxima-semibold text-xl text-brown">
-                    {item.subTitle}
-                  </p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </ProjectSlider>
-          {/* <Swiper spaceBetween={50} slidesPerView={1}>
-            {sliderData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex flex-col gap-4 md:mb-[9vw] md:flex-row md:pl-[3vw] xl:mb-[12.5rem] 3xl:pl-[9.875rem]">
-                  <div className="flex-1 lg:max-w-[31.25rem] 3xl:max-w-[39.5rem]">
-                    <Image
-                      src={item.image}
-                      alt="fabian"
-                      width={632}
-                      className="mx-auto"
-                    />
-                  </div>
-
-                  <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
-                    <div className="w-full text-center lg:max-w-[45.875rem]  ">
-                      <h2 className=" mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-9 2xl:mb-[5.5rem] 4xl:h-5">
-                        {item.subTitle}
-                      </h2>
-
-                      <p className="block font-gt-book-italic text-medium-blue lg:text-xl lg:leading-[1.875rem] 4xl:h-[6.875rem]">
-                        {item.description}
-                      </p>
-
-                      <p className="mt-5 block text-[0.938rem] leading-tight text-medium-blue lg:mt-[2.375rem] lg:leading-[1.563rem] 4xl:h-[5.625rem]">
-                        Mit einer Professional
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
-          {/* <div className="flex flex-col gap-4 md:mb-[9vw] md:flex-row md:pl-[3vw] xl:mb-[12.5rem] 3xl:pl-[9.875rem]">
-            <div className="flex-1 lg:max-w-[31.25rem] 3xl:max-w-[39.5rem]">
-              <Image
-                src={Fabian}
-                alt="fabian"
-                width={632}
-                className="mx-auto"
-              />
-            </div>
-
-            <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
-              <div className="w-full text-center lg:max-w-[45.875rem]  ">
-                <h2 className=" mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-9 2xl:mb-[5.5rem] 4xl:h-5">
-                  Fabian Schneider
-                </h2>
-
-                <p className="block font-gt-book-italic text-medium-blue lg:text-xl lg:leading-[1.875rem] 4xl:h-[6.875rem]">
-                  Dafür setzen wir auf schnelle, schlanke Strukturen:{" "}
-                  <br className="hidden 2xl:block" /> Auf Entscheidungsträger
-                  statt auf Befehlsempfänger. Unterstützt von einem{" "}
-                  <br className="hidden 2xl:block" /> breiten Netzwerk, das wir
-                  seit vielen Jahren kennen und uns genau den richtigen Support
-                  zur richtigen Zeit gibt. So, wie wir ihn gerade brauchen.
                 </p>
-
-                <p className="mt-5 block text-[0.938rem] leading-tight text-medium-blue lg:mt-[2.375rem] lg:leading-[1.563rem] 4xl:h-[5.625rem]">
-                  Mit einer Professionalität, die man jedem unserer Gebäude und
-                  Bauvorhaben ansehen kann: <br className="hidden 2xl:block" />{" "}
-                  Unikate in den besten Lagen, mit einer modern interpretierten,
-                  klassischen Formensprache, <br className="hidden 2xl:block" />{" "}
-                  Grundrissen, die ein Leben oberhalb der Norm ermöglichen sowie
-                  einer vielleicht altmodisch zu nennenden Verbindlichkeit
-                  unsererseits, die das nötige Vertrauen dafür schafft.
+                <p className="font-proxima-semibold text-xl text-brown">
+                  FABIAN SCHNEIDER
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="mx-auto max-w-[74.375rem] px-5 text-center 2xl:px-0">
-            <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-5 xl:mb-12 4xl:h-5">
-              Philosophie
-            </h4>
-            <p className="font-gt-book !leading-relaxed text-medium-blue xs:text-2xl md:text-[2.188rem] md:!leading-[3.125rem] 4xl:h-[14.688rem]">
-              Weil Bauen für uns kein Selbstzweck ist, entwickeln wir{" "}
-              <br className="hidden lg:block" />
-              ausschließlich Objekte, die das Leben ihrer Bewohner{" "}
-              <span className=" underline">maßgeblich</span> bereichern.
-              Schließlich gehört Wohnen zu den wichtigsten menschlichen
-              Grundbedürfnissen. Denn nur Weniges stimuliert das Gefühlsleben so{" "}
-              <span className=" underline">positiv</span> und{" "}
-              <span className="underline">dauerhaft</span> wie die Schönheit der
-              eigenen vier Wände.
-            </p>
-          </div> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                style={{
+                  backgroundImage: `url(${UnternehmenImg2.src})`,
+                }}
+                className="h-[65.25rem] w-full bg-cover bg-no-repeat"
+              ></div>
+              {/* <Image
+                src={UnternehmenImg2}
+                alt="fabian"                
+                className="object-cover aspect-auto"
+              /> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex w-full flex-col items-center justify-center pt-[21.625rem]">
+                <p className="font-proxima-semibold text-xl text-brown">
+                  Unser bisher schönstes Bauprojekt? Alle.
+                </p>
+                <p className="mx-auto mt-9 max-w-[80vw] text-center 4xl:h-[18.375rem] 4xl:w-[60.75rem]">
+                  <TextWithLineBreaks text="Jedem Bauvorhaben liegt ein Zauber inne. Denn es geht nicht nur darum, | eine Immobilie zu bauen. Sondern sie auch als Teil eines ganzen Quartiers zu | begreifen. Für uns ist das etwas Großartiges – und Verantwortungsvolles. | Denn wie wir in der Stadt von morgen leben, hat vor allem damit zu tun, | wie wir sie heute planen. Unsere Mission ist es, unverwechselbare Immobilien | zu erschaffen, die zum jeweiligen Standort passen und die Nachbarschaft | nachhaltig bereichern. Jedes Projekt steckt daher voller Herzblut und wir sind | stolz auf jedes einzelne." />
+                </p>
+              </div>
+            </SwiperSlide>
+          </ProjectSlider>
         </div>
         <div className="container">
           <Kontakt />
