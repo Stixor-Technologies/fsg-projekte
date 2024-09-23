@@ -88,7 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay.variable} ${GtSuperBold.variable} font-proxima ${GtSuperDisplayRegular.variable} ${GTSuperLightItalic.variable}`}
+        className={`${proximaThin.variable} ${proximaRegular.variable} ${proximaSemiBold.variable} ${proximaBold.variable} ${GtSuperRegular.variable} ${GtSuperRegularItalic.variable} ${GtSuperMedium.variable} ${GtSuperBook.variable} ${GtSuperBookItalic.variable} ${GtSuperDisplay.variable} ${GtSuperBold.variable} font-proxima ${GtSuperDisplayRegular.variable} ${GTSuperLightItalic.variable} ${IvyPresto.variable}`}
       >
         <Header />
         {children}
