@@ -297,12 +297,12 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
                 />
               )}
-
+              {/* 
               <MapComponent
                 title={project?.dieLage?.title}
                 decription={project?.dieLage?.description}
                 center={project?.mapCenter}
-              />
+              /> */}
 
               {/* section 10 */}
               <Faq faqs={project?.faq} />
