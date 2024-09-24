@@ -30,6 +30,7 @@ import Slider_138_1 from "@/public/assets/aktuelle-projekte/138/138-slider-1.png
 import AktuelleHeroSliderImage from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider.png";
 import AktuelleHeroSliderImage2 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-2.png";
 import AktuelleHeroSliderImage3 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-3.png";
+import PetitLocationImage from "@/public/assets/aktuelle-projekte/petit/locations.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
 
@@ -106,22 +107,38 @@ const aktuelleprojekte = [
         "In allen seinen acht Stockwerken treffen Charme und Weite traditioneller |  Altbauten auf den Komfort und die Funktionalität der heutigen Zeit. Freiheit bietet | auch der Ausblick aus  den Obergeschossen des Petit Palais. So präsentiert sich | ein schöner Blick ins Grüne und macht die Wechsel der Jahreszeiten unmittelbar  erlebbar. In den durch eine Fußbodenheizung gewärmten  Wohnräumen sorgt | ein hochwertiger Parkettboden für einen eleganten Charakter. Bäder aus | Naturstein erfüllen hohe Ansprüche. In einer Tiefgarage bieten 11 Stellplätze |  weiteren Komfort.",
     },
     interior: {
+      title:
+        "Eine hervorragende Lage, | eine aussergewöhnliche Architektur – | und die passende Ausstattung dazu. ",
       displayImage: PetitInterior,
-      title: "KLASSISCHE BAUKULTUR | modern INTERPRETIERT",
       description1:
         "Nie mit gut zufrieden sein – dieser Anspruch gilt von der | Architektur des Petit Palais bis hin zu seiner Ausstattung. | Das Normale, das Gängige, das Gewohnte, hier hat es keinen Platz. | Das beginnt schon an der Haustür. Ein handgefertigtes Unikat, | das auf die schönste Weise mit dem ebenfalls eigens angefertigten | Tor der Tiefgarage harmoniert. Dieses Niveau setzt sich vom großzügigen Entrée über das Treppenhaus bis zu den Wohnungseingangstüren fort. | Außen aus edlem Holz, mit brünierten Beschlägen im Bauhausstil. | Damit sie exakt zu den bronzefarbenen Wandleuchten von Occhio | passen, die den Bereich vor jeder Wohnung in brillante Farben tauchen. | In den Wohnräumen fällt das sorgsam im Fischgrätmuster verlegte Eichenparkett ins Auge. Eingerahmt von nicht weniger als zwölf Zentimeter hohen, weiß lackierten Sockelleisten, die glänzend mit den eleganten Schaltern und Dosen von Jung harmonieren. ",
     },
     model: PetitModel,
     besonderheiten: {
       displayImage: PetitBesonderheiten,
-      title: "Das Beste | Aus zwei Epochen",
+      title: "Das repräsentative Haus im Haus",
       description1:
-        "Historische Baukultur findet sich hier charmant zitiert – in Räumen, die ihren hanseatisch | traditionellen Vorbildern in nichts nachstehen und dabei ebenso repräsentativ wie | charakteristisch sind. Kombiniert mit morderner Haustechnik ergibt sich so ein Konzept, das | qualitativ Maßstäbe setzt und das Leben hier zu etwas Besonderem macht.",
+        "Die ausnehmend großzügige Maisonette glänzt mit gleich vier | Schlafzimmern und erstreckt sich über zwei Stockwerke. | Hier bietet sie zwei wunderschöne Ausblicke ins Uhlenhorster Grün:  | Von einem geschützten Balkon mit Natursteinbelag und einem eigenen,  | ruhig gelegenen Garten nach Westen. |  | Große Fensterfronten mit Schiebeelementen sorgen dafür, | dass die Ausstattung stets im schönsten Licht erstrahlt. So die edlen  | im Fischgrät-Muster verlegten Parkettböden aus Eiche, die bis zu | 2,70 m  hohen Decken oder die 2,23 m hohen Türen mit ihren | polierten Bauhausbeschlägen. |  | Hochwertig geht es auch in den zwei Bädern sowie dem Gäste-WC weiter: | Mit edlem Marmor, bodentiefen Walk-In-Duschen, verchromten | Handtuchheizkörpern, Armaturen von Dornbracht und dezent | eingelassenen Deckenstrahlern. Kurz, dieses Haus im Haus hat alles, | um zu faszinieren – und den Geschmack seiner Besitzer zu repräsentieren.",
       description2:
         "Wer die Schönheit klassischer Jugendstilarchitektur liebt und dabei | gerne viel Grün, Wasser und urbanen Lifestyle vor der eigenen Tür | weiß, der wird sich im Petit Palais mehr als zu Hause fühlen.",
     },
 
     galleryImage: PetitGallery,
+    locations: {
+      displayImage: PetitLocationImage,
+      locations: [
+        "FEENTEICH",
+        "FERNSEHTURM",
+        "SCHANZENPARK",
+        "FONTENAY",
+        "HOCHBUNKER",
+        "MICHEL",
+        "JUNGFERNSTIEG",
+        "BINNENALSTER",
+        "ELBPHILHARMONIE",
+        "RATHAUS",
+      ],
+    },
 
     dieLage: {
       title: "Wohnen wo Wasser und Himmel sich treffen…",
@@ -397,6 +414,21 @@ const aktuelleprojekte = [
         "Exklusive Läden, Shops, Boutiquen, | dicht an dicht, wie die Perlen einer Kette.",
       description:
         "Die Straßen von Uhlenhorst sind mit unzähligen Cafés, Restaurants und Möglichkeiten gepflastert. | Von bodenständig bis mit Stern – hier findet sich alles. Allein für den täglichen Bedarf gibt es mehr als 20 Supermärkte, mehrere | Bio-Discounter sowie diverse Obst-, Gemüse- und Feinkostgeschäfte mit verführerischen Schaufenstern und Auslagen. | Im Mühlenkamp, im Hofweg, in der Gertigstrasse oder im Poelchaukamp gehören ausgefallene Mode- und Interiorläden zum | guten Umgangston. Am Goldbekufer findet drei-mal die Woche ein großer Wochenmarkt statt und in den Einkaufsstraßen | reihen sich Bäcker, Friseure und Blumengeschäfte dicht an dicht – wie die Perlen einer Kette. ",
+    },
+    locations: {
+      displayImage: PetitLocationImage,
+      locations: [
+        "FEENTEICH",
+        "FERNSEHTURM",
+        "SCHANZENPARK",
+        "FONTENAY",
+        "HOCHBUNKER",
+        "MICHEL",
+        "JUNGFERNSTIEG",
+        "BINNENALSTER",
+        "ELBPHILHARMONIE",
+        "RATHAUS",
+      ],
     },
     slider2Images: [PetitSlider6, PetitSlider7, PetitSlider8, PetitSlider9],
     faq: [

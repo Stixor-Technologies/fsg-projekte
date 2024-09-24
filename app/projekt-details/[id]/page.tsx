@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { aktuelleprojekte } from "@/app/utils/data";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Spinner from "@/components/spinner/spinner";
 import TextWithLineBreaks from "@/components/line-break";
 import Faq from "@/components/faq";
@@ -14,6 +14,7 @@ import Project1Sec7 from "./components/project-1-sec-7";
 import Project2Sec7 from "./components/project-2-sec-7";
 import Project1Sec9 from "./components/project-1-sec-9";
 import Project2Sec9 from "./components/project-2-sec-9";
+import Map from "@/components/map";
 
 interface ProjectDetailParams {
   params: {
@@ -200,13 +201,13 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
             {/* section 8 */}
             <div className="container">
-              <div className="mb-[2.813rem] flex flex-col bg-gray md:flex-row md:py-12 md:pl-[3vw] lg:mb-[6.25rem] lg:pb-[6.25rem] lg:pt-[6.25rem] 3xl:pl-[6.25rem]">
-                <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
-                  <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem]">
-                    <p className="font-proxima-semibold text-[1.3125rem] text-brown">
-                      <TextWithLineBreaks text="Eine hervorragende Lage, | eine aussergewöhnliche Architektur – | und die passende Ausstattung dazu.  |" />
+              <div className="mb-[2.813rem] flex h-[59.875rem] flex-col bg-gray md:flex-row">
+                <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
+                  <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem] 4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]">
+                    <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] text-brown">
+                      <TextWithLineBreaks text={project?.interior.title} />
                     </p>
-                    <p className="font-proxima text-[.938rem] lg:leading-[1.563rem] 4xl:h-[13.438rem]">
+                    <p className="font-proxima text-[.938rem] lg:leading-[1.4375rem] 4xl:h-[13.438rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.interior?.description1}
@@ -215,7 +216,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     </p>
                   </div>
                 </div>
-                <div className="flex-1">
+                <div className="mt-[6.25rem] flex-1">
                   <Image src={project?.interior?.displayImage} alt="" />
                 </div>
               </div>
@@ -249,8 +250,8 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
             <div className="container">
               {/* section 11 -   Besonderheiten / Features*/}
-              <div className="mb-[2.813rem] flex flex-col bg-light-yellow  md:flex-row md:py-12 md:pl-[3vw] lg:mb-[6.25rem] lg:pb-[5.875rem] lg:pt-[6.25rem] 3xl:pl-[6.25rem] 4xl:h-[73.5rem]">
-                <div className="flex-1 lg:max-w-[31.25rem] 3xl:max-w-[44.063rem]">
+              <div className="flex flex-col items-center justify-center gap-10 bg-light-yellow lg:h-[58.375rem] lg:flex-row 4xl:items-start 4xl:justify-start">
+                <div className="flex-1 4xl:ml-[6.375rem] 4xl:mt-[5.5625rem]">
                   <Image
                     src={project?.besonderheiten?.displayImage}
                     alt=""
@@ -258,27 +259,18 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   />
                 </div>
 
-                <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start">
-                  <div className="w-full text-center text-medium-blue lg:max-w-[39rem] 4xl:mb-[18.563rem] 4xl:mt-[18.75rem]">
-                    <h2 className="mb-4 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] xl:mb-[2.625rem] 4xl:h-5">
-                      Besonderheiten / Features
-                    </h2>
-
-                    <h3 className="break-words font-gt-book text-xl uppercase md:text-base lg:text-2xl xl:text-[1.875rem] xl:leading-[2.5rem] 4xl:h-[4.375rem]">
+                <div className="flex flex-1">
+                  <div className="w-full text-center text-medium-blue 4xl:mt-[255px]">
+                    <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem]">
                       <TextWithLineBreaks
                         text={project?.besonderheiten?.title}
                       />
-                    </h3>
-                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-[2.938rem] 4xl:h-[13.438rem]">
+                    </h2>
+
+                    <p className="mt-9 font-proxima text-[.938rem] lg:leading-[1.375rem]">
                       <span className="block 4xl:h-[5.625rem]">
                         <TextWithLineBreaks
                           text={project?.besonderheiten?.description1}
-                        />
-                      </span>
-
-                      <span className="mt-4 block font-gt-book-italic text-xl leading-[1.875rem] xl:mt-[1.875rem] 4xl:h-[5rem]">
-                        <TextWithLineBreaks
-                          text={project?.besonderheiten?.description2 || ""}
                         />
                       </span>
                     </p>
@@ -288,7 +280,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
               {/* section 12 */}
 
-              {project?.bildImages && (
+              {/* {project?.bildImages && (
                 <div className="mb-[2.813rem] grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mb-[6.25rem] lg:gap-[4.125rem]">
                   {project?.bildImages?.map(
                     (imageSrc: StaticImageData, index: number) => (
@@ -309,13 +301,41 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   alt=""
                   className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
                 />
-              )}
-              {/* 
-              <MapComponent
+              )} */}
+
+              <div className="my-10 flex flex-col justify-center gap-10 bg-light-yellow lg:flex-row lg:items-center 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start">
+                <div className="flex-[0.7] lg:flex-1 4xl:w-[77.625rem]">
+                  <Image src={project?.locations.displayImage} alt="" />
+                </div>
+                <div className="ml-5 flex flex-[0.3] gap-[0.5rem] lg:ml-0 lg:mt-[6.25rem]">
+                  <div className="flex flex-col">
+                    {project?.locations.locations.map((location, index) => (
+                      <p
+                        key={index}
+                        className="w-[2.125rem] font-gt-super text-[1.5625rem] text-xl leading-[2.5rem] text-brown"
+                      >
+                        {index + 1}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="mt-[0.5rem] flex flex-col">
+                    {project?.locations.locations.map((location, index) => (
+                      <p
+                        key={index}
+                        className="font-proxima text-xl leading-[2.5rem] text-medium-blue"
+                      >
+                        {location}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <Map
                 title={project?.dieLage?.title}
                 decription={project?.dieLage?.description}
                 center={project?.mapCenter}
-              /> */}
+              />
 
               {/* section 10 */}
               <Faq faqs={project?.faq} />

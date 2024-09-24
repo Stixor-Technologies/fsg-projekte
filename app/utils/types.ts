@@ -36,6 +36,10 @@ interface Project {
   space: string;
   type: string;
   area: string;
+  locations: {
+    displayImage: StaticImageData;
+    locations: string[];
+  };
   detailDisplay: StaticImageData;
   philosophie: string;
   philosophieHeader: string;

@@ -44,7 +44,7 @@ const Map: FC<MapProps> = ({ center, title, decription }) => {
             <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-[1.313rem] lg:leading-[1.5rem] 4xl:h-[1.313rem]">
               DIE Lage
             </h2>
-            <h3 className="my-6 font-gt-book-italic text-xl text-medium-blue lg:mb-[2.906rem] lg:mt-[2.594rem] lg:text-[1.875rem] lg:leading-[2.5rem]">
+            <h3 className="my-6 font-gt-super text-xl text-medium-blue lg:mb-[2.906rem] lg:mt-[2.594rem] lg:text-[1.875rem] lg:leading-[2.5rem]">
               <TextWithLineBreaks text={title} />
             </h3>
             <p className=" text-[0.938rem] leading-[1.563rem] text-medium-blue">
