@@ -41,25 +41,26 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
         </div>
       ) : !loading && project ? (
         <>
-          <section className=" pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+          <section className=" pb-[5.625rem] pt-[6.75rem] lg:pt-[12.0625rem]">
             <div className="container">
               {/* section 1 */}
-              <ProjectSlider arrowColor="white">
-                {project.heroSlider.map((slide, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="relative mb-[2.813rem] lg:mb-24">
-                      <Image
-                        src={slide.displayImage}
-                        alt=""
-                        className="w-full"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </ProjectSlider>
-
+              <div className=" mb-[5.625rem]">
+                <ProjectSlider arrowColor="white">
+                  {project.heroSlider.map((slide, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="relative">
+                        <Image
+                          src={slide.displayImage}
+                          alt=""
+                          className="w-full"
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </ProjectSlider>
+              </div>
               {/* section 2 */}
-              <div className="flex items-center justify-center bg-light-yellow px-4 py-12 xs:px-7 md:h-[63.875rem]">
+              <div className="flex items-center justify-center bg-gray px-4 py-12 xs:px-7 md:h-[63.875rem]">
                 <div className="mx-auto flex max-w-[74.375rem] flex-col items-center justify-center text-center">
                   <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
                     <TextWithLineBreaks text={project?.philosophieHeader} />
@@ -81,7 +82,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
               {/* section 3 */}
 
-              <div className="mb-[2.813rem] grid grid-cols-1 justify-between gap-3   divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,.0625rem,1fr] md:flex md:gap-0 md:divide-x lg:mb-[6.25rem]  lg:py-[1.875rem] 4xl:h-[16.25rem]">
+              <div className="mb-[5.625rem] grid grid-cols-1 justify-between gap-3  divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,.0625rem,1fr] md:flex md:gap-0 md:divide-x lg:py-[1.875rem] 4xl:h-[16.25rem]">
                 <div className="flex flex-1 flex-col gap-3 md:flex-row md:justify-between md:gap-0">
                   <div className="metric-container 4xl:ml-[4.75rem]">
                     <h5 className="metric">
@@ -142,8 +143,10 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     </div>
                   )}
               </div>
+            </div>
 
-              {/* section 4 */}
+            {/* section 4 */}
+            <div className="mb-[3.75rem]">
               <ProjectSlider arrowColor="white">
                 {project?.sliderImages.map((image, index) => (
                   <>
@@ -155,17 +158,18 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   </>
                 ))}
               </ProjectSlider>
-
+            </div>
+            <div className="mb-[5.625rem]">
               {/* section 5 */}
               <ProjectPhase
                 projectPhases={project?.projectPhases}
                 currentPhase={project?.currentPhase}
               />
-
-              {/* section 6 */}
-
-              <div className="mb-[2.813rem] flex flex-col bg-light-yellow  md:flex-row md:py-12 md:pl-[3vw] lg:mb-[6.25rem] lg:pb-[6.25rem] lg:pt-[6.25rem] 3xl:pl-[6.25rem]">
-                <div className="flex-1 lg:max-w-[31.25rem] 3xl:max-w-[44.063rem]">
+            </div>
+            {/* section 6 */}
+            <div className="container">
+              <div className="mb-[5.625rem] flex flex-col justify-center gap-10 bg-gray py-10 lg:flex-row lg:items-center lg:gap-0 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start 4xl:py-0">
+                <div className="flex-1 4xl:ml-[8.875rem] 4xl:mt-[5.5625rem] 4xl:flex-none">
                   <Image
                     src={project?.architektur?.displayImage}
                     alt=""
@@ -173,9 +177,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   />
                 </div>
 
-                <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
-                  <div className="w-full text-center text-medium-blue lg:max-w-[33.938rem]  ">
-                    <h3 className="font-proxima-semibold text-xl leading-[1.5rem] text-brown">
+                <div className="flex flex-1 4xl:ml-[10.125rem] 4xl:mt-[18.375rem] 4xl:flex-none">
+                  <div className="mx-auto w-full max-w-[90%] text-center text-medium-blue lg:max-w-[33.9375rem]">
+                    <h3 className="font-proxima-semibold text-xl uppercase leading-[1.5rem] text-brown">
                       <TextWithLineBreaks text={project?.architektur.title} />
                       {/* {project?.architektur?.title} */}
                     </h3>
@@ -190,19 +194,19 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 </div>
               </div>
             </div>
-
             {/* section 7 */}
             {/* <Slider sliderImages={project?.sliderImages} /> */}
-            {project.id === "petit-palais" ? (
-              <Project1Sec7 />
-            ) : (
-              <Project2Sec7 />
-            )}
-
+            <div className="mb-[5.625rem]">
+              {project.id === "petit-palais" ? (
+                <Project1Sec7 />
+              ) : (
+                <Project2Sec7 />
+              )}
+            </div>
             {/* section 8 */}
             <div className="container">
-              <div className="mb-[2.813rem] flex h-[59.875rem] flex-col bg-gray md:flex-row">
-                <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
+              <div className="mb-[5.625rem] flex flex-col gap-10 bg-gray px-10 pb-10 lg:h-[59.875rem] lg:flex-row lg:items-center lg:gap-0 lg:pb-0 3xl:items-start 3xl:px-0">
+                <div className="order-2 flex h-full flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:order-1 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
                   <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem] 4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]">
                     <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] text-brown">
                       <TextWithLineBreaks text={project?.interior.title} />
@@ -216,7 +220,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     </p>
                   </div>
                 </div>
-                <div className="mt-[6.25rem] flex-1">
+                <div className="order-1 mx-auto mt-[6.25rem] flex-1 lg:order-2 lg:mx-0">
                   <Image src={project?.interior?.displayImage} alt="" />
                 </div>
               </div>
@@ -231,13 +235,13 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 />
               )} */}
             </div>
-
-            {project.id === "petit-palais" ? (
-              <Project1Sec9 />
-            ) : (
-              <Project2Sec9 />
-            )}
-
+            <div className="mb-[5.625rem]">
+              {project.id === "petit-palais" ? (
+                <Project1Sec9 />
+              ) : (
+                <Project2Sec9 />
+              )}
+            </div>
             {/* section 10 - feature before*/}
             {project?.feature_before && (
               <Image
@@ -250,7 +254,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
             <div className="container">
               {/* section 11 -   Besonderheiten / Features*/}
-              <div className="flex flex-col items-center justify-center gap-10 bg-light-yellow lg:h-[58.375rem] lg:flex-row 4xl:items-start 4xl:justify-start">
+              <div className="mb-[5.625rem] flex flex-col items-center justify-center gap-10 bg-gray px-10 py-10 lg:h-[58.375rem] lg:flex-row lg:py-0 3xl:px-0 4xl:items-start 4xl:justify-start">
                 <div className="flex-1 4xl:ml-[6.375rem] 4xl:mt-[5.5625rem]">
                   <Image
                     src={project?.besonderheiten?.displayImage}
@@ -303,7 +307,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 />
               )} */}
 
-              <div className="my-10 flex flex-col justify-center gap-10 bg-light-yellow lg:flex-row lg:items-center 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start">
+              <div className="mb-[5.625rem] flex flex-col justify-center gap-10 bg-gray lg:flex-row lg:items-center 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start">
                 <div className="flex-[0.7] lg:flex-1 4xl:w-[77.625rem]">
                   <Image src={project?.locations.displayImage} alt="" />
                 </div>

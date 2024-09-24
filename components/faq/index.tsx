@@ -115,7 +115,7 @@ const FaqCard = ({
           className="group relative flex cursor-pointer items-center justify-between gap-8"
           onClick={questionClicked}
         >
-          <span className="w-[90%] font-gt-book text-2xl text-medium-blue lg:text-[2.188rem] 4xl:h-[2.1875rem]">
+          <span className="w-[90%] font-gt-display-light text-2xl text-medium-blue lg:text-[2.188rem] 4xl:h-[2.1875rem]">
             {faqItem?.question}
           </span>
 
@@ -161,7 +161,7 @@ const FaqCard = ({
 
             <div className="faq-section-1 justify-end">
               {/* <span className="faq-section-1-header">WOHNFLÄCHE GESAMT</span> */}
-              <span className="faq-section-1-value !bg-brown">
+              <span className="faq-section-1-value !bg-brown !font-gt-display-rg">
                 {faqItem?.answer?.runterladen}
               </span>
             </div>
@@ -226,7 +226,7 @@ const Faq: FC<FaqProps> = ({ faqs }) => {
     setActiveFaq((prevActiveFaq) => (prevActiveFaq === id ? -1 : id));
   };
   return (
-    <div className="  bg-light-yellow px-4 py-10 xs:px-7 lg:px-12 lg:pb-[6.25rem] lg:pt-[7.625rem] 3xl:pl-[4.688rem] 3xl:pr-[4.938rem]">
+    <div className="  bg-gray px-4 py-10 xs:px-7 lg:px-12 lg:pb-[6.25rem] lg:pt-[7.625rem] 3xl:pl-[4.688rem] 3xl:pr-[4.938rem]">
       <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-[1.313rem]">
         Grundrisse
       </h2>

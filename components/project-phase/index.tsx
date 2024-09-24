@@ -10,7 +10,7 @@ const ProjectPhase: FC<ProjectPhaseProps> = ({
   currentPhase,
 }) => {
   return (
-    <div className="mx-auto mb-[2.813rem] max-w-[95.125rem] lg:mb-[6.625rem] 4xl:h-[8.188rem]">
+    <div className="mx-auto max-w-[95.125rem] 4xl:h-[8.188rem]">
       <div className="flex items-center">
         <div className="flex w-full flex-1 flex-col md:flex-row">
           {projectPhases?.map((phase: any, index: number) => (

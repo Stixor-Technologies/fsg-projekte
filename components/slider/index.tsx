@@ -23,7 +23,7 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
   const swiperRef = useRef<SwiperClass | null>(null);
 
   return (
-    <div className="relative mx-auto mb-[2.813rem] flex max-w-[120rem] items-center justify-center gap-10 lg:mb-[6.875rem]">
+    <div className="relative mx-auto flex max-w-[120rem] items-center justify-center gap-10">
       <Swiper
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;

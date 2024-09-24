@@ -64,11 +64,11 @@ body {
   }
 
   .faq-section-1-value {
-    @apply bg-dark-blue py-[0.563rem] text-center font-gt-super-bold lg:text-xl lg:leading-[1.875rem];
+    @apply bg-dark-blue py-[0.563rem] text-center font-gt-medium lg:text-xl lg:leading-[1.875rem];
   }
 
   .faq-list-header {
-    @apply mb-3 font-gt-super uppercase text-medium-blue underline decoration-1 lg:mb-[1.438rem] lg:text-xl lg:leading-[1.75rem] 4xl:h-5;
+    @apply mb-3 font-gt-medium uppercase text-medium-blue underline decoration-1 lg:mb-[1.438rem] lg:text-xl lg:leading-[1.75rem] 4xl:h-5;
   }
 
   .faq-list {
