@@ -10,34 +10,36 @@ import TextWithLineBreaks from "@/components/line-break";
 
 const Project1Sec9 = () => {
   return (
-    <ProjectSlider arrowColor="white">
-      <SwiperSlide>
-        <Image src={Img1} alt="img1" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={Img2} alt="img1" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={Img3} alt="img1" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={Img4} alt="img1" />
-      </SwiperSlide>
-      <SwiperSlide className="bg-light-yellow">
-        <div className="flex h-full flex-col items-center justify-center text-center">
-          <p className="font-proxima-semibold text-xl text-brown">
-            <TextWithLineBreaks text="Drei Zimmer und ein wunderschöner | Blick Richtung Hofwegkanal" />
-          </p>
-          <p className="mt-9 max-w-[74.375rem] font-ivy-presto text-[2.1875rem] leading-[2.625rem] text-black">
-            <TextWithLineBreaks text="Wie großzügig können drei Zimmer sein? Diese Wohnung sagt: Außerordentlich. | Mit zwei ausladenden Balkonen mit Natursteinbelag, einer davon | sogar | zum Hofwegkanal, großen Fensterfronten mit Schiebeelementen, zwei Schlafzimmern sowie einem offenen Wohn- und Essbereich, der dem | Leben | alle Möglichkeiten gibt." />
-            <br />
-            <TextWithLineBreaks text="Großzügig sind hier auch die 2,70 m bzw. 2,23 m hohen Decken | und die Türen, die zusammen mit dem noblen Fischgrät-Parkett und | den | polierten Beschlägen – selbstverständlich im Stil des Bauhauses – | allzeit für ein wahrhaft mondänes Lebensgefühl sorgen." />
-            <br />
-            <TextWithLineBreaks text="Dem stehen auch die beiden Bäder in nichts nach: Mit edlem Marmor, | bodentiefen Walk-In-Duschen, verchromten Handtuchheizkörpern, | Armaturen von | Dornbracht und dezent eingelassenen Deckenstrahlern. Kurz, hier verschmelzen Lage, Luxus und Blick zu einer Symbiose, die selbst anspruchsvollste Geschmäcker besonders finden werden." />
-          </p>
-        </div>
-      </SwiperSlide>
-    </ProjectSlider>
+    <div className="h-[50rem] lg:h-[65.25rem]">
+      <ProjectSlider arrowColor="white">
+        <SwiperSlide>
+          <Image src={Img1} alt="img1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Img2} alt="img1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Img3} alt="img1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Img4} alt="img1" />
+        </SwiperSlide>
+        <SwiperSlide className="bg-light-yellow">
+          <div className="flex h-full flex-col items-center justify-center text-center">
+            <p className="font-proxima-semibold text-brown lg:text-xl">
+              <TextWithLineBreaks text="Drei Zimmer und ein wunderschöner | Blick Richtung Hofwegkanal" />
+            </p>
+            <p className="mt-9 max-w-[74.375rem] font-ivy-presto text-xl text-black lg:text-[2.1875rem] lg:leading-[2.625rem]">
+              <TextWithLineBreaks text="Wie großzügig können drei Zimmer sein? Diese Wohnung sagt: Außerordentlich. | Mit zwei ausladenden Balkonen mit Natursteinbelag, einer davon | sogar | zum Hofwegkanal, großen Fensterfronten mit Schiebeelementen, zwei Schlafzimmern sowie einem offenen Wohn- und Essbereich, der dem | Leben | alle Möglichkeiten gibt." />
+              <br />
+              <TextWithLineBreaks text="Großzügig sind hier auch die 2,70 m bzw. 2,23 m hohen Decken | und die Türen, die zusammen mit dem noblen Fischgrät-Parkett und | den | polierten Beschlägen – selbstverständlich im Stil des Bauhauses – | allzeit für ein wahrhaft mondänes Lebensgefühl sorgen." />
+              <br />
+              <TextWithLineBreaks text="Dem stehen auch die beiden Bäder in nichts nach: Mit edlem Marmor, | bodentiefen Walk-In-Duschen, verchromten Handtuchheizkörpern, | Armaturen von | Dornbracht und dezent eingelassenen Deckenstrahlern. Kurz, hier verschmelzen Lage, Luxus und Blick zu einer Symbiose, die selbst anspruchsvollste Geschmäcker besonders finden werden." />
+            </p>
+          </div>
+        </SwiperSlide>
+      </ProjectSlider>
+    </div>
   );
 };
 

@@ -9,17 +9,17 @@ import TextWithLineBreaks from "@/components/line-break";
 
 const Project1Sec7 = () => {
   return (
-    <div className="!h-[40rem] lg:!h-[65.25rem]">
+    <div className="h-[40rem] lg:h-[65.25rem]">
       <ProjectSlider arrowColor="white">
         <SwiperSlide>
           <div
             style={{
               backgroundImage: `url(${Img1.src})`,
             }}
-            className="!h-[40rem] w-full bg-cover bg-center bg-no-repeat lg:!h-[65.25rem]"
+            className="h-full w-full bg-cover bg-center bg-no-repeat"
           />
         </SwiperSlide>
-        <SwiperSlide className="!lg:h-[65.25rem] bg-light-yellow">
+        <SwiperSlide className="h-full bg-light-yellow">
           <div className="flex h-full flex-col items-center justify-center text-center">
             <p className="font-proxima-semibold text-xl text-brown">
               <TextWithLineBreaks text="Hier ist selbst das kleinste Detail groß: | Und darf es auf 233 m2 auch sein" />
@@ -52,15 +52,14 @@ const Project1Sec7 = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <Image src={Img3} alt="img1" /> */}
           <div
             style={{
               backgroundImage: `url(${Img3.src})`,
             }}
-            className="!h-[40rem] w-full bg-cover bg-center bg-no-repeat lg:!h-[65.25rem]"
+            className="h-full w-full bg-cover bg-center bg-no-repeat"
           />
         </SwiperSlide>
-        <SwiperSlide className="!h-[40rem] bg-light-yellow lg:!h-[65.25rem]">
+        <SwiperSlide className="h-full bg-light-yellow">
           <div className="flex h-full flex-col items-center justify-center gap-10  bg-light-yellow lg:flex-row lg:px-10 2xl:gap-0 2xl:px-0 4xl:pl-[12.6875rem]">
             <div className="max-w-[35rem] flex-1 lg:max-w-none">
               <Image src={Img4} alt="" className="mx-auto" />
