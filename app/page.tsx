@@ -15,7 +15,7 @@ export default function Home() {
         <div className="relative mb-[2.813rem] flex items-center justify-center lg:mb-[6.563rem]">
           <Image src={HeroImage} alt="hero" />
 
-          <div className="absolute top-36 max-w-[63.75rem] text-center">
+          <div className="absolute top-10 max-w-[63.75rem] text-center sm:top-36">
             <h2 className="font-gt-display-light text-[clamp(1rem,3vw,3.438rem)] uppercase leading-[clamp(1rem,3.4vw,4.063rem)] tracking-tight text-black 4xl:h-[11.563rem]">
               Klassische Architektur,
               <br />

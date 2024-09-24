@@ -49,12 +49,23 @@ const Header = () => {
             ))}
           </div>
 
-          <Link href={"/"}>
-            <Image
-              src={!isTop ? LogoScrolled : Logo}
-              alt="header-logo"
-              className="max-w-[3rem] md:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
-            />
+          <Link href={"/"} className="hidden md:block">
+            {isTop ? (
+              <Image
+                src={Logo}
+                alt="header-logo"
+                className="max-w-[3rem] md:w-[17.5625rem] md:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
+              />
+            ) : (
+              <Image
+                src={LogoScrolled}
+                alt="header-logo"
+                className="max-w-[3rem] md:w-[4.25rem] md:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
+              />
+            )}
+          </Link>
+          <Link href={"/"} className="block md:hidden">
+            <Image src={Logo} alt="header-logo" className="max-w-[6rem]" />
           </Link>
 
           <div className="link-container gap-5 lg:!gap-[3.688rem] 4xl:mr-[1px]">

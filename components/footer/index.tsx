@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer className=" bg-dark-blue pb-12">
       <div>
-        <div className="relative mx-auto max-w-[110.563rem]">
+        <div className="relative mx-auto max-w-[110.563rem] px-5 sm:px-10 4xl:px-0">
           <div className="flex flex-col items-center gap-[4.5625rem]">
-            <p className="mt-[5.125rem] font-gt-display-light text-[2.1875rem]">
+            <p className="mt-[5.125rem] font-gt-display-light text-xl lg:text-[2.1875rem]">
               Besondere Orte mit einem besonderen Anspruch: Vollenden.{" "}
             </p>
             <div className="h-[0.5px] w-full bg-white" />
@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="row-start-1 mx-auto sm:col-span-full sm:row-start-1 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[3.5rem] 4xl:col-start-3">
+            <div className="row-start-1 mx-auto w-[12rem] sm:col-span-full sm:row-start-1 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-[3.5rem] lg:w-auto 4xl:col-start-3">
               <Image src={Logo} alt="footer-logo" />
             </div>
 
