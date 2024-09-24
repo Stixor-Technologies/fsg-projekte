@@ -66,16 +66,16 @@ import Image from "next/image";
 const Project2Section4 = () => {
   return (
     <ProjectSlider arrowColor="white">
-      <SwiperSlide className="h-full bg-light-yellow relative overflow-hidden">
+      <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img1} alt="img1" />
       </SwiperSlide>
-      <SwiperSlide className="h-full bg-light-yellow relative overflow-hidden">
+      <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img2} alt="img1" className="scale-[1.2] md:scale-100" />
       </SwiperSlide>
-      <SwiperSlide className="h-full bg-light-yellow relative overflow-hidden">
+      <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img3} alt="img1" />
       </SwiperSlide>
-      <SwiperSlide className="h-full bg-light-yellow relative overflow-hidden">
+      <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img4} alt="img1" className="scale-[1.2] md:scale-100" />
       </SwiperSlide>
     </ProjectSlider>

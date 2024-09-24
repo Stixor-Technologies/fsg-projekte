@@ -6,7 +6,6 @@ import Img1 from "@/public/assets/aktuelle-projekte/138/slider-4/1.png";
 import Img2 from "@/public/assets/aktuelle-projekte/138/slider-4/2.png";
 import Img3 from "@/public/assets/aktuelle-projekte/138/slider-4/3.png";
 import Img4 from "@/public/assets/aktuelle-projekte/138/slider-4/4.png";
-import TextWithLineBreaks from "@/components/line-break";
 
 const Project2Sec9 = () => {
   return (
@@ -15,7 +14,7 @@ const Project2Sec9 = () => {
         <SwiperSlide>
           <Image src={Img1} alt="img1" />
         </SwiperSlide>
-        <SwiperSlide className="h-full relative overflow-hidden">
+        <SwiperSlide className="relative h-full overflow-hidden">
           {/* <div className="flex h-full flex-col items-center justify-center text-center">
             <div className="mx-auto max-w-[74.375rem]">
               <p className="mb-[2.3125rem] font-proxima-semibold text-[1.25rem] leading-[1.5rem] text-brown">

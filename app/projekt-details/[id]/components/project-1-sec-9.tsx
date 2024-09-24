@@ -28,8 +28,8 @@ const Project1Sec9 = () => {
         <SwiperSlide>
           <Image src={Img4} alt="img1" />
         </SwiperSlide>
-        <SwiperSlide >
-        <Image src={Img5} alt="img1" />
+        <SwiperSlide>
+          <Image src={Img5} alt="img1" />
           {/* <div className="flex h-full flex-col items-center justify-center text-center">
             <p className="font-proxima-semibold text-lg text-brown lg:text-xl">
               <TextWithLineBreaks text="Drei Zimmer und ein wunderschöner | Blick Richtung Hofwegkanal" />

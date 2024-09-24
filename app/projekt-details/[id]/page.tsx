@@ -61,7 +61,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 </ProjectSlider>
               </div>
               {/* section 2 */}
-              <div className="flex items-center justify-center bg-gray px-4 md:py-12 xs:px-7 md:h-[63.875rem]">
+              <div className="flex items-center justify-center bg-gray px-4 xs:px-7 md:h-[63.875rem] md:py-12">
                 <div className="mx-auto flex max-w-[74.375rem] flex-col items-center justify-center text-center">
                   <h4
                     className={`mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl  ${
@@ -183,7 +183,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             {/* section 6 */}
             <div className="container">
               <div className="mb-[1.75rem] flex flex-col justify-center gap-10 bg-gray py-10 sm:mb-[5.625rem] lg:flex-row lg:items-center lg:gap-0 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start 4xl:py-0">
-                <div className={`flex-1 ${id ==="petit-palais"?"4xl:ml-[8.875rem]":"4xl:ml-[6.375rem]"} 4xl:mt-[5.5625rem] 4xl:flex-none`}>
+                <div
+                  className={`flex-1 ${id === "petit-palais" ? "4xl:ml-[8.875rem]" : "4xl:ml-[6.375rem]"} 4xl:mt-[5.5625rem] 4xl:flex-none`}
+                >
                   <Image
                     src={project?.architektur?.displayImage}
                     alt=""
@@ -191,7 +193,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   />
                 </div>
 
-                <div className={`flex flex-1 ${id === "petit-palais"?"4xl:ml-[10.125rem]":"4xl:ml-[12.625rem]"} 4xl:mt-[18.375rem] 4xl:flex-none`}>
+                <div
+                  className={`flex flex-1 ${id === "petit-palais" ? "4xl:ml-[10.125rem]" : "4xl:ml-[12.625rem]"} 4xl:mt-[18.375rem] 4xl:flex-none`}
+                >
                   <div className="mx-auto w-full max-w-[90%] text-center text-medium-blue lg:max-w-[33.9375rem]">
                     <h3 className="font-proxima-semibold text-xl uppercase leading-[1.5rem] text-brown">
                       <TextWithLineBreaks text={project?.architektur.title} />
@@ -220,10 +224,14 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             {/* section 8 */}
             <div className="container">
               <div className="mb-[1.75rem] flex flex-col gap-10 bg-gray px-10 pb-10 sm:mb-[5.625rem] lg:h-[59.875rem] lg:flex-row lg:items-center lg:gap-0 lg:pb-0 3xl:items-start 3xl:px-0">
-                <div className="order-2 flex h-full flex-1 4xl:flex-none items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:order-1 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
-                  <div className={`w-full text-center text-medium-blue lg:max-w-[32.063rem] ${
-                    id==="petit-palais"?"4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]":"4xl:ml-[12.625rem] 4xl:mt-[19.75rem]"
-                  }`}>
+                <div className="order-2 flex h-full flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:order-1 lg:px-7 2xl:px-10 3xl:px-0 4xl:flex-none 4xl:items-start 4xl:justify-start">
+                  <div
+                    className={`w-full text-center text-medium-blue lg:max-w-[32.063rem] ${
+                      id === "petit-palais"
+                        ? "4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]"
+                        : "4xl:ml-[12.625rem] 4xl:mt-[19.75rem]"
+                    }`}
+                  >
                     <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] leading-[1.75rem] text-brown">
                       <TextWithLineBreaks text={project?.interior.title} />
                     </p>
@@ -236,7 +244,9 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     </p>
                   </div>
                 </div>
-                <div className={`order-1 mx-auto flex-1 lg:order-2 lg:mx-0 xl:mt-[6.25rem] ${id ==="petit-palais"?"4xl:!mr-[6.3125rem]":"4xl:!mr-[6.4375rem]"} 4xl:flex 4xl:justify-end`}>
+                <div
+                  className={`order-1 mx-auto flex-1 lg:order-2 lg:mx-0 xl:mt-[6.25rem] ${id === "petit-palais" ? "4xl:!mr-[6.3125rem]" : "4xl:!mr-[6.4375rem]"} 4xl:flex 4xl:justify-end`}
+                >
                   <Image src={project?.interior?.displayImage} alt="" />
                 </div>
               </div>

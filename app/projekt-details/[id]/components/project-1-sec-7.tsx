@@ -111,7 +111,11 @@ const Project1Sec7 = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className={`relative overflow-hidden`}>
-          <Image src={Img4} alt="" className={`w-full scale-125 md:scale-100`} />
+          <Image
+            src={Img4}
+            alt=""
+            className={`w-full scale-125 md:scale-100`}
+          />
         </div>
       </SwiperSlide>
     </ProjectSlider>

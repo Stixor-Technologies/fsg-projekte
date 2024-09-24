@@ -7,16 +7,15 @@ import Img2 from "@/public/assets/aktuelle-projekte/138/slider-3/5.png";
 import Img3 from "@/public/assets/aktuelle-projekte/138/slider-3/3.png";
 import Img4 from "@/public/assets/aktuelle-projekte/138/slider-3/4.png";
 
-
 const Project2Sec7 = () => {
   return (
-    <div >
+    <div>
       <ProjectSlider arrowColor="white">
         <SwiperSlide>
           <Image src={Img1} alt="img1" />
         </SwiperSlide>
-        <SwiperSlide className="h-full relative overflow-hidden">
-        <Image src={Img2} alt="img1" className="scale-125 md:scale-100" />
+        <SwiperSlide className="relative h-full overflow-hidden">
+          <Image src={Img2} alt="img1" className="scale-125 md:scale-100" />
           {/* <div className="flex h-full flex-col items-center justify-center gap-10 px-10 md:flex-row xl:gap-0 2xl:px-0 4xl:items-start 4xl:justify-start">
             <div className="flex-1 text-center 4xl:ml-[16.8125rem] 4xl:mt-[23.125rem]">
               <div className="mx-auto max-w-[33.9375rem] 4xl:mx-0">
