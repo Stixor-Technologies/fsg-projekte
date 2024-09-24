@@ -15,7 +15,7 @@ const Ankauf = () => {
             <h4 className="mb-[1.875rem] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide md:mb-[4.6875rem] 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
               Ankaufsprofile
             </h4>
-            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,2.5rem)] leading-[clamp(0.875rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[9.125rem]">
+            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,2.5rem)] leading-[clamp(1rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[9.125rem]">
               Mit Seriosität, Verbindlichkeit
               <br /> und besten Referenzen: <br />
               Wir kaufen Immobilien und Grundstücke.

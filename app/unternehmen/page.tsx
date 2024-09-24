@@ -90,7 +90,7 @@ const Unternehmen = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex w-full flex-col items-center justify-center pt-[21.625rem]">
-                <p className="h-[1.3125rem] font-proxima-semibold text-xl text-brown">
+                <p className="h-[1.3125rem] font-proxima-semibold text-xl text-brown uppercase">
                   Unser bisher schönstes Bauprojekt? Alle.
                 </p>
                 <p className="mx-auto mt-9 max-w-[80vw] text-center font-gt-display-light xs:text-2xl md:text-[1.75rem] md:leading-[2.375rem] 4xl:h-[18.375rem] 4xl:w-[60.75rem]">
