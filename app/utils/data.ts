@@ -15,6 +15,7 @@ import PetitSlider9 from "@/public/assets/aktuelle-projekte/petit/slider-3/3.png
 import PetitInterior from "@/public/assets/aktuelle-projekte/petit/petit-interior.png";
 import PetitModel from "@/public/assets/aktuelle-projekte/petit/petit-model.png";
 import PetitBesonderheiten from "@/public/assets/aktuelle-projekte/petit/petit-besonderheiten.png";
+import Besonder138heiten from "@/public/assets/aktuelle-projekte/138/138-besondar.png";
 import PetitGallery from "@/public/assets/aktuelle-projekte/petit/petit-gallery.png";
 import Name_138 from "@/public/assets/aktuelle-projekte/138-name.svg";
 import Display_138 from "@/public/assets/aktuelle-projekte/138-display.png";
@@ -31,6 +32,8 @@ import AktuelleHeroSliderImage from "@/public/assets/aktuelle-projekte/petit/her
 import AktuelleHeroSliderImage2 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-2.png";
 import AktuelleHeroSliderImage3 from "@/public/assets/aktuelle-projekte/petit/hero-petit-slider-3.png";
 import PetitLocationImage from "@/public/assets/aktuelle-projekte/petit/locations.png";
+import Location138Image from "@/public/assets/aktuelle-projekte/138/locations.png";
+import Slider138 from "@/public/assets/aktuelle-projekte/138/hero-slider.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
 
@@ -330,12 +333,7 @@ const aktuelleprojekte = [
     projectName: Name_138,
     heroSlider: [
       {
-        displayImage: Display_138,
-        projectName: Name_138,
-      },
-      {
-        displayImage: Display_138,
-        projectName: Name_138,
+        displayImage: Slider138,
       },
     ],
     displayImage: Display_138,
@@ -345,9 +343,9 @@ const aktuelleprojekte = [
     type: "Nahe der Alster, mitten im Leben, umgeben von Schönem.",
     area: "Hamburg Harvestehude",
     philosophieHeader:
-      "Hier nimmt sich Hamburg | das Beste aus allen Lebensgefühlen - | und macht es zu Uhlenhorst.",
-    philosophie: `Wenn es ein Ideal von der Stadt gibt. | Hier ist es erreicht. An einem Ort, wo sich die schönsten | Gegensätze zu etwas noch Schönerem vereinen:  
-      Pulsierendes Leben mit glitzerndem Wasser, Jugendstilfassaden mit | alten Bäumen, Bars und Restaurants mit Parks und Wiesen, | Flaneure mit Müßiggängern, extrovertierte mit introvertierten  | Momenten. Hier zeigt sich Hamburg | von seiner schönsten Seite.`,
+      "Hier nimmt sich Hamburg  | das Beste aus allen Lebensgefühlen – | und macht es zu Uhlenhorst.",
+    philosophie:
+      "Wenn es ein Ideal von der Stadt gibt. | Hier ist es erreicht. An einem Ort, wo sich die schönsten | Gegensätze zu etwas noch Schönerem vereinen:  | Pulsierendes Leben mit glitzerndem Wasser, Jugendstilfassaden mit | alten Bäumen, Bars und Restaurants mit Parks und Wiesen, | Flaneure mit Müßiggängern, extrovertierte mit introvertierten  | Momenten. Hier zeigt sich Hamburg  | von seiner schönsten Seite.",
     unitMetrics: {
       wohnungen: 24,
       penthouse: 2,
@@ -384,26 +382,28 @@ const aktuelleprojekte = [
     currentPhase: 4,
     architektur: {
       displayImage: Architektur_138,
-      title: "Die Schönheit klassischer Jugendstilarchitektur",
+      title:
+        "AUF DER Uhlenhorst  | liebt man es anspruchsvoll.  | Wie die Ausstattung der No. 138.",
       description1:
-        "Das elegante Petit Palais ist ein neu erbautes  Mehrfamilienhaus, das im schönsten | Teil des Uhlenhorster Hofwegs liegt. Mit seiner weißen Fassade, seinen dezenten | Erkern und seiner  klaren Linienführung fügt es sich perfekt in die Reihe der angrenzenden historischen Jugendstilbauten ein. Dabei zeigt es einen eigenen Charakter und ergänzt das Straßenbild um schöne Details.",
+        "Wer mit offenen Augen durch Uhlenhorst geht sieht, | das Niveau ist hoch. Natürlich auch in der No. 138 im Winterhuder Weg. | Hier wird viel Wert auf Exklusivität, Funktionalität und Design gelegt und, | dass alles im schönsten Licht erscheint. Wofür – unter anderem – die großzügigen Fenster sorgen, die nicht nur bodentief sind, sondern auch aus Holz.   |  | Ansonsten glänzen polierte Bauhaus-Griffe aus verchromtem Messing. | Über Fischgrätparkett aus Eiche, profilierten Sockelleisten oder edlen Fliesen | in den Bädern und Toiletten. Das hohe Niveau wird durchgängig | durchgehalten – bis in die letzte Steckdose.",
       description2:
         "In allen seinen acht Stockwerken treffen Charme und Weite traditioneller |  Altbauten auf den Komfort und die Funktionalität der heutigen Zeit. Freiheit bietet | auch der Ausblick aus  den Obergeschossen des Petit Palais. So präsentiert sich | ein schöner Blick ins Grüne und macht die Wechsel der Jahreszeiten unmittelbar  erlebbar. In den durch eine Fußbodenheizung gewärmten  Wohnräumen sorgt | ein hochwertiger Parkettboden für einen eleganten Charakter. Bäder aus | Naturstein erfüllen hohe Ansprüche. In einer Tiefgarage bieten 11 Stellplätze |  weiteren Komfort.",
     },
     interior: {
       displayImage: Interior_138,
-      title: "KLASSISCHE BAUKULTUR | modern INTERPRETIERT",
+      title:
+        "Eine Formensprache, die die  | Schönheit ihrer Umgebung aufnimmt – | und sie niveauvoll unterstreicht.",
       description1:
-        "Dekorativer Naturstein, Kiesbeläge und moderne Bodenstrahler sorgen dafür, | dass das gute Wohngefühl bereits auf dem Grundstück beginnt.",
+        "Die Architektur der No. 138 steht nicht nur für sich selbst,  | sondern huldigt auch der Schönheit ihrer Umgebung.  | Mit einer geradlinigen Fassade und hochstrebenden Fenstern als Verneigung | vor den Altbauten der Umgebung, großzügigen Balkonen und Terrassen | um die prachtvollen Eindrücke von außen nach innen zu lassen, | feinem Parkett und Fußbodenheizung, um sie komfortabel zu genießen, | einer Tiefgarage mit Platz für Autos und viele, viele Fahrräder sowie sowie | einer eigens angefertigten Haustür, selbstverständlich  | von Hand getischlert. ",
       description2:
         "Es sind die kleinen Dinge, die ein Bild einzigartig machen – so auch im | Petit Palais. Vom Naturstein im Treppenhaus bis zum Fischgrätparkett in allen | Wohnungen, von den Dornbracht-Armaturen in den Badezimmern bis zum | Bauhaus-Fenstergriff, von der eleganten Außenleuchte bis zur noblen | Aufzug-Ausstattung – jedes Detail hier ist mit viel Liebe ausgewählt und | Teil eines vollkommenen Ganzen.",
     },
     feature_before: Feature_B_138,
     besonderheiten: {
-      displayImage: PetitBesonderheiten,
-      title: "Das Beste | Aus zwei Epochen",
+      displayImage: Besonder138heiten,
+      title: "EIN EINGANG VOLLER AUSDRUCK",
       description1:
-        "Historische Baukultur findet sich hier charmant zitiert – in Räumen, die ihren hanseatisch | traditionellen Vorbildern in nichts nachstehen und dabei ebenso repräsentativ wie | charakteristisch sind. Kombiniert mit morderner Haustechnik ergibt sich so ein Konzept, das | qualitativ Maßstäbe setzt und das Leben hier zu etwas Besonderem macht.",
+        "Der Eingangsbereich der No. 138 will nicht nur dem Auge schmeicheln, | sondern wartet darüber hinaus auch noch mit echten Werten auf:  | Wie einer handgetischlerten Haustür, elegantem Naturstein sowie | feinsinnigen Stuckelementen an Wänden und Decken.",
       description2:
         "Wer die Schönheit klassischer Jugendstilarchitektur liebt und dabei | gerne viel Grün, Wasser und urbanen Lifestyle vor der eigenen Tür | weiß, der wird sich im Petit Palais mehr als zu Hause fühlen.",
     },
@@ -416,18 +416,13 @@ const aktuelleprojekte = [
         "Die Straßen von Uhlenhorst sind mit unzähligen Cafés, Restaurants und Möglichkeiten gepflastert. | Von bodenständig bis mit Stern – hier findet sich alles. Allein für den täglichen Bedarf gibt es mehr als 20 Supermärkte, mehrere | Bio-Discounter sowie diverse Obst-, Gemüse- und Feinkostgeschäfte mit verführerischen Schaufenstern und Auslagen. | Im Mühlenkamp, im Hofweg, in der Gertigstrasse oder im Poelchaukamp gehören ausgefallene Mode- und Interiorläden zum | guten Umgangston. Am Goldbekufer findet drei-mal die Woche ein großer Wochenmarkt statt und in den Einkaufsstraßen | reihen sich Bäcker, Friseure und Blumengeschäfte dicht an dicht – wie die Perlen einer Kette. ",
     },
     locations: {
-      displayImage: PetitLocationImage,
+      displayImage: Location138Image,
       locations: [
-        "FEENTEICH",
-        "FERNSEHTURM",
-        "SCHANZENPARK",
-        "FONTENAY",
-        "HOCHBUNKER",
-        "MICHEL",
-        "JUNGFERNSTIEG",
-        "BINNENALSTER",
-        "ELBPHILHARMONIE",
-        "RATHAUS",
+        "Monkey Bar",
+        "SUP VERLEIH",
+        "MÜHLENKAMP",
+        "LANGER ZUG",
+        "AUSSENALSTER",
       ],
     },
     slider2Images: [PetitSlider6, PetitSlider7, PetitSlider8, PetitSlider9],

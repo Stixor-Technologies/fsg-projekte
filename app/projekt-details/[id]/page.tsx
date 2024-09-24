@@ -209,7 +209,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               <div className="mb-[1.75rem] flex flex-col gap-10 bg-gray px-10 pb-10 sm:mb-[5.625rem] lg:h-[59.875rem] lg:flex-row lg:items-center lg:gap-0 lg:pb-0 3xl:items-start 3xl:px-0">
                 <div className="order-2 flex h-full flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:order-1 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
                   <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem] 4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]">
-                    <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] text-brown">
+                    <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] leading-[1.75rem] text-brown">
                       <TextWithLineBreaks text={project?.interior.title} />
                     </p>
                     <p className="font-proxima text-[.938rem] lg:leading-[1.4375rem] 4xl:h-[13.438rem]">
@@ -244,14 +244,14 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               )}
             </div>
             {/* section 10 - feature before*/}
-            {project?.feature_before && (
+            {/* {project?.feature_before && (
               <Image
                 src={project?.feature_before}
                 width={1920}
                 alt=""
                 className="mx-auto mb-[2.813rem] lg:mb-[6.25rem]"
               />
-            )}
+            )} */}
 
             <div className="container">
               {/* section 11 -   Besonderheiten / Features*/}
