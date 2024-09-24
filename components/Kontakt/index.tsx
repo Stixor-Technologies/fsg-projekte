@@ -189,7 +189,7 @@ const Kontakt = () => {
           <p className="mt-[2.188rem] h-[3.4375rem] font-gt-display-light text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
             Wir beraten Sie gern
           </p>
-          <h2 className="mt-3 font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 2xl:mb-[5.0187rem] 4xl:h-5">
+          <h2 className="mt-[0.8125rem] font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 2xl:mb-[5.0187rem] 4xl:h-5">
             TEL +49 (0)40 561 289 40
           </h2>
         </div>

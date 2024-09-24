@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+    <section className=" bg-light-blue pb-[5.6188rem] pt-[6.75rem] lg:pt-[12.0625rem]">
       <div className="container">
         {/* section 1 */}
         <div className="relative mb-[2.813rem] flex items-center justify-center lg:mb-[6.563rem]">
@@ -30,7 +30,7 @@ export default function Home() {
             <h4 className="mb-[3.3125rem] font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl">
               Beste Lagen verdienen beste Planung.
             </h4>
-            <p className="font-gt-display-rg  !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[20.75rem] 4xl:w-[61.625rem]">
+            <div className="font-gt-display-light  !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[20.75rem] 4xl:w-[61.625rem]">
               <span className=" block">
                 Bei FSG | Projekte haben wir ein einfaches Credo:
                 <br className="hidden lg:block" /> Nur wenn uns eine Bauidee zu
@@ -54,7 +54,7 @@ export default function Home() {
                 <br className="hidden lg:block" />
                 die für sich sprechen – und zum Dialog einladen.
               </span>
-            </p>
+            </div>
           </div>
         </div>
 

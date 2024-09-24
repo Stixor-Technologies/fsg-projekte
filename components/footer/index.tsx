@@ -6,10 +6,10 @@ import Logo from "@/public/assets/footer-logo.svg";
 const Footer = () => {
   return (
     <footer className=" bg-dark-blue pb-12">
-      <div className="container pb-12 pt-[2.781rem] lg:pb-[4.563rem] 4xl:h-[33.625rem] 4xl:px-0">
-        <div className="mx-auto max-w-[110.563rem]">
+      <div>
+        <div className="relative mx-auto max-w-[110.563rem]">
           <div className="flex flex-col items-center gap-[4.5625rem]">
-            <p className="font-gt-display-light text-[2.1875rem]">
+            <p className="mt-[5.125rem] font-gt-display-light text-[2.1875rem]">
               Besondere Orte mit einem besonderen Anspruch: Vollenden.{" "}
             </p>
             <div className="h-[0.5px] w-full bg-white" />
@@ -67,7 +67,7 @@ const Footer = () => {
               <Image src={Logo} alt="footer-logo" />
             </div>
 
-            <div className="sm:row-start-2 sm:text-right lg:row-start-1 4xl:col-start-5 ">
+            <div className="sm:row-start-2 sm:text-right lg:row-start-1 4xl:col-start-5">
               <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-brown">
                 UNTERNEHMEN
               </h4>
