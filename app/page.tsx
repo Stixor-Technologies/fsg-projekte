@@ -87,7 +87,7 @@ export default function Home() {
               </div>
               <Link
                 href={"/unternehmen"}
-                className="mt-[3.5812rem] inline-block border-b-[2px] border-brown pb-2 text-[0.938rem] uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
+                className="mt-[3.5812rem] inline-block border-b-[2px] border-custom-brown pb-2 text-[0.938rem] uppercase text-custom-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
               >
                 UNTERNEHMEN
               </Link>
@@ -163,7 +163,7 @@ export default function Home() {
 
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0 4xl:mb-[14.5625rem] 4xl:mt-[16.625rem]">
             <div className="w-full text-center lg:max-w-[36.563rem]  ">
-              <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-[1.3125rem]">
+              <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-custom-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-[1.3125rem]">
                 WIR SUCHEN GRUNDSTÜCKE UND IMMOBILIEN.
               </h2>
               <p className="my-[2.3125rem] font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] 4xl:h-[8.4375rem]">
@@ -183,7 +183,7 @@ export default function Home() {
                 </span>
               </p>
 
-              <span className="inline-block border-b-[2px] border-brown pb-2 uppercase text-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]">
+              <span className="inline-block border-b-[2px] border-custom-brown pb-2 uppercase text-custom-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]">
                 PDF ansehen
               </span>
             </div>

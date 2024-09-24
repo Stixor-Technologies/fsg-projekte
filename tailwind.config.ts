@@ -35,15 +35,16 @@ const config: Config = {
       colors: {
         "light-yellow": "#F4EDE4",
         "dark-blue": "#101D40",
+        "dark-green": "#0C210C",
         "medium-blue": "#212D4D",
         "light-blue": "#1C2C53",
         "transparent-blue": "#4E5770",
-        brown: "#765534",
+        brown: "#765534",      
         "light-brown": "#AC9379",
         "dark-brown": "#C7B8A6",
+        "custom-brown":"#9D7953",
         silver: "#C3C3C3",
         gray: "#F2F3F4",
-        "dark-green": "#0B260A",
       },
       screens: {
         xs: "440px",

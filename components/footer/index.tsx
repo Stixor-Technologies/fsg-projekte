@@ -17,7 +17,7 @@ const Footer = () => {
 
           <div className="mt-[2.5rem] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0 4xl:grid-cols-[21.063rem,306px,30.125rem,418px,14.125rem,] 4xl:justify-normal">
             <div className="sm:row-start-2 lg:row-start-1">
-              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-brown">
+              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-custom-brown">
                 VERTRIEB
               </h4>
 
@@ -39,7 +39,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="!mt-[4.1875rem] flex gap-3 text-brown sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
+              <div className="!mt-[4.1875rem] flex gap-3 text-custom-brown sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
                 <Link
                   className=" font-proxima-semibold uppercase tracking-wide duration-300 hover:text-light-brown"
                   href={"/"}
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
 
             <div className="sm:row-start-2 sm:text-right lg:row-start-1 4xl:col-start-5">
-              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-brown">
+              <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-custom-brown">
                 UNTERNEHMEN
               </h4>
 
@@ -95,7 +95,7 @@ const Footer = () => {
                     E-Mail fsg@fsg-projekte.de
                   </Link>
                 </div>
-                <p className="!mt-[4.1875rem] font-proxima-semibold text-base uppercase tracking-wide text-brown duration-300 hover:text-light-brown">
+                <p className="!mt-[4.1875rem] font-proxima-semibold text-base uppercase tracking-wide text-custom-brown duration-300 hover:text-light-brown">
                   © FSG | Projekte, 2024
                 </p>
               </div>

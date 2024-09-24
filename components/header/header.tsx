@@ -41,7 +41,7 @@ const Header = () => {
             {navLinks.slice(0, Math.ceil(navLinks.length / 2)).map((link) => (
               <Link
                 key={link?.id}
-                className={`header-link ${path === link?.path && "text-light-brown"}`}
+                className={`header-link ${path === link?.path && "text-custom-brown"}`}
                 href={link?.path}
               >
                 {link.title}
@@ -72,7 +72,7 @@ const Header = () => {
             {navLinks.slice(-2, -1).map((link) => (
               <Link
                 key={link?.id}
-                className={`header-link ${path === link?.path && "text-light-brown"}`}
+                className={`header-link ${path === link?.path && "text-custom-brown"}`}
                 href={link.path}
               >
                 {link.title}

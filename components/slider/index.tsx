@@ -90,7 +90,7 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
               />
             </button>
           </div>
-          <div className="absolute bottom-2 z-30 block xs:bottom-10 md:hidden">
+          <div className="absolute bottom-2 z-30 block sm:bottom-10 md:hidden">
             <div className="flex items-center justify-center gap-3">
               {Array.from({ length: childrenLength }).map((_, index) => (
                 <div

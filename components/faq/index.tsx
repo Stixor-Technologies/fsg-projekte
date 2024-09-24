@@ -58,7 +58,7 @@ const FaqCard = ({
     if (!isActive) {
       gsap.to(answerRef.current, {
         height: "auto",
-        marginTop: "50px",
+        marginTop: "45px",
         marginBottom: "35px",
         duration: 0.4,
       });
@@ -197,9 +197,9 @@ const FaqCard = ({
                 <div>
                   <h3 className="faq-list-header">BADEZIMMER</h3>
                   <ul className="faq-list">
-                    {faqItem?.answer?.besonderheiten?.map(
-                      (besonderheiten: string, index: number) => (
-                        <li key={index}>{besonderheiten}</li>
+                    {faqItem?.answer?.badezimmer?.map(
+                      (badezimmer: string, index: number) => (
+                        <li key={index}>{badezimmer}</li>
                       ),
                     )}
                   </ul>
