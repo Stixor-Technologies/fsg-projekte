@@ -10,16 +10,16 @@ import TextWithLineBreaks from "@/components/line-break";
 
 const Unternehmen = () => {
   return (
-    <section className=" bg-light-blue pb-[3.181rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+    <section className=" bg-light-blue pb-[5.6188rem] pt-[6.75rem] lg:pt-[12.0625rem]">
       <div>
         {/* section 1 */}
         <div className="container">
           <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[56.75rem] lg:mb-[6.25rem]">
             <div className="mx-auto max-w-[71.563rem] text-center">
-              <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-10 4xl:h-5">
+              <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.1875rem]">
                 UNSER UNTERNEHMEN
               </h4>
-              <p className="font-gt-display-light !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[17.813rem]">
+              <p className="font-gt-display-light !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[20.75rem]">
                 Seit über zwanzig Jahren sind wir in der norddeutschen
                 Immobilienwirtschaft
                 <br className="hidden xl:block" /> fest etabliert. Mediales
@@ -94,7 +94,7 @@ const Unternehmen = () => {
                 <p className="font-proxima-semibold text-xl text-brown">
                   Unser bisher schönstes Bauprojekt? Alle.
                 </p>
-                <p className="mx-auto mt-9 max-w-[80vw] text-center 4xl:h-[18.375rem] 4xl:w-[60.75rem]">
+                <p className="mx-auto mt-9 max-w-[80vw] text-center font-gt-display-light text-[1.75rem] leading-[2.375rem] 4xl:h-[18.375rem] 4xl:w-[60.75rem]">
                   <TextWithLineBreaks text="Jedem Bauvorhaben liegt ein Zauber inne. Denn es geht nicht nur darum, | eine Immobilie zu bauen. Sondern sie auch als Teil eines ganzen Quartiers zu | begreifen. Für uns ist das etwas Großartiges – und Verantwortungsvolles. | Denn wie wir in der Stadt von morgen leben, hat vor allem damit zu tun, | wie wir sie heute planen. Unsere Mission ist es, unverwechselbare Immobilien | zu erschaffen, die zum jeweiligen Standort passen und die Nachbarschaft | nachhaltig bereichern. Jedes Projekt steckt daher voller Herzblut und wir sind | stolz auf jedes einzelne." />
                 </p>
               </div>
