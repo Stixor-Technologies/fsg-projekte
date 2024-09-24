@@ -73,7 +73,7 @@ const Project1Sec7 = () => {
                     }
                   />
                 </p>
-                <p className="mt-3 font-proxima text-[.938rem]">
+                <p className="mt-[1.4375rem] font-proxima text-[.938rem]">
                   <span className="block">
                     <TextWithLineBreaks
                       text={

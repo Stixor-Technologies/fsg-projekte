@@ -184,12 +184,12 @@ const Kontakt = () => {
       id="kontact"
       className=" bg-light-yellow py-[3.125rem] lg:pb-[3.625rem] lg:pt-[6.25rem] 4xl:h-[58.313rem]"
     >
-      <div className="mx-auto max-w-[64.188rem] px-5 md:px-10 xl:px-0">
+      <div className="mx-auto max-w-[68.25rem] px-5 md:px-10 xl:px-0">
         <div className=" mb-[1.938rem] text-center lg:mb-[3.875re,]">
-          <p className="mt-[2.188rem] h-[3.4375rem] font-gt-display-light text-xl text-medium-blue lg:mt-[4.375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
+          <p className="mt-[2.188rem] h-[3.4375rem] font-gt-display-light text-xl text-medium-blue lg:mt-[3.4375rem] lg:text-[3.4375rem] lg:leading-[2.375rem]">
             Wir beraten Sie gern
           </p>
-          <h2 className="mt-[0.8125rem] font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 2xl:mb-[5.0187rem] 4xl:h-5">
+          <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.875rem] xl:mb-9 xl:mt-[0.8125rem] 2xl:mb-[5.0187rem] 4xl:h-5">
             TEL +49 (0)40 561 289 40
           </h2>
         </div>
@@ -201,7 +201,7 @@ const Kontakt = () => {
         >
           {({ errors, touched }) => (
             <Form className="text-secondary text-lg">
-              <div className="grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2 sm:gap-[3.406rem]">
+              <div className="grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2 sm:gap-[7.4375rem]">
                 <div className="space-y-[0.9375rem]">
                   {inputTemplate({
                     name: "vorName",
@@ -262,7 +262,7 @@ const Kontakt = () => {
                   as={"button"}
                   variant="md"
                   text="Absenden"
-                  styles="mt-8 sm:mt-0 bg-opacity-80"
+                  styles="mt-8 sm:mt-0 bg-opacity-80 4xl:mt-[0.875rem]"
                   loading={isLoading}
                   disabled={isLoading}
                 />

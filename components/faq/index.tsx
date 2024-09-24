@@ -109,7 +109,7 @@ const FaqCard = ({
   return (
     <>
       <div
-        className={`border-b  border-black pb-[1.188rem] pt-[0.938rem] ${id === 0 && "border-t"}`}
+        className={`border-b  border-[#A6ABB7] pb-[1.188rem] pt-[0.938rem] ${id === 0 && "border-t"}`}
       >
         <div
           className="group relative flex cursor-pointer items-center justify-between gap-8"

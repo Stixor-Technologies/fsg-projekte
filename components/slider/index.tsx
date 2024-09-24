@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useRef } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -22,6 +22,25 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
 }) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
+  const [childrenLength, setChildrenLength] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(1);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.on("slideChange", () => {
+        if (swiperRef.current) {
+          setActiveSlide(swiperRef.current.realIndex + 1);
+        }
+      });
+    }
+  }, [swiperRef.current]);
+
+  useEffect(() => {
+    if (children) {
+      setChildrenLength(React.Children.count(children));
+    }
+  }, [children]);
+
   return (
     <div className="relative mx-auto flex h-full max-w-[120rem] items-center justify-center gap-10">
       <Swiper
@@ -30,21 +49,24 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
         }}
         loop={false}
         modules={[]}
-        className="mySwiper !flex h-full max-h-[65.25rem] w-full flex-col !items-center lg:flex-row"
+        className="mySwiper !flex h-full w-full flex-col !items-center lg:flex-row"
         slidesPerView={slidesPerView}
       >
         {children}
       </Swiper>
 
-      <div className="absolute top-[47.1%] z-20 flex h-6 w-[90.3%] items-center justify-between">
+      <div className="absolute top-[47.1%] z-20 hidden h-6 w-full items-center justify-between px-10 md:flex lg:px-[7.9375rem]">
         <button
           onClick={() => {
             swiperRef.current?.slidePrev();
           }}
-          className="rotate-180"
+          className={`rotate-180 ${
+            activeSlide === 1 ? "cursor-not-allowed opacity-50" : ""
+          }`}
+          disabled={activeSlide === 1}
         >
           <Image
-            width={24}
+            width={22.7}
             src={arrowColor === "white" ? ArrowWhite : Arrow}
             alt="next-image"
           />
@@ -53,13 +75,39 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
           onClick={() => {
             swiperRef.current?.slideNext();
           }}
+          disabled={activeSlide === childrenLength}
+          className={`${
+            activeSlide === childrenLength
+              ? "cursor-not-allowed opacity-50"
+              : ""
+          }`}
         >
           <Image
             src={arrowColor === "white" ? ArrowWhite : Arrow}
-            width={24}
+            width={22.7}
             alt="next-image"
           />
         </button>
+      </div>
+      <div className="absolute bottom-2 z-30 block xs:bottom-10 md:hidden">
+        <div className="flex items-center justify-center gap-3">
+          {Array.from({ length: childrenLength }).map((_, index) => (
+            <div
+              key={index}
+              role="button"
+              onClick={() => {
+                if (swiperRef.current) {
+                  swiperRef.current.slideTo(index);
+                }
+              }}
+              className={
+                activeSlide === index + 1
+                  ? "h-2 w-2 rounded-full bg-black xs:h-3 xs:w-3"
+                  : "h-2 w-2 rounded-full bg-gray xs:h-3 xs:w-3"
+              }
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

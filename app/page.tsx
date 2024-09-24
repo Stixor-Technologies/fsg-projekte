@@ -10,13 +10,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className=" bg-light-blue pb-[5.6188rem] pt-[6.75rem] lg:pt-[12.0625rem]">
-      <div className="container">
+      <div className="container flex flex-col gap-[2.375rem] lg:gap-[5.625rem]">
         {/* section 1 */}
-        <div className="relative mb-[2.813rem] flex items-center justify-center lg:mb-[6.563rem]">
+        <div className="relative flex items-center justify-center">
           <Image src={HeroImage} alt="hero" />
 
-          <div className="absolute top-10 max-w-[63.75rem] text-center sm:top-36">
-            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,3.438rem)] uppercase leading-[clamp(1rem,3.4vw,4.063rem)] tracking-tight text-black 4xl:h-[11.563rem]">
+          <div className="absolute top-6 max-w-[63.75rem] text-center md:top-16 lg:top-36">
+            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,3.438rem)] leading-[clamp(1rem,3.4vw,4.063rem)] tracking-tight text-black 4xl:h-[11.563rem]">
               Klassische Architektur,
               <br />
               modern interpretiert.
@@ -25,9 +25,9 @@ export default function Home() {
         </div>
 
         {/* section 2 */}
-        <div className="mb-[2.813rem] flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[63.313rem] lg:mb-[5.625rem] ">
+        <div className="flex items-center justify-center bg-light-yellow px-4 py-16 xs:px-7 sm:h-[63.313rem]">
           <div className="mx-auto max-w-[60.313rem] text-center">
-            <h4 className="mb-[3.3125rem] font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl">
+            <h4 className="mb-[3.3125rem] font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl 4xl:h-[1.25rem]">
               Beste Lagen verdienen beste Planung.
             </h4>
             <div className="font-gt-display-light  !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem] 4xl:h-[20.75rem] 4xl:w-[61.625rem]">
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
         {/* section 3 */}
-        <div className="mb-[2.813rem] flex flex-col bg-dark-blue md:flex-row lg:mb-[4.688rem] 4xl:h-[65.563rem]">
+        <div className="flex flex-col bg-dark-blue md:flex-row 4xl:h-[65.563rem]">
           <div className=" flex-1 md:order-1">
             <Image src={Fabian} alt="fabian" objectPosition="bottom" />
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 lg:px-7 2xl:px-0 4xl:items-start">
             <div className="w-full text-center lg:max-w-[39.188rem] 4xl:mb-[20.406rem]  4xl:mt-[21.863rem]">
               <div className="h-[11.9375rem]">
-                <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
+                <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
                   „Sich zu Hause zu fühlen – zu wissen, genau hier,
                   <br className="hidden 2xl:block" />
                   genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
@@ -81,7 +81,9 @@ export default function Home() {
                   <br className="hidden 2xl:block" />
                   muss und welche Pflanzen im Garten stehen.“
                 </p>
-                <p className="font-proxima">FABIAN SCHNEIDER</p>
+                <p className="my-2 font-proxima text-[0.9375rem] 4xl:my-0">
+                  FABIAN SCHNEIDER
+                </p>
               </div>
               <Link
                 href={"/unternehmen"}
@@ -94,7 +96,7 @@ export default function Home() {
         </div>
 
         {/* section 4 */}
-        <div className=" mb-[2.813rem] bg-light-yellow px-[4vw] py-8 xs:py-[7vw] lg:mb-[6.25rem] 2xl:px-[4.813rem] 2xl:py-[6.25rem]">
+        <div className=" bg-light-yellow px-[4vw] py-8 xs:py-[7vw] 2xl:px-[4.813rem] 2xl:py-[6.25rem]">
           <h2 className=" text-center font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-5">
             Aktuelle Projekte
           </h2>
@@ -154,17 +156,17 @@ export default function Home() {
         </div>
 
         {/* section 5 */}
-        <div className="mb-[2.813rem] flex flex-col bg-dark-blue md:flex-row md:py-12 md:pr-[3vw] lg:mb-[6.25rem] lg:py-[6.25rem] 3xl:pr-[6.25rem]">
+        <div className="flex flex-col bg-dark-blue md:flex-row md:py-12 md:pr-[3vw] lg:py-[6.25rem] 3xl:pr-[6.25rem]">
           <div className="flex-1 md:order-1 lg:max-w-[31.25rem] 3xl:max-w-[39rem]">
             <Image src={AnkaufsProfile} alt="fabian" className="mx-auto" />
           </div>
 
-          <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0">
+          <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:px-7 2xl:px-10 3xl:px-0 4xl:mb-[14.5625rem] 4xl:mt-[16.625rem]">
             <div className="w-full text-center lg:max-w-[36.563rem]  ">
-              <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem]">
+              <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-[1.3125rem]">
                 WIR SUCHEN GRUNDSTÜCKE UND IMMOBILIEN.
               </h2>
-              <p className="my-[2.3125rem] font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.563rem]">
+              <p className="my-[2.3125rem] font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] 4xl:h-[8.4375rem]">
                 <span className="block">
                   Etwas Gutes noch besser zu machen.
                   <br className="hidden xl:block" /> In diesem Sinne suchen wir

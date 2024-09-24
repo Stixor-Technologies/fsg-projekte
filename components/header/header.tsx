@@ -33,8 +33,8 @@ const Header = () => {
     <header ref={header} className={`fixed z-50 w-full bg-dark-blue`}>
       <div className="container">
         <nav
-          className={`mx-auto  flex h-[4.375rem] !max-w-[95.125rem] items-center justify-between duration-150 ${
-            isTop ? "md:h-[12.0625rem]" : "md:h-[8.1875rem]"
+          className={`mx-auto  flex h-[5rem] !max-w-[95.125rem] items-center justify-between duration-150 ${
+            isTop ? "lg:h-[12.0625rem]" : "lg:h-[8.1875rem]"
           }`}
         >
           <div className="link-container 4xl:ml-[4px]">
@@ -49,22 +49,22 @@ const Header = () => {
             ))}
           </div>
 
-          <Link href={"/"} className="hidden md:block">
+          <Link href={"/"} className="hidden lg:block">
             {isTop ? (
               <Image
                 src={Logo}
                 alt="header-logo"
-                className="max-w-[3rem] md:w-[17.5625rem] md:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
+                className="h-[8.3125rem] max-w-[3rem] md:w-[17.5625rem] md:max-w-[17.5625rem] 4xl:ml-[23.0313rem] 4xl:mr-[21.0375rem]"
               />
             ) : (
               <Image
                 src={LogoScrolled}
                 alt="header-logo"
-                className="max-w-[3rem] md:w-[4.25rem] md:max-w-none 4xl:ml-[20.681rem] 4xl:mr-[18.681rem]"
+                className="max-w-[3rem] md:w-[4.25rem] md:max-w-[17.5625rem] 4xl:ml-[23.0313rem] 4xl:mr-[21.0375rem]"
               />
             )}
           </Link>
-          <Link href={"/"} className="block md:hidden">
+          <Link href={"/"} className="block lg:hidden">
             <Image src={Logo} alt="header-logo" className="max-w-[6rem]" />
           </Link>
 

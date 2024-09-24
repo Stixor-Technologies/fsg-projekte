@@ -41,10 +41,10 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
         </div>
       ) : !loading && project ? (
         <>
-          <section className=" pb-[5.625rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+          <section className="pb-[5.625rem] pt-[6.75rem] lg:pt-[12.0625rem]">
             <div className="container">
               {/* section 1 */}
-              <div className=" mb-[5.625rem]">
+              <div className=" mb-[1.75rem] sm:mb-[5.625rem]">
                 <ProjectSlider arrowColor="white">
                   {project.heroSlider.map((slide, index) => (
                     <SwiperSlide key={index}>
@@ -62,18 +62,19 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
               {/* section 2 */}
               <div className="flex items-center justify-center bg-gray px-4 py-12 xs:px-7 md:h-[63.875rem]">
                 <div className="mx-auto flex max-w-[74.375rem] flex-col items-center justify-center text-center">
-                  <h4 className=" mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-[2.813rem] 4xl:h-5">
+                  <h4 className="mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl lg:mb-9">
                     <TextWithLineBreaks text={project?.philosophieHeader} />
                   </h4>
                   <p className=" max-w-[74.375rem] font-gt-display-light !leading-relaxed text-medium-blue xs:text-2xl sm:text-3xl md:text-[1.75rem] md:!leading-[2.375rem]">
-                    <span className="mb-[4.5625rem] block 4xl:h-[18.375rem]">
+                    <span className="mb-[4.5rem] block 4xl:h-[18.375rem]">
                       <TextWithLineBreaks text={project?.philosophie} />
                     </span>
                   </p>
                   {project?.philosophieButtonText && (
                     <LinkButton
+                      // className="w-[23.4375rem] max-w-full"
                       as={"button"}
-                      variant="md"
+                      variant="sm"
                       text="ZUR PETIT PALAIS WEBSEITE"
                     />
                   )}
@@ -82,7 +83,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
               {/* section 3 */}
 
-              <div className="mb-[5.625rem] grid grid-cols-1 justify-between gap-3  divide-transparent-blue bg-dark-brown py-4 xs:grid-cols-[1fr,.0625rem,1fr] md:flex md:gap-0 md:divide-x lg:py-[1.875rem] 4xl:h-[16.25rem]">
+              <div className="mb-[1.75rem] grid grid-cols-1 justify-between gap-3 divide-transparent-blue  bg-dark-brown py-4 xs:grid-cols-[1fr,.0625rem,1fr] sm:mb-[5.625rem] md:flex md:gap-0 md:divide-x lg:py-[1.875rem] 4xl:h-[16.25rem]">
                 <div className="flex flex-1 flex-col gap-3 md:flex-row md:justify-between md:gap-0">
                   <div className="metric-container 4xl:ml-[4.75rem]">
                     <h5 className="metric">
@@ -159,7 +160,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 ))}
               </ProjectSlider>
             </div>
-            <div className="mb-[5.625rem]">
+            <div className="mb-[1.75rem] sm:mb-[5.625rem]">
               {/* section 5 */}
               <ProjectPhase
                 projectPhases={project?.projectPhases}
@@ -168,7 +169,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             </div>
             {/* section 6 */}
             <div className="container">
-              <div className="mb-[5.625rem] flex flex-col justify-center gap-10 bg-gray py-10 lg:flex-row lg:items-center lg:gap-0 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start 4xl:py-0">
+              <div className="mb-[1.75rem] flex flex-col justify-center gap-10 bg-gray py-10 sm:mb-[5.625rem] lg:flex-row lg:items-center lg:gap-0 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start 4xl:py-0">
                 <div className="flex-1 4xl:ml-[8.875rem] 4xl:mt-[5.5625rem] 4xl:flex-none">
                   <Image
                     src={project?.architektur?.displayImage}
@@ -183,7 +184,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                       <TextWithLineBreaks text={project?.architektur.title} />
                       {/* {project?.architektur?.title} */}
                     </h3>
-                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-12 4xl:h-[21.25rem]">
+                    <p className="mt-3 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-9 4xl:h-[21.25rem]">
                       <span className="block">
                         <TextWithLineBreaks
                           text={project?.architektur?.description1}
@@ -196,7 +197,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             </div>
             {/* section 7 */}
             {/* <Slider sliderImages={project?.sliderImages} /> */}
-            <div className="mb-[5.625rem]">
+            <div className="mb-[1.75rem] sm:mb-[5.625rem]">
               {project.id === "petit-palais" ? (
                 <Project1Sec7 />
               ) : (
@@ -205,7 +206,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             </div>
             {/* section 8 */}
             <div className="container">
-              <div className="mb-[5.625rem] flex flex-col gap-10 bg-gray px-10 pb-10 lg:h-[59.875rem] lg:flex-row lg:items-center lg:gap-0 lg:pb-0 3xl:items-start 3xl:px-0">
+              <div className="mb-[1.75rem] flex flex-col gap-10 bg-gray px-10 pb-10 sm:mb-[5.625rem] lg:h-[59.875rem] lg:flex-row lg:items-center lg:gap-0 lg:pb-0 3xl:items-start 3xl:px-0">
                 <div className="order-2 flex h-full flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 md:py-0 lg:order-1 lg:px-7 2xl:px-10 3xl:px-0 4xl:items-start 4xl:justify-start">
                   <div className="w-full text-center text-medium-blue lg:max-w-[32.063rem] 4xl:ml-[13.5rem] 4xl:mt-[16.8125rem]">
                     <p className="mb-[2.125rem] font-proxima-semibold text-[1.3125rem] text-brown">
@@ -220,7 +221,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     </p>
                   </div>
                 </div>
-                <div className="order-1 mx-auto mt-[6.25rem] flex-1 lg:order-2 lg:mx-0">
+                <div className="order-1 mx-auto mt-[6.25rem] flex-1 lg:order-2 lg:mx-0 4xl:!mr-[6.3125rem] 4xl:flex 4xl:justify-end">
                   <Image src={project?.interior?.displayImage} alt="" />
                 </div>
               </div>
@@ -235,7 +236,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 />
               )} */}
             </div>
-            <div className="mb-[5.625rem]">
+            <div className="mb-[1.75rem] sm:mb-[5.625rem]">
               {project.id === "petit-palais" ? (
                 <Project1Sec9 />
               ) : (
@@ -254,7 +255,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
 
             <div className="container">
               {/* section 11 -   Besonderheiten / Features*/}
-              <div className="mb-[5.625rem] flex flex-col items-center justify-center gap-10 bg-gray px-10 py-10 lg:h-[58.375rem] lg:flex-row lg:py-0 3xl:px-0 4xl:items-start 4xl:justify-start">
+              <div className="mb-[1.75rem] flex flex-col items-center justify-center gap-10 bg-gray px-10 py-10 sm:mb-[5.625rem] lg:h-[58.375rem] lg:flex-row lg:py-0 3xl:px-0 4xl:items-start 4xl:justify-start">
                 <div className="flex-1 4xl:ml-[6.375rem] 4xl:mt-[5.5625rem]">
                   <Image
                     src={project?.besonderheiten?.displayImage}
@@ -307,7 +308,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 />
               )} */}
 
-              <div className="mb-[5.625rem] flex flex-col justify-center gap-10 bg-gray lg:flex-row lg:items-center 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start">
+              <div className="mb-[1.75rem] flex flex-col justify-center gap-10 bg-gray sm:mb-[5.625rem] lg:flex-row lg:items-center 4xl:h-[58.375rem] 4xl:items-start 4xl:justify-start">
                 <div className="flex-[0.7] lg:flex-1 4xl:w-[77.625rem]">
                   <Image src={project?.locations.displayImage} alt="" />
                 </div>

@@ -148,7 +148,7 @@ const aktuelleprojekte = [
     faq: [
       {
         id: 1,
-        question: "Wohnung 1",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -183,7 +183,7 @@ const aktuelleprojekte = [
 
       {
         id: 2,
-        question: "Wohnung 2",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -218,7 +218,7 @@ const aktuelleprojekte = [
 
       {
         id: 3,
-        question: "Wohnung 3",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -253,7 +253,7 @@ const aktuelleprojekte = [
 
       {
         id: 4,
-        question: "Wohnung 4",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -288,7 +288,7 @@ const aktuelleprojekte = [
 
       {
         id: 5,
-        question: "Wohnung 5",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -434,7 +434,7 @@ const aktuelleprojekte = [
     faq: [
       {
         id: 1,
-        question: "Wohnung 1",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -469,7 +469,7 @@ const aktuelleprojekte = [
 
       {
         id: 2,
-        question: "Wohnung 2",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -504,7 +504,7 @@ const aktuelleprojekte = [
 
       {
         id: 3,
-        question: "Wohnung 3",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",
@@ -539,7 +539,7 @@ const aktuelleprojekte = [
 
       {
         id: 4,
-        question: "Wohnung 4",
+        question: "Wohnung 1 / 4 Zimmer",
         answer: {
           zimmer: 4,
           flache: "219, 98 m²",

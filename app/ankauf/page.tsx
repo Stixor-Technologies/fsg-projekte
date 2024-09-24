@@ -5,17 +5,17 @@ import { Ankaufsprofil } from "../utils/data";
 
 const Ankauf = () => {
   return (
-    <section className=" bg-light-blue pb-[12.5625rem] pt-[6.75rem] lg:pt-[12.0625rem]">
+    <section className=" bg-light-blue pb-[3.5rem] pt-[6.75rem] md:pb-[12.5625rem] lg:pt-[12.0625rem]">
       <div className="container">
         {/* section 1 */}
         <div className="relative mb-14 flex items-center justify-center lg:mb-[6.563rem] ">
           <Image src={AnkaufProfile} alt="ankaufProfile" />
 
           <div className="absolute max-w-[67.438rem] text-center lg:-mt-32">
-            <h4 className=" mb-[clamp(2px,4.4vw,5.188rem)] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
+            <h4 className="mb-[1.875rem] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide md:mb-[4.6875rem] 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
               Ankaufsprofile
             </h4>
-            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,2.5rem)] leading-[clamp(0.875rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[8.438rem]">
+            <h2 className="font-gt-display-light text-[clamp(1rem,3vw,2.5rem)] leading-[clamp(0.875rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[9.125rem]">
               Mit Seriosität, Verbindlichkeit
               <br /> und besten Referenzen: <br />
               Wir kaufen Immobilien und Grundstücke.
@@ -25,7 +25,7 @@ const Ankauf = () => {
 
         {/* section 2 */}
 
-        <div className="mx-auto my-14 max-w-[82.25rem] text-center font-gt-display-light sm:text-lg lg:mb-[16rem] lg:mt-[15.375rem] lg:text-[1.75rem] lg:leading-[2.375rem] lg:tracking-tight 4xl:h-[13.625rem]">
+        <div className="mx-auto my-14 max-w-[82.25rem] text-center font-gt-display-light sm:text-lg lg:mb-[15.9375rem] lg:mt-[15.125rem] lg:text-[1.75rem] lg:leading-[2.375rem] lg:tracking-tight 4xl:h-[13.625rem]">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
             ligula ante. <br className="hidden lg:block" /> Mauris at congue
@@ -46,81 +46,76 @@ const Ankauf = () => {
         </div>
 
         {/* section 3 */}
-        <div className="flex flex-col gap-14 lg:gap-[4.5rem]">
-          {Ankaufsprofil?.map((profil, index) => (
-            <div
-              key={index}
-              className=" flex flex-col bg-white px-5 py-14 pt-[2.188rem] sm:px-10 lg:px-[6.375rem] lg:pt-[7.5rem] 4xl:h-[75.8125rem]"
-            >
-              <div>
-                <div className="w-full flex-1 divide-y-[.0625rem] divide-medium-blue border-medium-blue">
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point !mt-0`}>
-                      Transaktionsstruktur
-                    </span>
-                    <div className="mb-[1.625rem]">
-                      {profil?.Transaktionsstruktur.split(" | ").map(
-                        (item, index) => (
-                          <p className="ankauf-desc" key={index}>
-                            {item}
-                          </p>
-                        ),
-                      )}
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point`}>Volumen</span>
-                    <span className="ankauf-desc">{profil?.Volumen}</span>
-                  </div>
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point`}>GrundstückE</span>
-                    <div className="my-[1.625rem]">
-                      {profil?.GrundstückE.split(" | ").map((item, index) => (
-                        <p className="ankauf-desc" key={index}>
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point`}>Bestandsobjekte</span>
-                    <div className="my-[1.625rem]">
-                      {profil?.Bestandsobjekte.split(" | ").map(
-                        (item, index) => (
-                          <p className="ankauf-desc" key={index}>
-                            {item}
-                          </p>
-                        ),
-                      )}
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point`}>Regionen</span>
-                    <div className="my-[1.625rem]">
-                      {profil?.Regionen.split(" | ").map((item, index) => (
-                        <p className="ankauf-desc" key={index}>
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2">
-                    <span className={`ankauf-point`}>Ausschlußkriterien</span>
-                    <div className="my-[1.625rem]">
-                      {profil?.Ausschlußkriterien.split(" | ").map(
-                        (item, index) => (
-                          <p className="ankauf-desc" key={index}>
-                            {item}
-                          </p>
-                        ),
-                      )}
-                    </div>
-                  </div>
+
+        {Ankaufsprofil?.map((profil, index) => (
+          <div
+            key={index}
+            className="flex flex-col bg-white px-5 py-14 pt-[2.188rem] sm:px-10 lg:px-[6.375rem] lg:pt-[7.5rem] 4xl:h-[75.8125rem] 4xl:pb-[5.125rem]"
+          >
+            <div className="w-full flex-1 divide-y-[.0625rem] divide-medium-blue border-medium-blue">
+              <div className="grid sm:grid-cols-2 4xl:h-[6.75rem]">
+                <span className={`ankauf-point !mt-0`}>
+                  Transaktionsstruktur
+                </span>
+                <div className="mb-[1.625rem]">
+                  {profil?.Transaktionsstruktur.split(" | ").map(
+                    (item, index) => (
+                      <p className="ankauf-desc" key={index}>
+                        {item}
+                      </p>
+                    ),
+                  )}
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                <span className={`ankauf-point`}>Volumen</span>
+                <span className="ankauf-desc">{profil?.Volumen}</span>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                <span className={`ankauf-point`}>GrundstückE</span>
+                <div className="my-[1.625rem]">
+                  {profil?.GrundstückE.split(" | ").map((item, index) => (
+                    <p className="ankauf-desc" key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                <span className={`ankauf-point`}>Bestandsobjekte</span>
+                <div className="my-[1.625rem]">
+                  {profil?.Bestandsobjekte.split(" | ").map((item, index) => (
+                    <p className="ankauf-desc" key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                <span className={`ankauf-point`}>Regionen</span>
+                <div className="my-[1.625rem]">
+                  {profil?.Regionen.split(" | ").map((item, index) => (
+                    <p className="ankauf-desc" key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2">
+                <span className={`ankauf-point`}>Ausschlußkriterien</span>
+                <div className="my-[1.625rem]">
+                  {profil?.Ausschlußkriterien.split(" | ").map(
+                    (item, index) => (
+                      <p className="ankauf-desc" key={index}>
+                        {item}
+                      </p>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

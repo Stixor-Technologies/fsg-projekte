@@ -28,7 +28,7 @@ body {
 
 @layer utilities {
   .link-container {
-    @apply hidden gap-5 md:flex lg:gap-[2.75rem];
+    @apply hidden gap-5 lg:flex lg:gap-[2.75rem];
   }
 
   .header-link {
@@ -36,7 +36,7 @@ body {
   }
 
   .ankauf-point {
-    @apply mb-[0.8125rem] mt-[2.625rem] block font-proxima-semibold uppercase text-brown 4xl:h-[2.063rem];
+    @apply mb-[0.8125rem] mt-[2.625rem] block font-proxima-semibold uppercase text-brown 4xl:h-[2.063rem] 4xl:leading-[1.1875rem];
   }
 
   .ankauf-desc {

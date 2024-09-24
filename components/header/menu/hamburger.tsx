@@ -55,7 +55,7 @@ const Hamburger = () => {
   return (
     <button
       className="hide-custom-cursor no-custom-cursor group z-50 flex size-9 transform
-        items-center justify-center drop-shadow-lg md:hidden"
+        items-center justify-center drop-shadow-lg lg:hidden"
       type="button"
       onClick={() => {
         setIsMenuOpen(!isMenuOpen);
