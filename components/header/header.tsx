@@ -49,7 +49,7 @@ const Header = () => {
             ))}
           </div>
 
-          <Link href={"/"} className="hidden lg:block">
+          <Link href={"/"} className="hidden w-fit lg:block">
             {isTop ? (
               <Image
                 src={Logo}
@@ -64,7 +64,7 @@ const Header = () => {
               />
             )}
           </Link>
-          <Link href={"/"} className="block lg:hidden">
+          <Link href={"/"} className="block w-fit lg:hidden">
             <Image src={Logo} alt="header-logo" className="max-w-[6rem]" />
           </Link>
 
