@@ -134,7 +134,7 @@ const FaqCard = ({
             <div className="faq-section-1">
               <span className="faq-section-1-header">Zimmer</span>
               <span className="faq-section-1-value">
-                {faqItem?.answer?.zimmer}
+                {`${faqItem?.answer?.zimmer || "VERKAUFT"}`}
               </span>
             </div>
 
