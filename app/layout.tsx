@@ -57,16 +57,16 @@ const GtSuperBookItalic = localFont({
 });
 
 const GtSuperDisplay = localFont({
-  src: "./fonts/GT-Super-Display-Light.otf",
+  src: "./fonts/GT-Super-Display-Light.woff2",
   variable: "--font-gt-display-light",
 });
 const GtSuperDisplayRegular = localFont({
-  src: "./fonts/GT-Super-Display-Regular.otf",
+  src: "./fonts/GT-Super-Display-Regular.woff2",
   variable: "--font-gt-display-rg",
 });
 
 const GTSuperLightItalic = localFont({
-  src: "./fonts/GT-Super-Display-Light-Italic.otf",
+  src: "./fonts/GT-Super-Display-Light-Italic.woff2",
   variable: "--font-gt-display-light-italic",
 });
 

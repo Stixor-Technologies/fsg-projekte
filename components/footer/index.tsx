@@ -21,7 +21,7 @@ const Footer = () => {
                 VERTRIEB
               </h4>
 
-              <div className="mt-[0.875rem] space-y-3.5 font-gt-super lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
+              <div className="mt-[0.875rem] space-y-3.5 font-gt-book lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className="tracking-tight 4xl:h-[2.75rem] ">
                   FSG Projekte <br /> Beratungs- und Vertriebsgesellschaft mbH
                 </h4>
@@ -72,7 +72,7 @@ const Footer = () => {
                 UNTERNEHMEN
               </h4>
 
-              <div className=" mt-[0.875rem] space-y-3.5 font-gt-super lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
+              <div className=" mt-[0.875rem] space-y-3.5 font-gt-book lg:space-y-[1.188rem] xl:text-lg xl:leading-[1.625rem]">
                 <h4 className=" 4xl:h-[2.75rem] ">
                   FSG Grundstücks-
                   <br /> gesellschaft mbH
