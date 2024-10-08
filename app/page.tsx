@@ -166,7 +166,7 @@ export default function Home() {
               <h2 className="font-proxima-semibold uppercase leading-none tracking-wide text-custom-brown lg:text-xl lg:leading-[1.5rem] 4xl:h-[1.3125rem]">
                 WIR SUCHEN GRUNDSTÜCKE UND IMMOBILIEN.
               </h2>
-              <p className="my-[2.3125rem] font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] 4xl:h-[8.4375rem]">
+              <p className="my-[2.3125rem] font-proxima text-sm text-white lg:text-[0.938rem] lg:leading-[1.5rem] 4xl:h-[8.4375rem]">
                 <span className="block">
                   Etwas Gutes noch besser zu machen.
                   <br className="hidden xl:block" /> In diesem Sinne suchen wir
