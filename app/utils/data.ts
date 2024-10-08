@@ -36,6 +36,20 @@ import Location138Image from "@/public/assets/aktuelle-projekte/138/locations.pn
 import Slider138 from "@/public/assets/aktuelle-projekte/138/hero-slider.png";
 
 import Faq1 from "@/public/assets/faq-1.png";
+import PetitWE1 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE1.png";
+import PetitWE2 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE2.png";
+import PetitWE3 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE3.png";
+import PetitWE4 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE4.png";
+import PetitWE5 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE5.png";
+import PetitWE6 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE6.png";
+import PetitWE7 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE7.png";
+import PetitWE8 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE8.png";
+import PetitWE9 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE9.png";
+import PetitWE10 from "@/public/assets/aktuelle-projekte/petit/faqs/PetitPalais_Verortung_WE10.png";
+
+import WHW138WE1 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE01.png";
+import WHW138WE2 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE02.png";
+import WHW138WE3 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE03.png";
 
 const aktuelleprojekte = [
   {
@@ -180,7 +194,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE1,
         },
       },
 
@@ -215,7 +229,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE2,
         },
       },
 
@@ -251,7 +265,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE3,
         },
       },
 
@@ -287,7 +301,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE4,
         },
       },
 
@@ -323,7 +337,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE5,
         },
       },
 
@@ -359,7 +373,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE6,
         },
       },
 
@@ -395,7 +409,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE7,
         },
       },
 
@@ -431,7 +445,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE8,
         },
       },
 
@@ -467,7 +481,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE9,
         },
       },
 
@@ -503,7 +517,7 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: PetitWE10,
         },
       },
     ],
@@ -642,7 +656,7 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE1,
         },
       },
 
@@ -676,7 +690,7 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE2,
         },
       },
 
@@ -711,7 +725,7 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE3,
         },
       },
 
