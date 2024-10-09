@@ -61,7 +61,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                 </ProjectSlider>
               </div>
               {/* section 2 */}
-              <div className="flex items-center justify-center bg-gray px-4 xs:px-7 md:h-[63.875rem] md:py-12">
+              <div className="flex items-center justify-center bg-gray px-4 py-12 xs:px-7 md:h-[63.875rem]">
                 <div className="mx-auto flex max-w-[74.375rem] flex-col items-center justify-center text-center">
                   <h4
                     className={`mb-3 font-proxima-semibold uppercase tracking-wide text-brown sm:text-xl  ${
@@ -354,7 +354,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                     {project?.locations.locations.map((location, index) => (
                       <p
                         key={index}
-                        className="font-proxima text-xl leading-[2.5rem] text-medium-blue"
+                        className="font-proxima text-xl uppercase leading-[2.5rem] text-medium-blue"
                       >
                         {location}
                       </p>
