@@ -12,7 +12,7 @@ const Ankauf = () => {
           <Image src={AnkaufProfile} alt="ankaufProfile" />
 
           <div className="absolute max-w-[67.438rem] text-center lg:-mt-32">
-            <h4 className="mb-[1.875rem] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide md:mb-[4.6875rem] 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
+            <h4 className="mb-[1.875rem] font-proxima-semibold text-[clamp(0.625rem,1.4vw,1.313rem)] uppercase leading-tight tracking-wide text-custom-brown md:mb-[4.6875rem] 4xl:h-[1.313rem] 4xl:leading-[1.563rem]">
               Ankaufsprofile
             </h4>
             <h2 className="font-gt-display-light text-[clamp(1rem,3vw,2.5rem)] leading-[clamp(1rem,3.4vw,3.125rem)] tracking-tight  text-gray 4xl:h-[9.125rem]">
