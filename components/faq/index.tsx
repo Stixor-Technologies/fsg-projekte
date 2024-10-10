@@ -8,6 +8,7 @@ import FaqArrow from "@/public/assets/arrow.svg";
 import { FaqItem } from "@/app/utils/types";
 import { useScrollToSection } from "@/app/utils/scroll";
 import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
+import Link from "next/link";
 
 interface FaqProps {
   faqs: FaqItem[];
@@ -116,7 +117,7 @@ const FaqCard = ({
           onClick={questionClicked}
         >
           <span className="w-[90%] font-gt-display-light text-2xl text-medium-blue lg:text-[2.188rem] 4xl:h-[2.1875rem]">
-            {faqItem?.question}
+            {`${faqItem?.question} / ${faqItem?.answer?.zimmer} Zimmer`}
           </span>
 
           <Image
@@ -134,7 +135,7 @@ const FaqCard = ({
             <div className="faq-section-1">
               <span className="faq-section-1-header">Zimmer</span>
               <span className="faq-section-1-value">
-                {`${faqItem?.answer?.zimmer || "VERKAUFT"}`}
+                {faqItem?.answer?.zimmer}
               </span>
             </div>
 
@@ -160,10 +161,19 @@ const FaqCard = ({
             </div>
 
             <div className="faq-section-1 justify-end">
-              {/* <span className="faq-section-1-header">WOHNFLÄCHE GESAMT</span> */}
-              <span className="faq-section-1-value !bg-brown !font-gt-display-rg">
-                {faqItem?.answer?.runterladen}
-              </span>
+              {faqItem?.answer?.floorPlan ? (
+                <Link
+                  href={faqItem.answer.floorPlan}
+                  target="_blank"
+                  className="faq-section-1-value !bg-brown !font-gt-display-rg"
+                >
+                  {faqItem?.answer?.runterladen}
+                </Link>
+              ) : (
+                <span className="faq-section-1-value !bg-brown !font-gt-display-rg">
+                  {faqItem?.answer?.runterladen}
+                </span>
+              )}
             </div>
           </div>
 

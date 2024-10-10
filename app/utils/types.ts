@@ -10,6 +10,7 @@ interface FaqItem {
     terrassen: string;
     wohnflache: string;
     runterladen: string;
+    floorPlan?: string;
     ausstattung: string[];
 
     besonderheiten: string[];

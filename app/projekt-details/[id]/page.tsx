@@ -281,7 +281,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
             <div className="container">
               {/* section 11 -   Besonderheiten / Features*/}
               <div className="mb-[1.75rem] flex flex-col items-center justify-center gap-10 bg-gray px-10 py-10 sm:mb-[5.625rem] lg:h-[58.375rem] lg:flex-row lg:py-0 3xl:px-0 4xl:items-start 4xl:justify-start">
-                <div className="flex-1 4xl:ml-[6.375rem] 4xl:mt-[5.5625rem]">
+                <div className="flex-1 3xl:ml-[6.375rem] 3xl:flex-initial 4xl:mt-[5.5625rem]">
                   <Image
                     src={project?.besonderheiten?.displayImage}
                     alt=""

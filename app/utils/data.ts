@@ -55,12 +55,20 @@ import WHW138WE5 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortu
 import WHW138WE6 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE06.png";
 import WHW138WE7 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE07.png";
 import WHW138WE8 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE08.png";
+import WHW138WE9 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE09.png";
+import WHW138WE10 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE10.png";
+import WHW138WE11 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE11.png";
+import WHW138WE12 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE12.png";
+import WHW138WE13 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE13.png";
+import WHW138WE14 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE14.png";
+import WHW138WE15 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE15.png";
 import WHW138WE16 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE16.png";
 import WHW138WE17 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE17.png";
 import WHW138WE18 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE18.png";
 import WHW138WE19 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE19.png";
 import WHW138WE20 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE20.png";
 import WHW138WE21 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE21.png";
+import WHW138WE22 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE22.png";
 import WHW138WE23 from "@/public/assets/aktuelle-projekte/138/faqs/WHW138_Verortung_WE23.png";
 
 const aktuelleprojekte = [
@@ -177,7 +185,7 @@ const aktuelleprojekte = [
     faq: [
       {
         id: 1,
-        question: "WOHNEINHEIT 1 / 6 Zimmer",
+        question: "WOHNEINHEIT 1",
         answer: {
           zimmer: 6,
           flache: "219, 98 m²",
@@ -212,7 +220,7 @@ const aktuelleprojekte = [
 
       {
         id: 2,
-        question: "WOHNEINHEIT 2 / 5 Zimmer",
+        question: "WOHNEINHEIT 2",
         answer: {
           zimmer: 5,
           flache: "219, 98 m²",
@@ -247,7 +255,7 @@ const aktuelleprojekte = [
 
       {
         id: 3,
-        question: "WOHNEINHEIT 3 / 3 Zimmer",
+        question: "WOHNEINHEIT 3",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -283,7 +291,7 @@ const aktuelleprojekte = [
 
       {
         id: 4,
-        question: "WOHNEINHEIT 4 / 3 Zimmer",
+        question: "WOHNEINHEIT 4",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -319,7 +327,7 @@ const aktuelleprojekte = [
 
       {
         id: 5,
-        question: "WOHNEINHEIT 5 / 3 Zimmer",
+        question: "WOHNEINHEIT 5",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -355,7 +363,7 @@ const aktuelleprojekte = [
 
       {
         id: 6,
-        question: "WOHNEINHEIT 6 / 3 Zimmer",
+        question: "WOHNEINHEIT 6",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -391,7 +399,7 @@ const aktuelleprojekte = [
 
       {
         id: 7,
-        question: "WOHNEINHEIT 7 / 3 Zimmer",
+        question: "WOHNEINHEIT 7",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -427,7 +435,7 @@ const aktuelleprojekte = [
 
       {
         id: 8,
-        question: "WOHNEINHEIT 8 / 3 Zimmer",
+        question: "WOHNEINHEIT 8",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -463,9 +471,9 @@ const aktuelleprojekte = [
 
       {
         id: 9,
-        question: "WOHNEINHEIT 9 / 6 Zimmer",
+        question: "WOHNEINHEIT 9",
         answer: {
-          zimmer: 0,
+          zimmer: 6,
           flache: "219, 98 m²",
           terrassen: "41 m²",
           wohnflache: "232 m²",
@@ -499,9 +507,9 @@ const aktuelleprojekte = [
 
       {
         id: 10,
-        question: "WOHNEINHEIT 10 / 6 Zimmer",
+        question: "WOHNEINHEIT 10",
         answer: {
-          zimmer: 0,
+          zimmer: 6,
           flache: "219, 98 m²",
           terrassen: "45 m²",
           wohnflache: "233 m²",
@@ -645,6 +653,8 @@ const aktuelleprojekte = [
           terrassen: "9 m²",
           wohnflache: "73 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-01.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -681,6 +691,8 @@ const aktuelleprojekte = [
           terrassen: "15 m²",
           wohnflache: "111 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-02.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -715,6 +727,8 @@ const aktuelleprojekte = [
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-03.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -750,6 +764,8 @@ const aktuelleprojekte = [
           terrassen: "9 m²",
           wohnflache: "55 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-04.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -783,6 +799,8 @@ const aktuelleprojekte = [
           terrassen: "7 m²",
           wohnflache: "103 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-05.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -818,6 +836,8 @@ const aktuelleprojekte = [
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-06.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -853,6 +873,8 @@ const aktuelleprojekte = [
           terrassen: "9 m²",
           wohnflache: "55 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-07.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -886,6 +908,8 @@ const aktuelleprojekte = [
           terrassen: "7 m²",
           wohnflache: "103 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-08.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -916,11 +940,13 @@ const aktuelleprojekte = [
         id: 9,
         question: "WOHNEINHEIT 9",
         answer: {
-          zimmer: 2,
+          zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "86  m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-09.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -943,7 +969,7 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE9,
         },
       },
 
@@ -956,6 +982,8 @@ const aktuelleprojekte = [
           terrassen: "9 m²",
           wohnflache: "56 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-10.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -976,19 +1004,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE10,
         },
       },
 
       {
         id: 11,
-        question: "WOHNEINHEIT 9",
+        question: "WOHNEINHEIT 11",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-11.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1011,19 +1041,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE11,
         },
       },
 
       {
         id: 12,
-        question: "WOHNEINHEIT 11",
+        question: "WOHNEINHEIT 12",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-12.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1046,19 +1078,21 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE12,
         },
       },
 
       {
         id: 13,
-        question: "WOHNEINHEIT 12",
+        question: "WOHNEINHEIT 13",
         answer: {
-          zimmer: 3,
+          zimmer: 2,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-13.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1082,19 +1116,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE13,
         },
       },
 
       {
         id: 14,
-        question: "WOHNEINHEIT 11",
+        question: "WOHNEINHEIT 14",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "9 m²",
           wohnflache: "53 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-14.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1117,19 +1153,21 @@ const aktuelleprojekte = [
             "Naturstein",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE14,
         },
       },
 
       {
         id: 15,
-        question: "WOHNEINHEIT 14",
+        question: "WOHNEINHEIT 15",
         answer: {
-          zimmer: 3,
+          zimmer: 4,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-15.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1152,19 +1190,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE15,
         },
       },
 
       {
         id: 16,
-        question: "WOHNEINHEIT 15",
+        question: "WOHNEINHEIT 16",
         answer: {
-          zimmer: 4,
+          zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "39 m²",
           wohnflache: "184 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-16.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1187,19 +1227,21 @@ const aktuelleprojekte = [
             "Duschbad und Gäste-WC",
             "Eingelassene Deckenspots",
           ],
-          faqImage: Faq1,
+          faqImage: WHW138WE16,
         },
       },
 
       {
         id: 17,
-        question: "WOHNEINHEIT 16",
+        question: "WOHNEINHEIT 17",
         answer: {
-          zimmer: 3,
+          zimmer: 4,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "87 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-17.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1222,19 +1264,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE16,
+          faqImage: WHW138WE17,
         },
       },
 
       {
         id: 18,
-        question: "WOHNEINHEIT 17",
+        question: "WOHNEINHEIT 18",
         answer: {
-          zimmer: 4,
+          zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "15 m²",
           wohnflache: "124 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-18.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1257,19 +1301,21 @@ const aktuelleprojekte = [
             "Armaturen von GESSI, hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE17,
+          faqImage: WHW138WE18,
         },
       },
 
       {
         id: 19,
-        question: "WOHNEINHEIT 18",
+        question: "WOHNEINHEIT 19",
         answer: {
-          zimmer: 3,
+          zimmer: 2,
           flache: "219, 98 m²",
           terrassen: "6 m²",
           wohnflache: "83 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-19.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1292,19 +1338,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE18,
+          faqImage: WHW138WE19,
         },
       },
 
       {
         id: 20,
-        question: "WOHNEINHEIT 19",
+        question: "WOHNEINHEIT 20",
         answer: {
-          zimmer: 2,
+          zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "6 m²",
           wohnflache: "49 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-20.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1327,19 +1375,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE19,
+          faqImage: WHW138WE20,
         },
       },
 
       {
         id: 21,
-        question: "WOHNEINHEIT 20",
+        question: "WOHNEINHEIT 21",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
           terrassen: "7 m²",
           wohnflache: "90 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-21.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1362,19 +1412,21 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE20,
+          faqImage: WHW138WE21,
         },
       },
 
       {
         id: 22,
-        question: "WOHNEINHEIT 21",
+        question: "WOHNEINHEIT 22",
         answer: {
-          zimmer: 3,
+          zimmer: 2,
           flache: "219, 98 m²",
           terrassen: "9 m²",
           wohnflache: "74 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-22.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1397,7 +1449,7 @@ const aktuelleprojekte = [
             "Hochwertige Feinsteinfliesen",
             "Eingelassene Deckenspots",
           ],
-          faqImage: WHW138WE21,
+          faqImage: WHW138WE22,
         },
       },
 
@@ -1410,6 +1462,8 @@ const aktuelleprojekte = [
           terrassen: "7 m²",
           wohnflache: "90 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-23.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
@@ -1446,6 +1500,8 @@ const aktuelleprojekte = [
           terrassen: "56 m²",
           wohnflache: "182 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/138/faqs/pdfs/Grundriss-WHW-138-WE-24.pdf",
           ausstattung: [
             "3-fach isolierverglaste Holzfenster mit Bauhausbeschlägen",
             "Fußbodenheizung",
