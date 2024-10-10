@@ -45,7 +45,7 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
 
   return (
     <div
-      className={`relative mx-auto flex h-full items-center justify-center gap-10 ${!fromUnternehmen && "max-w-[120rem] "}`}
+      className={`relative mx-auto flex h-full items-center justify-center gap-10 ${fromUnternehmen && "bg-white"} ${!fromUnternehmen && "max-w-[120rem] "}`}
     >
       <Swiper
         onBeforeInit={(swiper) => {
@@ -94,7 +94,9 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
               />
             </button>
           </div>
-          <div className="absolute bottom-2 z-30 block sm:bottom-10 md:hidden">
+          <div
+            className={`absolute bottom-2 z-30 block md:hidden ${fromUnternehmen ? "sm:bottom-4" : "sm:bottom-10"}`}
+          >
             <div className="flex items-center justify-center gap-3">
               {Array.from({ length: childrenLength }).map((_, index) => (
                 <div

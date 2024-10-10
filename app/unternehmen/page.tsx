@@ -48,9 +48,9 @@ const Unternehmen = () => {
 
         {/* section 2 */}
 
-        <div className="mb-[5.625rem] h-[65.25rem] text-black">
+        <div className="mb-[5.625rem] text-black md:h-[65.25rem]">
           <ProjectSlider fromUnternehmen>
-            <SwiperSlide className="bg-white py-[10.75rem]">
+            <SwiperSlide className="bg-white py-8 md:py-[10.75rem]">
               <div className="flex flex-col items-center justify-center text-center">
                 <Image
                   src={Fabian}
@@ -58,7 +58,7 @@ const Unternehmen = () => {
                   width={284}
                   className="mx-auto"
                 />
-                <p className="mb-[1.9375rem] mt-[4rem] max-w-[80%] font-gt-display-light-italic text-dark-blue xs:text-2xl md:text-[1.75rem] md:leading-[2.375rem]">
+                <p className="my-8 max-w-[80%] font-gt-display-light-italic text-dark-blue xs:text-2xl md:text-[1.75rem] md:leading-[2.375rem]">
                   {"„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ "
                     .split(" | ")
                     .map((text, index) => (
@@ -89,7 +89,7 @@ const Unternehmen = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-white">
-              <div className="flex w-full flex-col items-center justify-center pt-[21.625rem]">
+              <div className="flex w-full flex-col items-center justify-center py-40 md:pt-[21.625rem]">
                 <p className="h-[1.3125rem] text-center font-proxima-semibold text-xl uppercase text-brown">
                   Unser bisher schönstes Bauprojekt? Alle.
                 </p>

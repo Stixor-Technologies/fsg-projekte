@@ -59,8 +59,8 @@ const FaqCard = ({
     if (!isActive) {
       gsap.to(answerRef.current, {
         height: "auto",
-        marginTop: "45px",
-        marginBottom: "35px",
+        marginTop: "28px",
+        marginBottom: "9px",
         duration: 0.4,
       });
       answerRef.current?.classList.add("active");
@@ -131,7 +131,7 @@ const FaqCard = ({
 
         <div ref={answerRef} className="h-0 overflow-hidden">
           {/* section 1 */}
-          <div className="mb-16 grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]  flex-wrap gap-x-1 gap-y-4">
+          <div className="mb-[1.75rem] grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]  flex-wrap gap-x-1 gap-y-4">
             <div className="faq-section-1">
               <span className="faq-section-1-header">Zimmer</span>
               <span className="faq-section-1-value">
@@ -177,7 +177,7 @@ const FaqCard = ({
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 lg:flex-row lg:gap-0">
+          <div className="flex flex-col md:gap-5 lg:flex-row lg:gap-0">
             <div className="flex w-full max-w-[75rem] flex-col md:flex-row">
               <div className="mr-10 w-full max-w-[34.8125rem]">
                 <h3 className="faq-list-header">Ausstattung</h3>

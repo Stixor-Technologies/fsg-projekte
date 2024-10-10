@@ -64,30 +64,29 @@ export default function Home() {
             <Image src={Fabian} alt="fabian" objectPosition="bottom" />
           </div>
 
-          <div className="flex flex-1 items-center justify-center px-4 py-12 xs:px-7 md:px-4 lg:px-7 2xl:px-0 4xl:items-start">
+          <div className="flex flex-1 items-center justify-center px-4 py-8 xs:px-7 sm:py-12 md:px-4 lg:px-7 2xl:px-0 4xl:items-start">
             <div className="w-full text-center lg:max-w-[39.188rem] 4xl:mb-[20.406rem]  4xl:mt-[21.863rem]">
-              <div className="h-[11.9375rem]">
-                <p className="mt-3 font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
-                  „Sich zu Hause zu fühlen – zu wissen, genau hier,
-                  <br className="hidden 2xl:block" />
-                  genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
-                  Bauprojekt an.
-                  <br className="hidden 2xl:block" /> Es definiert unser Ziel,
-                  wenn wir darüber nachdenken, welche
-                  <br className="hidden 2xl:block" /> Blickachsen es braucht, um
-                  Licht und Leben in eine Wohnung zu lassen.
-                  <br className="hidden 2xl:block" /> Mit welchen Materialien
-                  wir arbeiten, wo der Elektroschalter sitzen
-                  <br className="hidden 2xl:block" />
-                  muss und welche Pflanzen im Garten stehen.“
-                </p>
-                <p className="my-2 font-proxima text-[0.9375rem] 4xl:my-0">
-                  FABIAN SCHNEIDER
-                </p>
-              </div>
+              <p className="font-proxima text-sm lg:text-[0.938rem] lg:leading-[1.5rem] xl:mt-[3.438rem] 4xl:h-[10.313rem]">
+                „Sich zu Hause zu fühlen – zu wissen, genau hier,
+                <br className="hidden 2xl:block" />
+                genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes
+                Bauprojekt an.
+                <br className="hidden 2xl:block" /> Es definiert unser Ziel,
+                wenn wir darüber nachdenken, welche
+                <br className="hidden 2xl:block" /> Blickachsen es braucht, um
+                Licht und Leben in eine Wohnung zu lassen.
+                <br className="hidden 2xl:block" /> Mit welchen Materialien wir
+                arbeiten, wo der Elektroschalter sitzen
+                <br className="hidden 2xl:block" />
+                muss und welche Pflanzen im Garten stehen.“
+              </p>
+              <p className="my-2 font-proxima text-[0.9375rem] 4xl:my-0">
+                FABIAN SCHNEIDER
+              </p>
+
               <Link
                 href={"/unternehmen"}
-                className="mt-[3.5812rem] inline-block border-b-[2px] border-custom-brown pb-2 text-[0.938rem] uppercase text-custom-brown lg:pb-[0.8rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
+                className="mt-4 inline-block border-b-[2px] border-custom-brown pb-2 text-[0.938rem] uppercase text-custom-brown md:mt-[3vw] lg:pb-[0.8rem] 3xl:mt-[3.5812rem] 4xl:h-[1.734rem] 4xl:leading-[1.125rem]"
               >
                 UNTERNEHMEN
               </Link>
@@ -101,7 +100,7 @@ export default function Home() {
             Aktuelle Projekte
           </h2>
 
-          <div className="mt-[6vw] flex flex-col gap-[4vw] 2xl:mt-24 2xl:gap-[6.25rem]">
+          <div className="mt-[8.2vw] flex flex-col gap-[8.2vw] 2xl:mt-24 2xl:gap-[6.25rem]">
             {aktuelleprojekte?.map((project, index) => (
               <Link
                 href={`/projekt-details/${project?.id}`}
@@ -150,7 +149,7 @@ export default function Home() {
               as={"button"}
               variant="sm"
               text="Kontakt aufnehmen"
-              styles={"self-center mt-7 md:mt-0 bg-opacity-80"}
+              styles={"self-center bg-opacity-80"}
             />
           </div>
         </div>

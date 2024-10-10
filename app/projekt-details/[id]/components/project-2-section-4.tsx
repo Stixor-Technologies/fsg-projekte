@@ -55,22 +55,41 @@
 // export default Project2Sec4;
 
 import ProjectSlider from "@/components/slider";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Img1 from "@/public/assets/aktuelle-projekte/138/slider-2/1.png";
 import Img2 from "@/public/assets/aktuelle-projekte/138/slider-2/5.png";
+import Img2Mobile from "@/public/assets/aktuelle-projekte/138/slider-2/5-mobile.png";
 import Img3 from "@/public/assets/aktuelle-projekte/138/slider-2/3.png";
 import Img4 from "@/public/assets/aktuelle-projekte/138/slider-2/6.png";
 import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
 
 const Project2Section4 = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <ProjectSlider arrowColor="white">
       <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img1} alt="img1" />
       </SwiperSlide>
       <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
-        <Image src={Img2} alt="img1" className="scale-[1.2] md:scale-100" />
+        <Image
+          src={isMobile ? Img2Mobile : Img2}
+          alt="img1"
+          className="scale-[1.2] md:scale-100"
+        />
       </SwiperSlide>
       <SwiperSlide className="relative h-full overflow-hidden bg-light-yellow">
         <Image src={Img3} alt="img1" />

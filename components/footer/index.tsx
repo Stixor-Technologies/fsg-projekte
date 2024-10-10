@@ -5,17 +5,17 @@ import Logo from "@/public/assets/footer-logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-blue pb-12 4xl:h-[35.5rem]">
+    <footer className="bg-dark-blue pb-10 sm:pb-12 4xl:h-[35.5rem]">
       <div>
         <div className="relative mx-auto max-w-[110.563rem] px-5 sm:px-10 4xl:px-0">
-          <div className="flex flex-col items-center gap-[4.5625rem]">
-            <p className="mt-[5.125rem] font-gt-display-light text-xl lg:text-[2.1875rem] 4xl:h-[2.1875rem]">
+          <div className="flex flex-col items-center gap-8 md:gap-[4.5625rem]">
+            <p className="mt-10 font-gt-display-light text-xl sm:mt-[5.125rem] lg:text-[2.1875rem] 4xl:h-[2.1875rem]">
               Besondere Orte mit einem besonderen Anspruch: Vollenden.{" "}
             </p>
             <div className="h-[0.5px] w-full bg-white" />
           </div>
 
-          <div className="mt-[2.5rem] grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0 4xl:grid-cols-[21.063rem,306px,30.125rem,418px,14.125rem,] 4xl:justify-normal">
+          <div className="mt-8 grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1fr,2fr,1fr] lg:gap-0 4xl:grid-cols-[21.063rem,306px,30.125rem,418px,14.125rem,] 4xl:justify-normal">
             <div className="sm:row-start-2 lg:row-start-1">
               <h4 className="4xl-[1.438rem] font-proxima-semibold text-lg leading-[1.375rem] text-custom-brown">
                 VERTRIEB
@@ -39,7 +39,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="!mt-[4.1875rem] flex gap-3 text-custom-brown sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
+              <div className="mt-8 flex gap-3 text-custom-brown sm:!mt-[4.1875rem] sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
                 <Link
                   className=" font-proxima-semibold uppercase tracking-wide duration-300 hover:text-light-brown"
                   href={"/"}
@@ -95,7 +95,7 @@ const Footer = () => {
                     E-Mail fsg@fsg-projekte.de
                   </Link>
                 </div>
-                <p className="!mt-[4.1875rem] font-proxima-semibold text-base uppercase tracking-wide text-custom-brown duration-300 hover:text-light-brown">
+                <p className="!mt-8 font-proxima-semibold text-base uppercase tracking-wide text-custom-brown duration-300 hover:text-light-brown sm:!mt-[4.1875rem]">
                   © FSG | Projekte, 2024
                 </p>
               </div>
