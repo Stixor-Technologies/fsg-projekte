@@ -16,7 +16,7 @@ body {
   }
 
   .ankauf-point {
-    @apply mb-[0.8125rem] mt-[2.625rem] block font-proxima-semibold uppercase text-brown 4xl:h-[2.063rem] 4xl:leading-[1.1875rem];
+    @apply mb-[0.8125rem] mt-[1.625rem] block font-proxima-semibold uppercase text-brown 4xl:h-[2.063rem] 4xl:leading-[1.1875rem];
   }
 
   .ankauf-desc {

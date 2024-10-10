@@ -50,7 +50,7 @@ const Ankauf = () => {
         {Ankaufsprofil?.map((profil, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white px-5 py-14 pt-[2.188rem] sm:px-10 lg:px-[6.375rem] lg:pt-[7.5rem] 4xl:h-[75.8125rem] 4xl:pb-[5.125rem]"
+            className="flex flex-col bg-white px-5 py-[2.188rem] sm:px-10 lg:px-[6.375rem] lg:pt-[7.5rem] 4xl:h-[75.8125rem] 4xl:pb-[5.125rem]"
           >
             <div className="w-full flex-1 divide-y-[.0625rem] divide-medium-blue border-medium-blue">
               <div className="grid sm:grid-cols-2 4xl:h-[6.75rem]">
@@ -69,11 +69,13 @@ const Ankauf = () => {
               </div>
               <div className="grid sm:grid-cols-2">
                 <span className={`ankauf-point`}>Volumen</span>
-                <span className="ankauf-desc">{profil?.Volumen}</span>
+                <div className="mb-[1.625rem] sm:mt-[1.625rem]">
+                  <span className="ankauf-desc">{profil?.Volumen}</span>
+                </div>
               </div>
               <div className="grid sm:grid-cols-2">
                 <span className={`ankauf-point`}>GrundstückE</span>
-                <div className="my-[1.625rem]">
+                <div className="mb-[1.625rem] sm:mt-[1.625rem]">
                   {profil?.GrundstückE.split(" | ").map((item, index) => (
                     <p className="ankauf-desc" key={index}>
                       {item}
@@ -83,7 +85,7 @@ const Ankauf = () => {
               </div>
               <div className="grid sm:grid-cols-2">
                 <span className={`ankauf-point`}>Bestandsobjekte</span>
-                <div className="my-[1.625rem]">
+                <div className="mb-[1.625rem] sm:mt-[1.625rem]">
                   {profil?.Bestandsobjekte.split(" | ").map((item, index) => (
                     <p className="ankauf-desc" key={index}>
                       {item}
@@ -93,7 +95,7 @@ const Ankauf = () => {
               </div>
               <div className="grid sm:grid-cols-2">
                 <span className={`ankauf-point`}>Regionen</span>
-                <div className="my-[1.625rem]">
+                <div className="mb-[1.625rem] sm:mt-[1.625rem]">
                   {profil?.Regionen.split(" | ").map((item, index) => (
                     <p className="ankauf-desc" key={index}>
                       {item}
@@ -103,7 +105,7 @@ const Ankauf = () => {
               </div>
               <div className="grid sm:grid-cols-2">
                 <span className={`ankauf-point`}>Ausschlußkriterien</span>
-                <div className="my-[1.625rem]">
+                <div className="sm:mt-[1.625rem]">
                   {profil?.Ausschlußkriterien.split(" | ").map(
                     (item, index) => (
                       <p className="ankauf-desc" key={index}>
