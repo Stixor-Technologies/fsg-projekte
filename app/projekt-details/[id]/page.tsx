@@ -340,17 +340,26 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   <Image src={project?.locations.displayImage} alt="" />
                 </div>
                 <div className="ml-5 flex flex-[0.3] gap-[0.5rem] lg:ml-0 lg:mt-[6.25rem]">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col justify-center">
                     {project?.locations.locations.map((location, index) => (
-                      <p
-                        key={index}
-                        className="w-[2.125rem] font-gt-super text-[1.5625rem] text-xl leading-[2.5rem] text-brown"
-                      >
-                        {index + 1}
-                      </p>
+                      <div key={index} className="flex">
+                        <p
+                          key={index}
+                          className="w-[2.125rem] font-gt-super text-[1.5625rem] text-xl leading-[2.5rem] text-brown"
+                        >
+                          {index + 1}
+                        </p>
+
+                        <p
+                          key={index}
+                          className="font-proxima text-xl uppercase leading-[2.5rem] text-medium-blue"
+                        >
+                          {location}
+                        </p>
+                      </div>
                     ))}
                   </div>
-                  <div className="mt-[0.5rem] flex flex-col">
+                  {/* <div className="mt-[0.5rem] flex flex-col">
                     {project?.locations.locations.map((location, index) => (
                       <p
                         key={index}
@@ -359,7 +368,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                         {location}
                       </p>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

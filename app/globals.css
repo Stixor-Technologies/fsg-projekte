@@ -28,7 +28,7 @@ body {
   }
 
   .metric {
-    @apply font-gt-book text-5xl lg:text-[4.375rem] lg:leading-[4.813rem] 4xl:h-[4.563rem];
+    @apply font-gt-display-light text-5xl lg:text-[4.375rem] lg:leading-[4.813rem] 4xl:h-[4.563rem];
   }
 
   .metric-label {
@@ -52,7 +52,7 @@ body {
   }
 
   .faq-list {
-    @apply mb-7 list-outside list-disc pl-3 text-medium-blue lg:pl-3.5 lg:text-xl lg:leading-[1.75rem] 4xl:mb-0;
+    @apply mb-7 list-outside list-disc pl-3 text-medium-blue lg:pl-3.5 lg:text-xl lg:leading-[1.75rem];
   }
 
   .faq-list li::marker {

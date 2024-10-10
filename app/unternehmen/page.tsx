@@ -48,7 +48,7 @@ const Unternehmen = () => {
 
         {/* section 2 */}
 
-        <div className="mb-[5.625rem] h-[65.25rem] bg-white text-black">
+        <div className="mb-[5.625rem] h-[65.25rem] text-black">
           <ProjectSlider fromUnternehmen>
             <SwiperSlide className="bg-white py-[10.75rem]">
               <div className="flex flex-col items-center justify-center text-center">
@@ -88,7 +88,7 @@ const Unternehmen = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="bg-white">
               <div className="flex w-full flex-col items-center justify-center pt-[21.625rem]">
                 <p className="h-[1.3125rem] text-center font-proxima-semibold text-xl uppercase text-brown">
                   Unser bisher schönstes Bauprojekt? Alle.

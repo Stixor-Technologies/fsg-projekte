@@ -183,7 +183,7 @@ const FaqCard = ({
               <div className="w-full max-w-[37.6875rem]">
                 <div>
                   <h3 className="faq-list-header">Besonderheiten</h3>
-                  <ul className="faq-list 4xl:h-[6.5rem]">
+                  <ul className="faq-list">
                     {faqItem?.answer?.besonderheiten?.map(
                       (besonderheiten: string, index: number) => (
                         <li key={index} className=" ">
@@ -194,7 +194,7 @@ const FaqCard = ({
                   </ul>
                 </div>
 
-                <div>
+                <div className="mt-0">
                   <h3 className="faq-list-header">BADEZIMMER</h3>
                   <ul className="faq-list">
                     {faqItem?.answer?.badezimmer?.map(
@@ -208,7 +208,7 @@ const FaqCard = ({
             </div>
 
             <div className="w-full shrink-0 items-center justify-center self-start lg:ml-4 lg:flex lg:max-w-[16.5rem]">
-              <Image src={faqItem?.answer?.faqImage} alt="" className="" />
+              <Image src={faqItem?.answer?.faqImage} alt="" />
             </div>
           </div>
         </div>

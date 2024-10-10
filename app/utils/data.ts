@@ -177,7 +177,7 @@ const aktuelleprojekte = [
     faq: [
       {
         id: 1,
-        question: "WOHNEINHEIT 1",
+        question: "WOHNEINHEIT 1 / 6 Zimmer",
         answer: {
           zimmer: 6,
           flache: "219, 98 m²",
@@ -212,7 +212,7 @@ const aktuelleprojekte = [
 
       {
         id: 2,
-        question: "WOHNEINHEIT 2",
+        question: "WOHNEINHEIT 2 / 5 Zimmer",
         answer: {
           zimmer: 5,
           flache: "219, 98 m²",
@@ -247,7 +247,7 @@ const aktuelleprojekte = [
 
       {
         id: 3,
-        question: "WOHNEINHEIT 3",
+        question: "WOHNEINHEIT 3 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -283,7 +283,7 @@ const aktuelleprojekte = [
 
       {
         id: 4,
-        question: "WOHNEINHEIT 4",
+        question: "WOHNEINHEIT 4 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -319,7 +319,7 @@ const aktuelleprojekte = [
 
       {
         id: 5,
-        question: "WOHNEINHEIT 5",
+        question: "WOHNEINHEIT 5 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -355,7 +355,7 @@ const aktuelleprojekte = [
 
       {
         id: 6,
-        question: "WOHNEINHEIT 6",
+        question: "WOHNEINHEIT 6 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -391,7 +391,7 @@ const aktuelleprojekte = [
 
       {
         id: 7,
-        question: "WOHNEINHEIT 7",
+        question: "WOHNEINHEIT 7 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -427,7 +427,7 @@ const aktuelleprojekte = [
 
       {
         id: 8,
-        question: "WOHNEINHEIT 8",
+        question: "WOHNEINHEIT 8 / 3 Zimmer",
         answer: {
           zimmer: 3,
           flache: "219, 98 m²",
@@ -463,7 +463,7 @@ const aktuelleprojekte = [
 
       {
         id: 9,
-        question: "WOHNEINHEIT 9",
+        question: "WOHNEINHEIT 9 / 6 Zimmer",
         answer: {
           zimmer: 0,
           flache: "219, 98 m²",
@@ -499,7 +499,7 @@ const aktuelleprojekte = [
 
       {
         id: 10,
-        question: "WOHNEINHEIT 10",
+        question: "WOHNEINHEIT 10 / 6 Zimmer",
         answer: {
           zimmer: 0,
           flache: "219, 98 m²",
