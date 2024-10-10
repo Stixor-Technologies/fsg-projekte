@@ -13,12 +13,14 @@ interface ProjectSliderProps {
   children: React.ReactNode;
   arrowColor?: "black" | "white";
   slidesPerView?: number;
+  fromUnternehmen?: boolean;
 }
 
 const ProjectSlider: FC<ProjectSliderProps> = ({
   children,
   arrowColor = "black",
   slidesPerView = 1,
+  fromUnternehmen = false,
 }) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
@@ -42,7 +44,9 @@ const ProjectSlider: FC<ProjectSliderProps> = ({
   }, [children]);
 
   return (
-    <div className="relative mx-auto flex h-full max-w-[120rem] items-center justify-center gap-10">
+    <div
+      className={`relative mx-auto flex h-full items-center justify-center gap-10 ${!fromUnternehmen && "max-w-[120rem] "}`}
+    >
       <Swiper
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;

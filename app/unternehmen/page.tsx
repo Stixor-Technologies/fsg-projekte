@@ -49,7 +49,7 @@ const Unternehmen = () => {
         {/* section 2 */}
 
         <div className="mb-[5.625rem] h-[65.25rem] bg-white text-black">
-          <ProjectSlider>
+          <ProjectSlider fromUnternehmen>
             <SwiperSlide className="bg-white py-[10.75rem]">
               <div className="flex flex-col items-center justify-center text-center">
                 <Image
@@ -58,7 +58,7 @@ const Unternehmen = () => {
                   width={284}
                   className="mx-auto"
                 />
-                <p className="mb-[1.9375rem] mt-[4rem] max-w-[80%] font-gt-display-light-italic xs:text-2xl md:text-[1.75rem] md:leading-[2.375rem]">
+                <p className="mb-[1.9375rem] mt-[4rem] max-w-[80%] font-gt-display-light-italic text-dark-blue xs:text-2xl md:text-[1.75rem] md:leading-[2.375rem]">
                   {"„Sich zu Hause zu fühlen – zu wissen, genau hier, | genau so will ich wohnen: Mit diesem Anspruch gehen wir jedes Bauprojekt an. | Es definiert unser Ziel, wenn wir darüber nachdenken, welche | Blickachsen es braucht, um Licht und Leben in eine Wohnung zu lassen. | Mit welchen Materialien wir arbeiten, wo der Elektroschalter sitzen | muss und welche Pflanzen im Garten stehen.“ "
                     .split(" | ")
                     .map((text, index) => (
@@ -74,7 +74,7 @@ const Unternehmen = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex h-full items-center justify-center">
+              <div className="relative mx-auto flex h-full items-center justify-center">
                 {/* <div
                 style={{
                   backgroundImage: `url(${UnternehmenImg2.src})`,
@@ -84,7 +84,7 @@ const Unternehmen = () => {
                 <Image
                   src={UnternehmenImg2}
                   alt="fabian"
-                  className="aspect-auto object-cover"
+                  className="w-full object-cover"
                 />
               </div>
             </SwiperSlide>
