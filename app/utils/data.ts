@@ -192,6 +192,8 @@ const aktuelleprojekte = [
           terrassen: "24 m²",
           wohnflache: "235 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH1_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Vier Schlafzimmer",
@@ -227,6 +229,8 @@ const aktuelleprojekte = [
           terrassen: "27 m²",
           wohnflache: "189 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH2_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Drei Schlafzimmer",
@@ -262,6 +266,8 @@ const aktuelleprojekte = [
           terrassen: "19 m²",
           wohnflache: "114 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH3_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -298,6 +304,8 @@ const aktuelleprojekte = [
           terrassen: "16 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH4_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -334,6 +342,8 @@ const aktuelleprojekte = [
           terrassen: "17 m²",
           wohnflache: "112 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH5_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -370,6 +380,8 @@ const aktuelleprojekte = [
           terrassen: "15 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH6_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -406,6 +418,8 @@ const aktuelleprojekte = [
           terrassen: "17 m²",
           wohnflache: "112 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH7_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -442,6 +456,8 @@ const aktuelleprojekte = [
           terrassen: "15 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH8_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Zwei Schlafzimmer",
@@ -478,6 +494,8 @@ const aktuelleprojekte = [
           terrassen: "41 m²",
           wohnflache: "232 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH9_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Drei bis vier Schlafzimmer",
@@ -514,6 +532,8 @@ const aktuelleprojekte = [
           terrassen: "45 m²",
           wohnflache: "233 m²",
           runterladen: "Grundriss runterladen",
+          floorPlan:
+            "/assets/aktuelle-projekte/petit/faqs/pdfs/MFD_PetitPalais_GrundrisExpose_WH10_digital.pdf",
           ausstattung: [
             "Böden aus Eiche-Fischgrätparkett und Marmor in den Bädern",
             "Drei bis vier Schlafzimmer",
