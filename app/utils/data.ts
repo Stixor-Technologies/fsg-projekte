@@ -225,7 +225,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 2",
         answer: {
           zimmer: 5,
-          flache: "219, 98 m²",
+          flache: "172, 74 m²",
           terrassen: "27 m²",
           wohnflache: "189 m²",
           runterladen: "Grundriss runterladen",
@@ -262,7 +262,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 3",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "103, 47 m²",
           terrassen: "19 m²",
           wohnflache: "114 m²",
           runterladen: "Grundriss runterladen",
@@ -300,7 +300,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 4",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "120, 09 m²",
           terrassen: "16 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
@@ -338,7 +338,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 5",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "104, 16 m²",
           terrassen: "17 m²",
           wohnflache: "112 m²",
           runterladen: "Grundriss runterladen",
@@ -376,7 +376,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 6",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "120, 44 m²",
           terrassen: "15 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
@@ -414,7 +414,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 7",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "103, 80 m²",
           terrassen: "17 m²",
           wohnflache: "112 m²",
           runterladen: "Grundriss runterladen",
@@ -452,7 +452,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 8",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "120, 16 m²",
           terrassen: "15 m²",
           wohnflache: "128 m²",
           runterladen: "Grundriss runterladen",
@@ -490,7 +490,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 9",
         answer: {
           zimmer: 6,
-          flache: "219, 98 m²",
+          flache: "210, 55 m²",
           terrassen: "41 m²",
           wohnflache: "232 m²",
           runterladen: "Grundriss runterladen",
@@ -528,7 +528,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 10",
         answer: {
           zimmer: 6,
-          flache: "219, 98 m²",
+          flache: "210, 75 m²",
           terrassen: "45 m²",
           wohnflache: "233 m²",
           runterladen: "Grundriss runterladen",
@@ -669,7 +669,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 1",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "68, 43 m²",
           terrassen: "9 m²",
           wohnflache: "73 m²",
           runterladen: "Grundriss runterladen",
@@ -707,7 +707,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 2",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "103, 47 m²",
           terrassen: "15 m²",
           wohnflache: "111 m²",
           runterladen: "Grundriss runterladen",
@@ -743,7 +743,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 3",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "82, 08 m²",
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
@@ -780,7 +780,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 4",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "50, 61 m²",
           terrassen: "9 m²",
           wohnflache: "55 m²",
           runterladen: "Grundriss runterladen",
@@ -815,7 +815,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 5",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "99, 28 m²",
           terrassen: "7 m²",
           wohnflache: "103 m²",
           runterladen: "Grundriss runterladen",
@@ -852,7 +852,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 6",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "82, 08 m²",
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
@@ -889,7 +889,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 7",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "50, 78 m²",
           terrassen: "9 m²",
           wohnflache: "55 m²",
           runterladen: "Grundriss runterladen",
@@ -924,7 +924,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 8",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "99, 28 m²",
           terrassen: "7 m²",
           wohnflache: "103 m²",
           runterladen: "Grundriss runterladen",
@@ -961,7 +961,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 9",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "82, 41 m²",
           terrassen: "7 m²",
           wohnflache: "86  m²",
           runterladen: "Grundriss runterladen",
@@ -998,7 +998,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 10",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "51, 05 m²",
           terrassen: "9 m²",
           wohnflache: "56 m²",
           runterladen: "Grundriss runterladen",
@@ -1033,7 +1033,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 11",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "99, 89 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
@@ -1070,7 +1070,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 12",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "82, 36 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
@@ -1107,7 +1107,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 13",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "47, 81 m²",
           terrassen: "7 m²",
           wohnflache: "86 m²",
           runterladen: "Grundriss runterladen",
@@ -1145,7 +1145,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 14",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "99, 86 m²",
           terrassen: "9 m²",
           wohnflache: "53 m²",
           runterladen: "Grundriss runterladen",
@@ -1182,7 +1182,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 15",
         answer: {
           zimmer: 4,
-          flache: "219, 98 m²",
+          flache: "164, 15 m²",
           terrassen: "7 m²",
           wohnflache: "104 m²",
           runterladen: "Grundriss runterladen",
@@ -1219,7 +1219,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 16",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "83, 42 m²",
           terrassen: "39 m²",
           wohnflache: "184 m²",
           runterladen: "Grundriss runterladen",
@@ -1256,7 +1256,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 17",
         answer: {
           zimmer: 4,
-          flache: "219, 98 m²",
+          flache: "116, 14 m²",
           terrassen: "7 m²",
           wohnflache: "87 m²",
           runterladen: "Grundriss runterladen",
@@ -1293,7 +1293,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 18",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "80, 50 m²",
           terrassen: "15 m²",
           wohnflache: "124 m²",
           runterladen: "Grundriss runterladen",
@@ -1330,7 +1330,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 19",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "46, 26 m²",
           terrassen: "6 m²",
           wohnflache: "83 m²",
           runterladen: "Grundriss runterladen",
@@ -1367,7 +1367,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 20",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "86, 45 m²",
           terrassen: "6 m²",
           wohnflache: "49 m²",
           runterladen: "Grundriss runterladen",
@@ -1404,7 +1404,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 21",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "69, 74 m²",
           terrassen: "7 m²",
           wohnflache: "90 m²",
           runterladen: "Grundriss runterladen",
@@ -1441,7 +1441,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 22",
         answer: {
           zimmer: 2,
-          flache: "219, 98 m²",
+          flache: "46, 26 m²",
           terrassen: "9 m²",
           wohnflache: "74 m²",
           runterladen: "Grundriss runterladen",
@@ -1478,7 +1478,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 23",
         answer: {
           zimmer: 3,
-          flache: "219, 98 m²",
+          flache: "86, 67 m²",
           terrassen: "7 m²",
           wohnflache: "90 m²",
           runterladen: "Grundriss runterladen",
@@ -1516,7 +1516,7 @@ const aktuelleprojekte = [
         question: "WOHNEINHEIT 24",
         answer: {
           zimmer: 4,
-          flache: "219, 98 m²",
+          flache: "154, 29 m²",
           terrassen: "56 m²",
           wohnflache: "182 m²",
           runterladen: "Grundriss runterladen",
