@@ -70,6 +70,11 @@ const Kontakt = () => {
       .email("Ungültige E-Mail-Adresse")
       .required("Erforderlich"),
 
+    ruckrufnummer: Yup.string().matches(
+      /^\+?\d{11,13}$/,
+      "Ungültige Telefonnummer. Bitte nur Zahlen und maximal ein '+' am Anfang verwenden. Die Gesamtlänge sollte zwischen 11 und 13 Zeichen liegen.",
+    ),
+
     nachricht: Yup.string()
       .min(10, "Die Nachricht sollte mindestens 10 Zeichen lang sein")
       .max(300, "Die Nachricht sollte höchstens 300 Zeichen lang sein."),
@@ -225,10 +230,16 @@ const Kontakt = () => {
                   })}
                 </div>
                 <div className="flex flex-col justify-between gap-[0.938rem]">
-                  {dropDownTemplate({
+                  {/* {dropDownTemplate({
                     name: "ruckrufnummer",
                     placeholder: "Rückrufnummer",
                     options: ["One", "Two", "Three", "Four", "Five"],
+                  })} */}
+                  {inputTemplate({
+                    name: "ruckrufnummer",
+                    placeholder: "ruckrufnummer",
+                    touched: touched.ruckrufnummer,
+                    error: errors.ruckrufnummer,
                   })}
                   {dropDownTemplate({
                     name: "projekt",
