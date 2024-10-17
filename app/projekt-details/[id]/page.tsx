@@ -191,17 +191,16 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   <Image
                     src={project?.architektur?.displayImage}
                     alt=""
-                    className="mx-auto px-4"
+                    className="mx-auto max-w-[550px] px-4 xl:max-w-[38.875rem]"
                   />
                 </div>
 
                 <div
-                  className={`flex flex-1 ${id === "petit-palais" ? "4xl:ml-[10.125rem]" : "4xl:ml-[12.625rem]"} 4xl:mt-[18.375rem] 4xl:flex-none`}
+                  className={`flex flex-1 px-4 2xl:px-0 ${id === "petit-palais" ? "4xl:ml-[10.125rem]" : "4xl:ml-[12.625rem]"} 4xl:mt-[18.375rem] 4xl:flex-none`}
                 >
                   <div className="mx-auto w-full max-w-[90%] text-center text-medium-blue lg:max-w-[33.9375rem]">
                     <h3 className="font-proxima-semibold text-xl uppercase leading-[1.5rem] text-brown">
                       <TextWithLineBreaks text={project?.architektur.title} />
-                      {/* {project?.architektur?.title} */}
                     </h3>
                     <p className="mt-4 font-proxima text-[.938rem] lg:mt-5 lg:leading-[1.563rem] xl:mt-7 2xl:mt-9 4xl:h-[21.25rem]">
                       <span className="block">
