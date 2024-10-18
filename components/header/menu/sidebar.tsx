@@ -128,7 +128,7 @@ const Sidebar = () => {
                 setIsMenuOpen(false);
               }}
             >
-              Kontact
+              Kontakt
             </li>
           </ul>
         </div>

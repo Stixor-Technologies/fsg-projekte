@@ -80,11 +80,8 @@ const Kontakt = () => {
       .max(300, "Die Nachricht sollte höchstens 300 Zeichen lang sein."),
 
     terms: Yup.boolean()
-      .oneOf(
-        [true],
-        "Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen",
-      )
-      .required("Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen"),
+      .oneOf([true], "Sie müssen der Datenschutzerklärung zustimmen")
+      .required("Sie müssen der Datenschutzerklärung zustimmen"),
   });
 
   useEffect(() => {
@@ -230,14 +227,9 @@ const Kontakt = () => {
                   })}
                 </div>
                 <div className="flex flex-col justify-between gap-[0.938rem]">
-                  {/* {dropDownTemplate({
-                    name: "ruckrufnummer",
-                    placeholder: "Rückrufnummer",
-                    options: ["One", "Two", "Three", "Four", "Five"],
-                  })} */}
                   {inputTemplate({
                     name: "ruckrufnummer",
-                    placeholder: "ruckrufnummer",
+                    placeholder: "Rückrufnummer",
                     touched: touched.ruckrufnummer,
                     error: errors.ruckrufnummer,
                   })}
