@@ -39,7 +39,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="mt-8 flex gap-3 text-custom-brown sm:!mt-[4.1875rem] sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
+              <div className="mt-8 flex gap-2 text-custom-brown xs:gap-3 sm:!mt-[4.1875rem] sm:max-w-[17.4375rem] sm:flex-row sm:justify-between sm:gap-0 lg:mt-[2.563rem] 4xl:h-[1.125rem]">
                 <Link
                   className=" font-proxima-semibold uppercase tracking-wide duration-300 hover:text-light-brown"
                   href={"/"}

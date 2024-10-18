@@ -191,7 +191,7 @@ const ProjectDetail = ({ params: { id } }: ProjectDetailParams) => {
                   <Image
                     src={project?.architektur?.displayImage}
                     alt=""
-                    className="mx-auto max-w-[550px] px-4 xl:max-w-[38.875rem]"
+                    className="mx-auto w-full max-w-[34.375rem] px-4 xl:max-w-[38.875rem]"
                   />
                 </div>
 
